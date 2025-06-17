@@ -216,84 +216,26 @@
 		}
 	}
 	s:STATE_MAZOVIA = { #Mazovia - DONE
-		region_state:RUS = {
+		region_state:POL = {
 			create_pop = {
 				culture = polish
-				size = 970792
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 180591
-			}
-			create_pop = {
-				culture = north_german
-				size = 39499
-			}
-			create_pop = {
-				culture = russian
-				size = 53083
-			}
-			create_pop = {
-				culture = byelorussian
-				size = 50440
-			}
-			create_pop = {
-				culture = ukrainian
-				size = 21106
+				size = 4974190
 			}
 		}
 	}
 	s:STATE_GREATER_POLAND = { #Warszawa - DONE
-		region_state:RUS = {
+		region_state:POL = {
 			create_pop = {
 				culture = polish
-				size = 2004469
-			}
-			create_pop = {
-				culture = polish
-				religion = protestant
-				size = 30000
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 358977
-			}
-			create_pop = {
-				culture = north_german
-				size = 134245
-			}
-			create_pop = {
-				culture = russian
-				size = 60600
+				size = 5739450
 			}
 		}
 	}
 	s:STATE_LESSER_POLAND = { #Lublin - DONE
-		region_state:RUS = {
+		region_state:POL = {
 			create_pop = {
 				culture = polish
-				size = 633163
-			}
-			create_pop = {
-				culture = polish
-				religion = protestant
-				size = 26000
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 117162
-			}
-			create_pop = {
-				culture = north_german
-				size = 19663
-			}
-			create_pop = {
-				culture = ukrainian
-				size = 160774
-			}
-			create_pop = {
-				culture = russian
-				size = 35435
+				size = 1147890
 			}
 		}
 	}

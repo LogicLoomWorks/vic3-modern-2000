@@ -124,11 +124,6 @@ STATES = {
             owned_provinces = { xD9E021 xB06121 x7f25cd x7763F3 x50F5CB}
         }
 
-        create_state = {
-        country = c:BUL
-            owned_provinces = {x940C8D xA3D7CE x316021}
-        }
-
         add_homeland = cu:bulgarian
         add_homeland = cu:romanian
         add_homeland = cu:turkish
@@ -905,7 +900,7 @@ STATES = {
 	s:STATE_BOSNIA = {
 		create_state = {
 			country = c:BOS
-			owned_provinces = { x5F13FD x9021E0 xAC2DD3 x1121E0 x3F67BA xD021A0 x23D67C x19AF6A x51A0A0 xD0A0A0 xDA817B x7C904A xA40356 x50209F x3B7D2B x1E7362 xF06101 }
+			owned_provinces = { x5F13FD x9021E0 xAC2DD3 x1121E0 x3F67BA xD021A0 x23D67C x19AF6A x51A0A0 xD0A0A0 xDA817B x7C904A xA40356 x50209F x3B7D2B x1E7362 xF06101}
 		}
 		
 		add_homeland = cu:bosniak
@@ -3598,7 +3593,7 @@ STATES = {
 	s:STATE_BULGARIA = {
 		create_state = {
 			country = c:BUL
-			owned_provinces = { xC866AF xCDD237 xB4F1D6 x2038F6 xB55757 x71A0A0 xC2E2B9 x6768DB xEC96F3 xE8D59C x64275F xF0A0A0 xD06121 x52BF3E xC59A98 xEFEAA0 }
+			owned_provinces = { xC866AF xCDD237 xB4F1D6 x2038F6 xB55757 x71A0A0 xC2E2B9 x6768DB xEC96F3 xE8D59C x64275F xF0A0A0 xD06121 x52BF3E xC59A98 xEFEAA0 x940C8D xA3D7CE x316021}
 		}
 		
 		add_homeland = cu:turkish	
@@ -4739,7 +4734,7 @@ STATES = {
 	s:STATE_NORTHERN_SERBIA = {
 		create_state = {
 			country = c:YUG
-			owned_provinces = { x4D115A xF9E78E x10A060 x4B1F45 xEDBA20 x3B6092 x74F1F4 x9061A0 x40AF95 x90A061 }
+			owned_provinces = { x4D115A xF9E78E x10A060 x4B1F45 xEDBA20 x3B6092 x74F1F4 x9061A0 x40AF95 x90A061 x18B761 x334B53 xAC083C xD021E0 x62A730 xD02161 x334B53 x9DFFAF}
 		}
 		
 		add_homeland = cu:serb
@@ -4747,7 +4742,7 @@ STATES = {
 	s:STATE_SOUTHERN_SERBIA = {
 		create_state = {
 			country = c:YUG
-			owned_provinces = { xA5D3A9 x9DFFAF x334B53 xD021E0 x18B761 x4773E6 xB852BB xD02161 x45E06A x62A730 xAC083C }
+			owned_provinces = { xA5D3A9  x4773E6 xB852BB  x45E06A   }
 		}
 		
 		add_homeland = cu:serb
@@ -6125,7 +6120,7 @@ STATES = {
 	s:STATE_CROATIA = {
 		create_state = {
 			country = c:CRO
-			owned_provinces = { x71A041 x70DF00 x6D8BC6 xF021C0 x71A0C0 xB39050 xB339EC x458E4C }
+			owned_provinces = { x71A041 x70DF00 x6D8BC6 xF021C0 x71A0C0 xB39050 xB339EC x458E4C x124D73}
 		}
 		
 		add_homeland = cu:croat
@@ -6135,14 +6130,6 @@ STATES = {
 		create_state = {
 			country = c:CRO
 			owned_provinces = { x51A021 x106020 x13318D x906121 x80CF00 }
-		}
-		create_state = {
-			country = c:YUG
-			owned_provinces = { x902161 x1A4DF9 }
-		}
-		create_state = {
-			country = c:BOS
-			owned_provinces = { xDA817B } 
 		}
 		
 		add_homeland = cu:croat
@@ -6161,14 +6148,6 @@ STATES = {
 		create_state = {
 			country = c:HUN
 			owned_provinces = { xF0E001 x6F8D2A x716180 x27F483 x3C6913 xCF2020 x906A5F x715F5D xCACEBC xC139B7 xCFDFDF x2668FB xB02121 x1CAC04   x30A020 }
-		}
-		create_state = {
-			country = c:SLO
-			owned_provinces = { xA709B7 }
-		}
-		create_state = {
-			country = c:CRO
-			owned_provinces = { x124D73}
 		}
 		
 		add_homeland = cu:hungarian
@@ -6266,7 +6245,7 @@ STATES = {
 	s:STATE_SLOVENIA = {
 		create_state = {
 			country = c:SLO
-			owned_provinces = { x31E041 xB0E040 x792B8A x44F127 }
+			owned_provinces = { x31E041 xB0E040 x792B8A x44F127 xA709B7}
 		}
 		
 		add_homeland = cu:south_german
@@ -6275,7 +6254,7 @@ STATES = {
 	s:STATE_DELVIDEK = {
 		create_state = {
 			country = c:YUG
-			owned_provinces = { x77143D x901B70 x9E1AD1 x11E021 x626998 xC347D8 }
+			owned_provinces = { x77143D x901B70 x9E1AD1 x11E021 x626998 xC347D8 x902161 x1A4DF9}
 		}
 		
 		add_homeland = cu:hungarian
@@ -6511,7 +6490,6 @@ STATES = {
 		create_state = {
 			country = c:POL
 			owned_provinces = { x0E40DA x1CB894 x1F6F99 x24BBED x29408F x2F0D92 x471A61 x577EE4 x57A53D x5FF022 x6000DF x738072 x8FE2DB x955F09 x9FEDC5 xA03316 xA3A3A9 xA7B86B xAB3C62 xC02B8C xC061A0 xC0E0A0 xD0A0E0 xDE06BA }
-			state_type = unincorporated
 		}
 		
 		add_homeland = cu:polish
@@ -6520,7 +6498,6 @@ STATES = {
 		create_state = {
 			country = c:POL
 			owned_provinces = { x40DF20 x4161A0 x44ACBB x46B950 x496950 x51A0E0 x9444C9 xAEB9A5 xB491B1 xE0BB00 xEB0783 xF73169 }
-			state_type = unincorporated
 		}
 		
 		add_homeland = cu:polish

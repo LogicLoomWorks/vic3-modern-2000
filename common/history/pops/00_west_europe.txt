@@ -479,10 +479,10 @@
 		}
 	}
 	s:STATE_POMERANIA = {
-		region_state:GER = {
+		region_state:POL = {
 			create_pop = {
 				culture = north_german
-				size = 849928
+				size = 1913150
 			}
 		}
 	}
@@ -572,6 +572,12 @@
 			create_pop = {
 				culture = north_german
 				size = 5987874
+			}
+		}
+		region_state:POL = {
+			create_pop = {
+				culture = north_german
+				size = 1147890
 			}
 		}
 	}
