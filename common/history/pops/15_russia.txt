@@ -694,35 +694,16 @@
 		}
 	}
 	s:STATE_BESSARABIA = {
-		region_state:RUS = {
+		region_state:MDV = {
 			create_pop = {
 				culture = romanian
-				size = 303466
+				size = 3597000
 			}
-			create_pop = {
-				culture = ukrainian
-				size = 81600
-			}
+		}
+		region_state:TMR = {
 			create_pop = {
 				culture = russian
-				size = 43520
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 54400
-			}
-			create_pop = {
-				culture = bulgarian
-				size = 28832
-			}
-			create_pop = {
-				culture = south_german
-				size = 16864
-			}
-			create_pop = {
-				culture = turkish
-				religion = orthodox
-				size = 15776
+				size = 660000
 			}
 		}
 	}

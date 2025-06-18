@@ -300,33 +300,33 @@ STATE_MOSCOW = {
 STATE_BREST = {
     id = 133
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x157352" "x18020B" "x1917E9" "x241A22" "x406020" "x66FB56" "x6D7F7E" "x75F1B4" "x7E7F58" "x806161" "x84294C" "x84FE3D" "x862F77" "x8ABE62" "x936BF9" "xA201E3" "xA6BED3" "xA93262" "xAB3AC5" "xAC6FAE" "xB338E8" "xBCB94C" "xBFDF20" "xC15AD8" "xC1D9C0" "xC3FA73" "xCB21FD" "xCCD197" "xDE471E" "xE06176" "xE87D11" "xF02643" }
+    provinces = { "x157352" "x18020B" "x1917E9" "x241A22" "x406020" "x66FB56" "x6D7F7E" "x75F1B4" "x7E7F58" "x806161" "x84294C" "x84FE3D" "x8ABE62" "x936BF9" "xA201E3" "xA6BED3" "xA93262" "xAB3AC5" "xB338E8" "xBCB94C" "xBFDF20" "xC15AD8" "xC1D9C0" "xC3FA73" "xCB21FD" "xCCD197" "xDE471E" "xE06176" "xE87D11" "xF02643" }
     traits = {}
     city = "x8ABE62"
     farm = "xAB3AC5"
     mine = "x157352"
     wood = "xA6BED3"
-    arable_land = 75
+    arable_land = 70
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 14
+        bg_logging = 13
     }
 }
 
 STATE_VOLHYNIA = {
     id = 134
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x0EB3C7" "x1A9FFE" "x364496" "x37A636" "x5A26AE" "x71E0A0" "x80FB0F" "x8201CF" "xAC3079" "xAFEBC8" "xE001E0" "xE2F553" }
+    provinces = { "x0EB3C7" "x1A9FFE" "x364496" "x37A636" "x5A26AE" "x71E0A0" "x80FB0F" "x8201CF" "xAC3079" "xAFEBC8" "xE001E0" "xE2F553" "x862F77" "xAC6FAE"}
     traits = {}
     city = "x5A26AE"
     farm = "x5A26AE"
     mine = "x8201CF"
     wood = "xAC3079"
-    arable_land = 40
+    arable_land = 45
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 42
-        bg_logging = 18
+        bg_logging = 19
     }
 }
 

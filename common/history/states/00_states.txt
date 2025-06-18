@@ -940,10 +940,7 @@ STATES = {
 			country = c:ROM
 			owned_provinces = {xFFCCDA x00A7F4 x067DF0 x734EFF xF40045 x0983EE x0D8A56 xFF2F40 x30E0A0 x3CE97E xB0A0E0 x556DE7 xEF2060 x56839F x80D8F3 x35CE84 x946A66}
 		}
-		create_state = {
-			country = c:UKR
-			owned_provinces = { x31A0A0 x7E6263}
-		}
+		
 		add_homeland = cu:ukrainian
 		add_homeland = cu:romanian
 	}
@@ -6080,7 +6077,7 @@ STATES = {
 	s:STATE_EAST_GALICIA = {
 		create_state = {
 			country = c:UKR
-			owned_provinces = { xA2805F x9D8087 xCDD223 x11A021 xCAE5B0 x8F9F20 xE369C4 xA3CF78 xB021A0 x053163 x4D0305 xC1B262 xEFE270 x489C42 x7EDD9E x53932F xC58E1C xD0E061 }
+			owned_provinces = { xA2805F x9D8087 xCDD223 x11A021 xCAE5B0 x8F9F20 xE369C4 xA3CF78 xB021A0 x053163 x4D0305 xC1B262 xEFE270 x489C42 x7EDD9E x53932F xC58E1C xD0E061 x31A0A0 x7E6263 xA0531B x69BAC7 xC85CD0 x359378}
 		}
 		
 		add_homeland = cu:polish
@@ -6099,10 +6096,6 @@ STATES = {
 		create_state = {
 			country = c:SVK
 			owned_provinces = { xC54074 xB23DA0 x7DE5D3 x51E061 x20C000 x02CE3A }
-		}
-		create_state = {
-			country = c:UKR
-			owned_provinces = { xA0531B x69BAC7 xC85CD0 x359378 }
 		}
 		
 		add_homeland = cu:slovak
@@ -6478,10 +6471,6 @@ STATES = {
 			country = c:BYE
 			owned_provinces = { x157352 x18020B x1917E9 x241A22 x406020 x66FB56 x6D7F7E x75F1B4 x7E7F58 x806161 x84294C x84FE3D  x8ABE62 x936BF9 xA201E3 xA6BED3 xA93262 xAB3AC5  xB338E8 xBCB94C xBFDF20 xC15AD8 xC1D9C0 xC3FA73 xCB21FD xCCD197 xDE471E xE06176 xE87D11 xF02643 }
 		}
-		create_state = {
-			country = c:UKR
-			owned_provinces = {x862F77 xAC6FAE}
-		}
 		
 		add_homeland = cu:byelorussian
 		add_homeland = cu:russian
@@ -6513,7 +6502,7 @@ STATES = {
 	s:STATE_VOLHYNIA = {
 		create_state = {
 			country = c:UKR
-			owned_provinces = { x0EB3C7 x1A9FFE x364496 x37A636 x5A26AE x71E0A0 x80FB0F x8201CF xAC3079 xAFEBC8 xE001E0 xE2F553 }
+			owned_provinces = { x0EB3C7 x1A9FFE x364496 x37A636 x5A26AE x71E0A0 x80FB0F x8201CF xAC3079 xAFEBC8 xE001E0 xE2F553 x862F77 xAC6FAE}
 		}
 		
 		add_homeland = cu:ukrainian

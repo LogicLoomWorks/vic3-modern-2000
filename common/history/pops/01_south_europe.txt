@@ -359,48 +359,10 @@
 		}
 	}
 	s:STATE_DOBRUDJA = {
-		region_state:TUR = {
-			create_pop = {
-				culture = turkish
-				size = 59044
-			}
-			create_pop = {
-				culture = ukrainian
-				size = 3000
-			}
-			create_pop = {
-				culture = bulgarian
-				size = 90004
-			}
-			create_pop = {
-				culture = greek
-				size = 3900
-			}
+		region_state:ROM = {
 			create_pop = {
 				culture = romanian
-				size = 76000
-			}
-		}
-		region_state:RUS = {
-			create_pop = {
-				culture = turkish
-				size = 2560
-			}
-			create_pop = {
-				culture = ukrainian
-				size = 9000
-			}
-			create_pop = {
-				culture = bulgarian
-				size = 2000
-			}
-			create_pop = {
-				culture = greek
-				size = 100
-			}
-			create_pop = {
-				culture = romanian
-				size = 8000
+				size = 884280
 			}
 		}
 	}
@@ -421,43 +383,18 @@
 		}
 	}
 	s:STATE_NORTHERN_THRACE = {
-		region_state:TUR = {
-			create_pop = {
-				culture = turkish
-				size = 273408
-			}
+		region_state:BUL = {
 			create_pop = {
 				culture = bulgarian
-				size = 497600
-			}
-			create_pop = {
-				culture = greek
-				size = 40004
-			}
-			create_pop = {
-				culture = bulgarian
-				religion = sunni
-				size = 35600
-			}
-			create_pop = {
-				culture = sephardic
-				size = 6996
+				size = 3133650
 			}
 		}
 	}
 	s:STATE_BULGARIA = {
-		region_state:TUR = {
-			create_pop = {
-				culture = turkish
-				size = 210404
-			}
+		region_state:BUL = {
 			create_pop = {
 				culture = bulgarian
-				size = 660000
-			}
-			create_pop = {
-				culture = sephardic
-				size = 4004
+				size = 4901350
 			}
 		}
 	}
