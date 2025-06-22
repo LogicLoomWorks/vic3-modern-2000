@@ -6932,11 +6932,7 @@ STATES = {
 	s:STATE_EASTERN_HIMALAYAS = {
 		create_state = {
 			country = c:HND
-			owned_provinces = { xE0B0E0 }
-		}
-		create_state = {
-			country = c:CHI
-			owned_provinces = { xA1341A x186F38 x525CC9 xA5D54A xF8346B x373402 xD238D2 x8FE067 xD2139B xEB2EA9 x83DFE3 xADDE52 x84F73C x665E5B xF5C0FC x4CBB7C x28F81E xBC0BCD xD2C34D }
+			owned_provinces = { xE0B0E0 xA1341A x186F38 x525CC9 xA5D54A xF8346B x373402 xD238D2 x8FE067 xD2139B xEB2EA9 x83DFE3 xADDE52 x84F73C x665E5B xF5C0FC x4CBB7C x28F81E xBC0BCD xD2C34D }
 		}
 		create_state = {
 			country = c:BHU
