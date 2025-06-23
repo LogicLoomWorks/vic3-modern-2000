@@ -1,18 +1,18 @@
 ﻿POPS = {
 	s:STATE_IVORY_COAST = {
-		region_state:FRA = {
+		region_state:CIV = {
 			create_pop = {
 				culture = akan
 				size = 88000
 			}
 		}
-		region_state:BLE = {
+		region_state:CIV = {
 			create_pop = {
 				culture = akan
 				size = 40000
 			}
 		}
-		region_state:KNG = {
+		region_state:CIV = {
 			create_pop = {
 				culture = akan
 				size = 52004
@@ -31,7 +31,7 @@
 				size = 20004
 			}
 		}
-		region_state:AYI = {
+		region_state:CIV = {
 			create_pop = {
 				culture = akan
 				size = 79200
@@ -44,7 +44,7 @@
 		}
 	}
 	s:STATE_WINDWARD_COAST = {
-		region_state:KBD = {
+		region_state:CIV = {
 			create_pop = {
 				culture = mande
 				size = 70000
@@ -64,7 +64,7 @@
 				size = 5000
 			}
 		}
-		region_state:BLE = {
+		region_state:CIV = {
 			create_pop = {
 				culture = akan
 				size = 99996
@@ -79,7 +79,7 @@
 				size = 11100
 			}
 		}
-		region_state:KRU = {
+		region_state:CIV = {
 			create_pop = {
 				culture = kru
 				size = 215004
@@ -92,7 +92,7 @@
 		}
 	}
 	s:STATE_SENEGAL = {
-		region_state:FRA = {
+		region_state:SEN = {
 			create_pop = {
 				culture = fulbe
 				size = 95992
@@ -106,7 +106,7 @@
 				size = 32000
 			}
 		}
-		region_state:JLF = {
+		region_state:SEN = {
 			create_pop = {
 				culture = wolof
 				size = 107600
@@ -117,7 +117,7 @@
 				size = 6000
 			}
 		}
-		region_state:CAY = {
+		region_state:SEN = {
 			create_pop = {
 				culture = wolof
 				size = 82000
@@ -128,7 +128,7 @@
 				size = 8000
 			}
 		}
-		region_state:FTR = {
+		region_state:SEN = {
 			create_pop = {
 				culture = fulbe
 				size = 80004
@@ -150,7 +150,7 @@
 		}
 	}
 	s:STATE_GAMBIA = {
-		region_state:POR = {
+		region_state:SEN = {
 			create_pop = {
 				culture = fulbe
 				size = 552304
@@ -160,7 +160,7 @@
 				size = 127996
 			}
 		}
-		region_state:GBR = {
+		region_state:SEN = {
 			create_pop = {
 				culture = mande
 				size = 91540
@@ -174,7 +174,7 @@
 				size = 22860
 			}
 		}
-		region_state:SRR = {
+		region_state:SEN = {
 			create_pop = {
 				culture = mande
 				religion = animist
@@ -191,7 +191,7 @@
 				size = 8000
 			}
 		}
-		region_state:BND = {
+		region_state:SEN = {
 			create_pop = {
 				culture = mande
 				size = 96000
@@ -210,7 +210,7 @@
 				size = 10000
 			}
 		}
-		region_state:KBU = {
+		region_state:SEN = {
 			create_pop = {
 				culture = mande
 				religion = animist
@@ -249,7 +249,7 @@
 		}
 	}
 	s:STATE_VOLTA = {
-		region_state:MOS = {
+		region_state:BFA = {
 			create_pop = {
 				culture = mossi
 				size = 828400
@@ -278,7 +278,7 @@
 				size = 18000
 			}
 		}
-		region_state:KNG = {
+		region_state:BFA = {
 			create_pop = {
 				culture = dyula
 				size = 19996
@@ -340,7 +340,7 @@
 		}
 	}
 	s:STATE_HAUSALAND = {
-		region_state:SOK = {
+		region_state:NGR = {
 			create_pop = {
 				culture = hausa
 				size = 538523
@@ -388,7 +388,7 @@
 				size = 20000
 			}
 		}
-		region_state:BRG = {
+		region_state:NGR = {
 			create_pop = {
 				culture = mande
 				size = 40000
@@ -396,7 +396,7 @@
 		}
 	}
 	s:STATE_BENIN = {
-		region_state:BEN = {
+		region_state:NGR = {
 			create_pop = {
 				culture = edo
 				size = 493792
@@ -425,7 +425,7 @@
 		}
 	}
 	s:STATE_YORUBA_STATES = {
-		region_state:OYO = {
+		region_state:NGR = {
 			create_pop = {
 				culture = yoruba
 				size = 1548008
@@ -438,7 +438,7 @@
 		}
 	}
 	s:STATE_NIGER_DELTA = {
-		region_state:IBO = {
+		region_state:NGR = {
 			create_pop = {
 				culture = ibo
 				size = 1048000
@@ -470,7 +470,7 @@
 	}
 	# If anyone has better numbers for ethnic makeup and overall population figures, hmu
 	s:STATE_OUTER_HAUSALAND = {
-		region_state:HAU = {
+		region_state:NER = {
 			create_pop = {
 				culture = hausa
 				size = 168948
@@ -511,7 +511,7 @@
 				size = 8550
 			}
 		}
-		region_state:SOK = {
+		region_state:NER = {
 			create_pop = {
 				culture = hausa
 				size = 12752
@@ -552,7 +552,7 @@
 				size = 6450
 			}		
 		}
-		region_state:BOR = {
+		region_state:NER = {
 			create_pop = {
 				culture = kanuri
 				size = 88000
@@ -569,7 +569,7 @@
 		}
 	}
 	s:STATE_BORNU = {
-		region_state:BOR = {
+		region_state:NGR = {
 			create_pop = {
 				culture = kanuri
 				size = 423988
@@ -594,7 +594,7 @@
 		}
 	}
 	s:STATE_NIGERIA = {
-		region_state:SOK = {
+		region_state:NGR = {
 			create_pop = {
 				culture = tiv
 				size = 173200
@@ -650,7 +650,7 @@
 		}
 	}
 	s:STATE_EAST_HAUSALAND = {
-		region_state:SOK = {
+		region_state:NGR = {
 			create_pop = {
 				culture = hausa
 				size = 1260202
@@ -688,7 +688,7 @@
 		}
 	}
 	s:STATE_GUINEA = {
-		region_state:MDK = {
+		region_state:GIN = {
 			create_pop = {
 				culture = mande
 				size = 158836
@@ -712,7 +712,7 @@
 				size = 1000
 			}
 		}
-		region_state:SSU = {
+		region_state:GIN = {
 			create_pop = {
 				culture = mande
 				size = 316000
@@ -727,7 +727,7 @@
 				size = 8000
 			}
 		}
-		region_state:FTJ = {
+		region_state:GIN = {
 			create_pop = {
 				culture = fulbe
 				size = 296360
@@ -749,7 +749,7 @@
 		}
 	}
 	s:STATE_GHANA = {
-		region_state:GBR = {
+		region_state:GHA = {
 			create_pop = {
 				culture = akan
 				size = 40204
@@ -763,7 +763,7 @@
 				size = 6984
 			}
 		}
-		region_state:NET = {
+		region_state:GHA = {
 			create_pop = {
 				culture = akan
 				size = 45572
@@ -773,7 +773,7 @@
 				size = 4220
 			}
 		}
-		region_state:ASH = {
+		region_state:GHA = {
 			create_pop = {
 				culture = akan
 				size = 436308
@@ -794,7 +794,7 @@
 		}
 	}
 	s:STATE_TOGO = {
-		region_state:DEN = {
+		region_state:TOG = {
 			create_pop = {
 				culture = akan
 				size = 116308
@@ -808,7 +808,7 @@
 				size = 47996
 			}
 		}
-		region_state:ASH = {
+		region_state:TOG = {
 			create_pop = {
 				culture = ewe
 				size = 20000
@@ -831,7 +831,7 @@
 				size = 64004
 			}
 		}
-		region_state:EWE = {
+		region_state:TOG = {
 			create_pop = {
 				culture = ewe
 				size = 355996
@@ -844,7 +844,7 @@
 		}
 	}
 	s:STATE_DAHOMEY = {
-		region_state:DAH = {
+		region_state:BEN = {
 			create_pop = {
 				culture = fon
 				size = 287988
@@ -868,7 +868,7 @@
 				size = 13000
 			}
 		}
-		region_state:BRG = {
+		region_state:BEN = {
 			create_pop = {
 				culture = mande
 				size = 129704
@@ -889,7 +889,7 @@
 		}
 	}
 	s:STATE_LINDI = {
-		region_state:HHE = {
+		region_state:TZA = {
 			create_pop = {
 				culture = yao
 				size = 206800
@@ -932,7 +932,7 @@
 				size = 5000
 			}
 		}
-		region_state:GGO = {
+		region_state:TZA = {
 			create_pop = {
 				culture = lacustrine_bantu
 				size = 85000
@@ -943,7 +943,7 @@
 				size = 7000
 			}
 		}
-		region_state:SNG = {
+		region_state:TZA = {
 			create_pop = {
 				culture = lacustrine_bantu
 				size = 107000
@@ -956,7 +956,7 @@
 		}
 	}
 	s:STATE_ZANZIBAR = {
-		region_state:OMA = {
+		region_state:TZA = {
 			create_pop = {
 				culture = swahili
 				size = 382800
@@ -1005,7 +1005,7 @@
 		}
 	}
 	s:STATE_TANGANYIKA = {
-		region_state:NYM = {
+		region_state:TZA = {
 			create_pop = {
 				culture = unyamwezi
 				size = 331200
@@ -1035,7 +1035,7 @@
 				size = 25000
 			}
 		}
-		region_state:MSI = {
+		region_state:TZA = {
 			create_pop = {
 				culture = maasai
 				size = 29900
@@ -1046,7 +1046,7 @@
 				size = 2000
 			}
 		}
-		region_state:KRG = {
+		region_state:TZA = {
 			create_pop = {
 				culture = lacustrine_bantu
 				size = 116600
@@ -1057,7 +1057,7 @@
 				size = 7000
 			}
 		}
-		region_state:RWD = {
+		region_state:TZA = {
 			create_pop = {
 				culture = ruanda
 				size = 501996
@@ -1068,7 +1068,7 @@
 				size = 10000
 			}
 		}
-		region_state:BRD = {
+		region_state:TZA = {
 			create_pop = {
 				culture = rundi
 				size = 452004
@@ -1081,7 +1081,7 @@
 		}
 	}
 	s:STATE_KENYA = {
-		region_state:KKY = {
+		region_state:KEN = {
 			create_pop = {
 				culture = lacustrine_bantu
 				size = 282600
@@ -1115,7 +1115,7 @@
 		}
 	}
 	s:STATE_RIFT_VALLEY = {
-		region_state:MSI = {
+		region_state:KEN = {
 			create_pop = {
 				culture = maasai
 				size = 49000
@@ -1126,7 +1126,7 @@
 				size = 3000
 			}
 		}
-		region_state:LUO = {
+		region_state:KEN = {
 			create_pop = {
 				culture = luo
 				size = 102404
@@ -1137,7 +1137,7 @@
 				size = 6000
 			}
 		}
-		region_state:TRK = {
+		region_state:KEN = {
 			create_pop = {
 				culture = nilotic
 				size = 155800
@@ -1159,241 +1159,31 @@
 		}
 	}
 	s:STATE_OROMIA = {
-		region_state:HAR = {
+		region_state:ETH = {
 			create_pop = {
 				culture = amhara
-				size = 99636
-			}
-			create_pop = {
-				culture = oromo
-				religion = sunni
-				size = 136004
-			}
-			create_pop = {
-				culture = somali
-				size = 485604
-			}
-			create_pop = {
-				culture = somali
-				size = 28849
-				pop_type = slaves
-			}
-		}
-		region_state:SHW = {
-			create_pop = {
-				culture = amhara
-				size = 252360
-			}
-			create_pop = {
-				culture = oromo
-				religion = sunni
-				size = 177200
-			}
-			create_pop = {
-				culture = oromo
-				size = 476304
-			}
-			create_pop = {
-				culture = kikuyu
-				size = 36234
-				pop_type = slaves
+				size = 12123000
 			}
 		}
 	}
 	s:STATE_AMHARA = {
-		region_state:WLG = {
+		region_state:ETH = {
 			create_pop = {
 				culture = amhara
-				size = 90000
-			}
-			create_pop = {
-				culture = oromo
-				size = 120004
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 145600
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = amhara
-				size = 48000
-			}
-		}
-		region_state:SHW = {
-			create_pop = {
-				culture = amhara
-				size = 164000
-			}
-			create_pop = {
-				culture = oromo
-				size = 192404
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 132396
-			}
-		}
-		region_state:BRN = {
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 140000
-			}
-			create_pop = {
-				culture = sidama
-				size = 80004
-			}
-			create_pop = {
-				culture = oromo
-				size = 200000
-			}
-			create_pop = {
-				culture = kikuyu
-				size = 12600
-				pop_type = slaves
-			}
-		}
-		region_state:KFA = {
-			create_pop = {
-				culture = oromo
-				size = 320400
-			}
-			create_pop = {
-				culture = amhara
-				size = 160400
-			}
-			create_pop = {
-				culture = sidama
-				size = 156000
-			}
-			create_pop = {
-				culture = kikuyu
-				size = 19856
-				pop_type = slaves
-			}
-		}
-		region_state:SDM = {
-			create_pop = {
-				culture = sidama
-				size = 240000
-			}
-			create_pop = {
-				culture = kikuyu
-				size = 8600
-				pop_type = slaves
+				size = 22003000
 			}
 		}
 	}
 	s:STATE_GONDER = {
-		region_state:BGM = {
+		region_state:ETH = {
 			create_pop = {
 				culture = amhara
-				size = 522000
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 96000
-			}
-			create_pop = {
-				culture = amhara
-				religion = jewish
-				size = 24000
-			}
-			create_pop = {
-				culture = kikuyu 
-				size = 77040
-				pop_type = slaves
-			}
-		}
-		region_state:WLO = {
-			create_pop = {
-				culture = amhara
-				size = 335200
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 206000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = oromo
-				religion = animist
-				size = 50000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = amhara
-				size = 26000
-			}
-		}
-		region_state:AWS = {
-			create_pop = {
-				culture = afar
-				size = 52000
-			}
-			create_pop = {
-				culture = amhara
-				size = 4500
-			}
-			create_pop = {
-				culture = tigray
-				religion = sunni
-				size = 4360
-			}
-			create_pop = {
-				culture = kikuyu 
-				size = 6694
-				pop_type = slaves
-			}
-		}
-		region_state:TGR = {
-			create_pop = {
-				culture = amhara
-				size = 260000
-			}
-			create_pop = {
-				culture = amhara
-				religion = jewish
-				size = 24000
-			}
-			create_pop = {
-				culture = tigray
-				size = 300432
-			}
-			create_pop = {
-				culture = kikuyu
-				size = 64287
-				pop_type = slaves
-			}
-		}
-		region_state:GJM = {
-			create_pop = {
-				culture = amhara
-				size = 360200
-			}
-			create_pop = {
-				culture = oromo
-				size = 260400
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 200000
-			}
-			create_pop = {
-				culture = kikuyu
-				size = 70400
-				pop_type = slaves
+				size = 33411000
 			}
 		}
 	}
 	s:STATE_KAZEMBE = {
-		region_state:BMB = {
+		region_state:ZAM = {
 			create_pop = {
 				culture = lunda
 				size = 27204
@@ -1420,7 +1210,7 @@
 				size = 20000
 			}
 		}
-		region_state:KZM = {
+		region_state:ZAM = {
 			create_pop = {
 				culture = lunda
 				size = 100000
@@ -1435,7 +1225,7 @@
 				size = 6000
 			}
 		}
-		region_state:MRV = {
+		region_state:ZAM = {
 			create_pop = {
 				culture = lacustrine_bantu
 				size = 60000
@@ -1456,99 +1246,10 @@
 		}
 	}
 	s:STATE_SOMALILAND = {
-		region_state:ISQ = {
+		region_state:SOM = {
 			create_pop = {
 				culture = somali
-				size = 109000
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 3000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = somali
-				size = 15000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = oromo
-				religion = animist
-				size = 1000
-			}
-		}
-		region_state:WSG = {
-			create_pop = {
-				culture = somali
-				size = 83676
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = somali
-				size = 7000
-			}
-		}
-		region_state:GLD = {
-			create_pop = {
-				culture = somali
-				size = 158000
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 12000
-			}
-			create_pop = {
-				culture = swahili
-				size = 32000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = somali
-				size = 8280
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = oromo
-				religion = animist
-				size = 4000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = swahili
-				size = 8000
-			}
-		}
-		region_state:MJT = {
-			create_pop = {
-				culture = somali
-				size = 282040
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 6000
-			}
-			create_pop = {
-				culture = swahili
-				size = 44400
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = somali
-				size = 25000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = oromo
-				religion = animist
-				size = 2000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = swahili
-				size = 4000
+				size = 8839000
 			}
 		}
 	}
@@ -1575,7 +1276,7 @@
 				size = 5000
 			}
 		}
-		region_state:FRA = {
+		region_state:MAD = {
 			create_pop = {
 				culture = malagasy
 				size = 302500
@@ -1611,7 +1312,7 @@
 		}
 	}
 	s:STATE_UGANDA = {
-		region_state:BUG = {
+		region_state:UGA = {
 			create_pop = {
 				culture = lacustrine_bantu
 				size = 455500
@@ -1626,7 +1327,7 @@
 				size = 292188
 			}
 		}
-		region_state:BNY = {
+		region_state:UGA = {
 			create_pop = {
 				culture = baganda
 				size = 200000
@@ -1646,7 +1347,7 @@
 				size = 2000
 			}
 		}
-		region_state:ANK = {
+		region_state:UGA = {
 			create_pop = {
 				culture = baganda
 				size = 171000
@@ -1661,7 +1362,7 @@
 				size = 62000
 			}
 		}
-		region_state:ACH = {
+		region_state:UGA = {
 			create_pop = {
 				culture = luo
 				size = 201600
@@ -1674,123 +1375,15 @@
 		}
 	}
 	s:STATE_EQUATORIA = {
-		region_state:DNK = {
+		region_state:SSD = {
 			create_pop = {
 				culture = nilotic
-				size = 80360
-			}
-			create_pop = {
-				culture = sudanese
-				size = 6000
-			}
-			create_pop = {
-				culture = luo
-				size = 50000
-			}
-			create_pop = {
-				culture = dinka
-				size = 140000
-			}
-			create_pop = {
-				culture = fur
-				size = 26000
-			}
-			create_pop = {
-				culture = nuba
-				size = 19000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = nilotic
-				size = 4000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = sudanese
-				size = 2000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = luo
-				size = 2000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = dinka
-				size = 8000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = fur
-				size = 2000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = nuba
-				size = 1000
-			}
-		}
-		region_state:NUE = {
-			create_pop = {
-				culture = nuer
-				size = 188000
-			}
-			create_pop = {
-				culture = sudanese
-				size = 4000
-			}
-			create_pop = {
-				culture = nuba
-				size = 37004
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = nuba
-				size = 15000
-			}
-		}
-		region_state:DFT = {
-			create_pop = {
-				culture = nilotic
-				size = 48036
-			}
-			create_pop = {
-				culture = azande
-				size = 218804
-			}
-			create_pop = {
-				culture = luo
-				size = 50000
-			}
-			create_pop = {
-				culture = fur
-				size = 11000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = luo
-				size = 10000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = fur
-				size = 5000
-			}
-		}
-		region_state:TPS = {
-			create_pop = {
-				culture = nilotic
-				size = 76000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = nilotic
-				size = 4000
+				size = 3203000
 			}
 		}
 	}
 	s:STATE_MOCAMBIQUE = {
-		region_state:POR = {
+		region_state:MOZ = {
 			create_pop = {
 				culture = makua
 				size = 250000
@@ -1813,7 +1406,7 @@
 				size = 3996
 			}		
 		}
-		region_state:MRV = {
+		region_state:MOZ = {
 			create_pop = {
 				culture = makua
 				size = 170000
@@ -1841,7 +1434,7 @@
 		}
 	}
 	s:STATE_WADDAI = {
-		region_state:WAD = {
+		region_state:CHD = {
 			create_pop = {
 				culture = fur
 				size = 108004
@@ -1860,7 +1453,7 @@
 				size = 12000
 			}
 		}
-		region_state:BGI = {
+		region_state:CHD = {
 			create_pop = {
 				culture = baguirmi
 				size = 31992
@@ -1879,7 +1472,7 @@
 				size = 8000
 			}
 		}
-		region_state:BOR = {
+		region_state:CHD = {
 			create_pop = {
 				culture = bedouin
 				size = 12000
@@ -1896,7 +1489,7 @@
 		}
 	}
 	s:STATE_NORTH_CAMEROON = {
-		region_state:SOK = {
+		region_state:CMR = {
 			create_pop = {
 				culture = equatorial_bantu
 				size = 568000
@@ -1924,7 +1517,7 @@
 				size = 10000
 			}
 		}
-		region_state:BMM = {
+		region_state:CMR = {
 			create_pop = {
 				culture = equatorial_bantu
 				religion = sunni
@@ -1942,7 +1535,7 @@
 		}
 	}
 	s:STATE_SOUTH_CAMEROON = {
-		region_state:SPA = {
+		region_state:CMR = {
 			create_pop = {
 				culture = spanish
 				size = 800
@@ -1957,7 +1550,7 @@
 				size = 6400
 			}
 		}
-		region_state:FNG = {
+		region_state:CMR = {
 			create_pop = {
 				culture = fang
 				size = 388000
@@ -1977,7 +1570,7 @@
 				size = 13000
 			}
 		}
-		region_state:DLA = {
+		region_state:CMR = {
 			create_pop = {
 				culture = equatorial_bantu
 				size = 600000
@@ -1990,7 +1583,7 @@
 		}
 	}
 	s:STATE_UBANGI_SHARI = {
-		region_state:DAK = {
+		region_state:CAF = {
 			create_pop = {
 				culture = equatorial_bantu
 				size = 283400
@@ -2010,7 +1603,7 @@
 				size = 4000
 			}
 		}
-		region_state:ZND = {
+		region_state:CAF = {
 			create_pop = {
 				culture = equatorial_bantu
 				size = 18000
@@ -2027,7 +1620,7 @@
 		}
 	}
 	s:STATE_CONGO = {
-		region_state:BOB = {
+		region_state:COG = {
 			create_pop = {
 				culture = bakongo
 				size = 20200
@@ -2042,7 +1635,7 @@
 				size = 2400
 			}
 		}
-		region_state:LNG = {
+		region_state:COG = {
 			create_pop = {
 				culture = bakongo
 				size = 36200
@@ -2057,7 +1650,7 @@
 				size = 9000
 			}
 		}
-		region_state:TKE = {
+		region_state:COG = {
 			create_pop = {
 				culture = bakongo
 				size = 29000
@@ -2079,7 +1672,7 @@
 		}
 	}
 	s:STATE_CONGO_ORIENTALE = {
-		region_state:MNB = {
+		region_state:COD = {
 			create_pop = {
 				culture = fluvian_bantu
 				size = 433500
@@ -2090,7 +1683,7 @@
 				size = 34500
 			}
 		}
-		region_state:ZND = {
+		region_state:COD = {
 			create_pop = {
 				culture = azande
 				size = 381006
@@ -2101,7 +1694,7 @@
 				size = 28506
 			}
 		}
-		region_state:LGA = {
+		region_state:COD = {
 			create_pop = {
 				culture = fluvian_bantu
 				size = 228000
@@ -2112,7 +1705,7 @@
 				size = 12000
 			}
 		}
-		region_state:HMB = {
+		region_state:COD = {
 			create_pop = {
 				culture = fluvian_bantu
 				size = 321000
@@ -2123,7 +1716,7 @@
 				size = 15000
 			}
 		}
-		region_state:LBA = {
+		region_state:COD = {
 			create_pop = {
 				culture = luba
 				size = 96012
@@ -2136,7 +1729,7 @@
 		}
 	}
 	s:STATE_KASAI = {
-		region_state:KBA = {
+		region_state:COD = {
 			create_pop = {
 				culture = fluvian_bantu
 				size = 720000
@@ -2156,7 +1749,7 @@
 				size = 6000
 			}
 		}
-		region_state:LBA = {
+		region_state:COD = {
 			create_pop = {
 				culture = luba
 				size = 120000
@@ -2173,7 +1766,7 @@
 		}
 	}
 	s:STATE_BAS_CONGO = {
-		region_state:KON = {
+		region_state:COD = {
 			create_pop = {
 				culture = bakongo
 				size = 252000
@@ -2198,7 +1791,7 @@
 				size = 30000
 			}
 		}
-		region_state:YKA = {
+		region_state:COD = {
 			create_pop = {
 				culture = bakongo
 				size = 165000
@@ -2220,7 +1813,7 @@
 		}
 	}
 	s:STATE_EQUATEUR = {
-		region_state:BNG = {
+		region_state:COD = {
 			create_pop = {
 				culture = mongo
 				size = 595200
@@ -2231,7 +1824,7 @@
 				size = 30000
 			}
 		}
-		region_state:BOB = {
+		region_state:COD = {
 			create_pop = {
 				culture = mongo
 				size = 240012
@@ -2244,7 +1837,7 @@
 		}
 	}
 	s:STATE_NORTH_ANGOLA = {
-		region_state:POR = {
+		region_state:ANG = {
 			create_pop = {
 				culture = bakongo
 				size = 176404
@@ -2270,7 +1863,7 @@
 		}
 	}
 	s:STATE_SOUTH_ANGOLA = {
-		region_state:POR = {
+		region_state:ANG = {
 			create_pop = {
 				culture = ovimbundu
 				size = 116000
@@ -2280,7 +1873,7 @@
 				size = 116004
 			}
 		}
-		region_state:OVM = {
+		region_state:ANG = {
 			create_pop = {
 				culture = ovimbundu
 				size = 219996
@@ -2297,7 +1890,7 @@
 		}
 	}
 	s:STATE_EAST_ANGOLA = {
-		region_state:CHK = {
+		region_state:ANG = {
 			create_pop = {
 				culture = kavango_bantu
 				size = 90000
@@ -2320,7 +1913,7 @@
 				size = 80200
 			}
 		}
-		region_state:LND = {
+		region_state:ANG = {
 			create_pop = {
 				culture = lunda
 				size = 103996
@@ -2339,7 +1932,7 @@
 				size = 10000
 			}
 		}
-		region_state:KSN = {
+		region_state:ANG = {
 			create_pop = {
 				culture = lunda
 				size = 40000
@@ -2359,7 +1952,7 @@
 				size = 9000
 			}
 		}
-		region_state:LZO = {
+		region_state:ANG = {
 			create_pop = {
 				culture = kavango_bantu
 				size = 40600
@@ -2371,7 +1964,7 @@
 		}
 	}
 	s:STATE_KATANGA = {
-		region_state:KZM = {
+		region_state:COD = {
 			create_pop = {
 				culture = lunda
 				size = 120400
@@ -2386,7 +1979,7 @@
 				size = 15604
 			}
 		}
-		region_state:LND = {
+		region_state:COD = {
 			create_pop = {
 				culture = lunda
 				size = 268400
@@ -2397,7 +1990,7 @@
 				size = 12000
 			}
 		}
-		region_state:LBA = {
+		region_state:COD = {
 			create_pop = {
 				culture = luba
 				size = 2404
@@ -2410,7 +2003,7 @@
 		}
 	}
 	s:STATE_GABON = {
-		region_state:FNG = {
+		region_state:GAB = {
 			create_pop = {
 				culture = fang
 				size = 56000
@@ -2430,7 +2023,7 @@
 				size = 20000
 			}
 		}
-		region_state:LNG = {
+		region_state:GAB = {
 			create_pop = {
 				culture = bakongo
 				size = 32000
@@ -2465,7 +2058,7 @@
 		}
 	}
 	s:STATE_ZAMBIA = {
-		region_state:LZO = {
+		region_state:ZAM = {
 			create_pop = {
 				culture = lunda
 				size = 28092
@@ -2489,7 +2082,7 @@
 				size = 3000
 			}
 		}
-		region_state:BMB = {
+		region_state:ZAM = {
 			create_pop = {
 				culture = lacustrine_bantu
 				size = 48136
@@ -2506,7 +2099,7 @@
 		}
 	}
 	s:STATE_ZAMBEZIA = {
-		region_state:POR = {
+		region_state:MOZ = {
 			create_pop = {
 				culture = sena
 				size = 183996
@@ -2528,7 +2121,7 @@
 				size = 12004
 			}
 		}
-		region_state:MSK = {
+		region_state:MOZ = {
 			create_pop = {
 				culture = shona
 				size = 196400
@@ -2547,7 +2140,7 @@
 				size = 5000
 			}
 		}
-		region_state:MNC = {
+		region_state:MOZ = {
 			create_pop = {
 				culture = shona
 				size = 200000
@@ -2573,7 +2166,7 @@
 		}
 	}
 	s:STATE_ZAMBEZI = {
-		region_state:MTB = {
+		region_state:ZIM = {
 			create_pop = {
 				culture = shona
 				size = 120000
@@ -2600,7 +2193,7 @@
 				size = 15000
 			}
 		}
-		region_state:MSH = {
+		region_state:ZIM = {
 			create_pop = {
 				culture = shona
 				size = 120000
@@ -2615,7 +2208,7 @@
 				size = 10000
 			}
 		}
-		region_state:MNC = {
+		region_state:ZIM = {
 			create_pop = {
 				culture = shona
 				size = 56000
@@ -2632,7 +2225,7 @@
 		}
 	}
 	s:STATE_NAMAQUALAND = {
-		region_state:NAM = {
+		region_state:NMB = {
 			create_pop = {
 				culture = khoisan
 				size = 56000
@@ -2649,7 +2242,7 @@
 		}
 	}
 	s:STATE_HEREROLAND = {
-		region_state:HRO = {
+		region_state:NMB = {
 			create_pop = {
 				culture = herero
 				size = 83996
@@ -2684,7 +2277,7 @@
 		}
 	}
 	s:STATE_ZULULAND = {
-		region_state:ZUL = {
+		region_state:SAF = {
 			create_pop = {
 				culture = zulu
 				size = 567996
@@ -2703,7 +2296,7 @@
 				size = 16000
 			}
 		}
-		region_state:BST = {
+		region_state:SAF = {
 			create_pop = {
 				culture = sotho
 				size = 120096
@@ -2716,7 +2309,7 @@
 		}
 	}
 	s:STATE_VRYSTAAT = {
-		region_state:ORA = {
+		region_state:SAF = {
 			create_pop = {
 				culture = sotho
 				size = 353400
@@ -2737,7 +2330,7 @@
 		}
 	}
 	s:STATE_TRANSVAAL = {
-		region_state:TRN = {
+		region_state:SAF = {
 			create_pop = {
 				culture = sotho
 				size = 271804
@@ -2833,7 +2426,7 @@
 				size = 12000
 			}
 		}
-		region_state:TSW = {
+		region_state:SAF = {
 			create_pop = {
 				culture = tswana
 				size = 120004
@@ -2844,7 +2437,7 @@
 				size = 12000
 			}
 		}
-		region_state:WBL = {
+		region_state:SAF = {
 			create_pop = {
 				culture = khoisan
 				size = 20000
@@ -2861,7 +2454,7 @@
 		}
 	}
 	s:STATE_BOTSWANA = {
-		region_state:TSW = {
+		region_state:BOT = {
 			create_pop = {
 				culture = tswana
 				size = 60000
@@ -2880,7 +2473,7 @@
 				size = 4000
 			}
 		}
-		region_state:LZO = {
+		region_state:BOT = {
 			create_pop = {
 				culture = kavango_bantu
 				size = 14560
@@ -2888,7 +2481,7 @@
 		}
 	}
 	s:STATE_LOURENCO_MARQUES = {
-		region_state:POR = {
+		region_state:MOZ = {
 			create_pop = {
 				culture = nguni
 				size = 66761
@@ -2902,7 +2495,7 @@
 				size = 57000
 			}
 		}
-		region_state:GZA = {
+		region_state:MOZ = {
 			create_pop = {
 				culture = nguni
 				size = 267043
