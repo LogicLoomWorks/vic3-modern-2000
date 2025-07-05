@@ -240,8 +240,15 @@
 				culture = han # nanfaren
 				size = 500000
 				religion = mahayana
-			}
+			}			
 		}
+			region_state:HKG = {
+				create_pop = {
+					culture = yue
+					size = 6665000
+				}
+			}		
+		
 	}
 	s:STATE_ALXA = {
 		region_state:CHI = {
@@ -624,24 +631,10 @@
 				religion = mahayana
 			}
 		}
-		region_state:POR = {
+		region_state:MAC = {
 			create_pop = {
 				culture = yue
-				size = 186000
-			}
-			create_pop = {
-				culture = yue
-				size = 156000
-				religion = mahayana
-			}
-			create_pop = {
-				culture = portuguese
-				size = 996
-			}
-			create_pop = {
-				culture = yue
-				religion = catholic
-				size = 5000
+				size = 430600
 			}
 		}
 	}
@@ -972,29 +965,7 @@
 		region_state:ROC = {
 			create_pop = {
 				culture = min
-				size = 1000000
-			}
-			create_pop = {
-				culture = min
-				religion = mahayana
-				size = 480000
-			}
-			create_pop = {
-				culture = manchu
-				size = 492
-			}
-			create_pop = {
-				culture = han # nanfaren
-				size = 605504
-			}
-			create_pop = {
-				culture = han # nanfaren
-				religion = mahayana
-				size = 215504
-			}
-			create_pop = {
-				culture = yuanzhumin
-				size = 600000
+				size = 22191000
 			}
 		}
 	}
