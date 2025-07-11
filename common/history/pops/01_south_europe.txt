@@ -340,7 +340,7 @@
 		region_state:ALB = {
 			create_pop = {
 				culture = albanian
-				size = 3177586
+				size = 3063320
 			}
 		}
 	}
