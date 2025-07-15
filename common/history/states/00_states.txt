@@ -196,10 +196,6 @@ STATES = {
 	}
 	s:STATE_POMERANIA = {
 		create_state = {
-			country = c:GER
-			owned_provinces = { xA04121 xE1A03A x567452 }
-		}
-		create_state = {
 			country = c:POL
 			owned_provinces = {x6A53CF xA9BD82 x3C26DD x86E6F2 xA0C020 xD4C37D x8D1E12 x89A2A9 xCDEAE4 xEF5730 x8C6982 x8001A0 x19AE19} 
 		}
@@ -6518,7 +6514,7 @@ STATES = {
 	s:STATE_MECKLENBURG = {
 		create_state = {
 			country = c:GER
-			owned_provinces = { xD8F441 xE080A0 x4545BE x12E54F x24CA48 xE041A0 xD9A469}
+			owned_provinces = { xD8F441 xE080A0 x4545BE x12E54F x24CA48 xE041A0 xD9A469 xA04121 xE1A03A x567452}
 		}	
 		
 		add_homeland = cu:north_german
