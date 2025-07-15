@@ -2967,7 +2967,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:BEL
-			owned_provinces = { xB0A0C0 x916574 x2D32D7 x8080A0 xEF2040 x3A5FB9  }
+			owned_provinces = { xB0A0C0 x916574 x2D32D7 x8080A0 xEF2040 x3A5FB9 x486F6A }
 		}
 
 		add_homeland = cu:wallonian
@@ -6314,7 +6314,7 @@ STATES = {
 	s:STATE_NORTH_RHINE = {
 		create_state = {
 			country = c:GER
-			owned_provinces = { "x2101E0" "x5101A0" "x518021" "x8001E0" "x834B66" "x9F4072" "xD08021" x486F6A x29CCD6}
+			owned_provinces = { "x2101E0" "x5101A0" "x518021" "x8001E0" "x834B66" "x9F4072" "xD08021" x29CCD6}
 		}
 		
 		add_homeland = cu:north_german
