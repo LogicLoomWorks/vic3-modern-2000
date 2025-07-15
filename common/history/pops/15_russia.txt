@@ -80,7 +80,7 @@
 		region_state:EST = {
 			create_pop = {
 				culture = estonian
-				size = 263082
+				size = 387982
 			}
 			create_pop = {
 				culture = russian
