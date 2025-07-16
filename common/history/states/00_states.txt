@@ -5580,7 +5580,7 @@ STATES = {
 	s:STATE_KAUNAS = {
 		create_state = {
 			country = c:LIT
-			owned_provinces = { x0980C8 x0B6577 x21F318 x232B98 x406DC9 x6175AD x629C46 x7A5D64 x8060A0 x80D858 x95171C xA8FF51 xAF73F2 xBFE867 xC0A0A0 xCC4C28 xCD7291 xE0B943 }
+			owned_provinces = { x72FDF3 x0980C8 x0B6577 x21F318 x232B98 x406DC9 x6175AD x629C46 x7A5D64 x8060A0 x80D858 x95171C xA8FF51 xAF73F2 xBFE867 xC0A0A0 xCC4C28 xCD7291 xE0B943 }
 		}
 		
 		add_homeland = cu:lithuanian
@@ -6289,11 +6289,6 @@ STATES = {
 			country = c:POL
 			owned_provinces = {xBF9F20 x9FD037 x47C900 xC04521 x7D6DC3 xEEF586 xAEA6D6 x5428E6 xABC4AE }
 		}
-		create_state = {
-			country = c:LIT
-			owned_provinces = {x72FDF3 }
-		}
-		
 		create_state = {
 			country = c:RUS
 			owned_provinces = {x40A0A0 x975566 xC020A0 x4121A0 x981EBE x2399A2 x1E73B9}
