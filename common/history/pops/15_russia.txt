@@ -40,7 +40,7 @@
 		}
 	}
 	s:STATE_COURLAND = { 
-		region_state:EST = {
+		region_state:LAT = {
 			create_pop = {
 				culture = latvian
 				size = 524711
