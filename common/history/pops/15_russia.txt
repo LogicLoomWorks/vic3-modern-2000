@@ -1,41 +1,9 @@
 ﻿POPS = {
 	s:STATE_VILNIUS = { 
-		region_state:RUS = {
-			create_pop = {
-				culture = byelorussian
-				size = 147130
-			}
-			create_pop = {
-				culture = latvian
-				size = 258
-			}
+		region_state:LIT = {
 			create_pop = {
 				culture = lithuanian
-				size = 178882
-			}
-			create_pop = {
-				culture = russian
-				size = 40028
-			}
-			create_pop = {
-				culture = polish
-				size = 75418
-			}
-			create_pop = {
-				culture = north_german
-				size = 2062
-			}
-			create_pop = {
-				culture = tatar
-				size = 600
-			}
-			create_pop = {
-				culture = ukrainian
-				size = 500
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 77259
+				size = 2107942
 			}
 		}
 	}
@@ -88,34 +56,10 @@
 		}
 	}
 	s:STATE_KAUNAS = { 
-		region_state:RUS = {
+		region_state:LIT = {
 			create_pop = {
 				culture = lithuanian
-				size = 618377
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 124653
-			}
-			create_pop = {
-				culture = latvian
-				size = 15387
-			}
-			create_pop = {
-				culture = polish
-				size = 136510
-			}
-			create_pop = {
-				culture = north_german
-				size = 26366
-			}
-			create_pop = {
-				culture = russian
-				size = 44443
-			}
-			create_pop = {
-				culture = byelorussian
-				size = 31056
+				size = 1405024
 			}
 		}
 	}
