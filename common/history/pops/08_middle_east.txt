@@ -3,7 +3,7 @@
 		region_state:SAU = {
 			create_pop = {
 				culture = bedouin
-				size = 4233203
+				size = 3728161
 			}
 		}
 	}
@@ -11,7 +11,7 @@
 		region_state:OMA = {
 			create_pop = {
 				culture = bedouin
-				size = 2006011
+				size = 2282131
 			}
 		}
 	}
@@ -19,48 +19,15 @@
 		region_state:UAE = {
 			create_pop = {
 				culture = bedouin
-				size = 3494002
+				size = 505000
 			}
-		}
-		region_state:OMA = {
-			create_pop = {
-				culture = bedouin
-				size = 288082
-			}
-		}
-			region_state:QAT = {
-			create_pop = {
-				culture = bedouin
-				size = 645023
-			}
-		}
-			region_state:BHN = {
-			create_pop = {
-				culture = bedouin
-				size = 670001
-			}
-		}
+		}		
 	}
 	s:STATE_YEMEN = {
 		region_state:YEM = {
 			create_pop = {
 				culture = yemenite
-				size = 19624445
-			}
-		}
-	}
-	s:STATE_HEDJAZ = {
-		region_state:SAU = {
-			create_pop = {
-				culture = bedouin
-				religion = sunni
-				size = 9394044
-			}
-		}
-		region_state:JOR = {
-			create_pop = {
-				culture = bedouin
-				size = 323419
+				size = 16624141
 			}
 		}
 	}
@@ -68,66 +35,23 @@
 		region_state:SAU = {
 			create_pop = {
 				culture = bedouin
-				size = 2923303
+				size = 231000
 			}
-		}
-		region_state:IRQ = {
-			create_pop = {
-				culture = bedouin
-				size = 309099
-			}
-		}
-			region_state:JOR = {
-			create_pop = {
-				culture = bedouin
-				size = 867037
-			}
-		}
-			region_state:SYR = {
-			create_pop = {
-				culture = bedouin
-				size = 607080
-			}
-		}
 	}
 	s:STATE_CYPRUS = {
 		region_state:CYP = {
 			create_pop = {
 				culture = turkish
-				size = 43764
+				size = 208639
 			}
 			create_pop = {
 				culture = greek
-				size = 100012
+				size = 561188
 			}
 			create_pop = {
 				culture = sephardic
 				religion = jewish
-				size = 670
-			}
-			create_pop = {
-				culture = mashriqi
-				religion = catholic
-				size = 859
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = north_caucasian
-				size = 360
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = lacustrine_bantu
-				size = 3000
-			}
-		}
-	}
-	s:STATE_TRANSJORDAN = {
-		region_state:JOR = {
-			create_pop = {
-				culture = bedouin
-				religion = sunni
-				size = 4209990
+				size = 400
 			}
 		}
 	}
@@ -136,65 +60,89 @@
 			create_pop = {
 				culture = sephardic
 				religion = jewish
-				size = 6111011
+				size = 2722500
+			}
+			create_pop = {
+				culture = ashkenazi
+				religion = jewish
+				size = 2227500
+			}
+			create_pop = {
+				culture = sunni
+				religion = sunni
+				size = 1138584
 			}
 		}
 	}
 	s:STATE_WEST_BANK = {
 		region_state:PAL = {
 			create_pop = {
+				culture = sunni
+				religion = sunni
+				size = 1943658
+			}
+			create_pop = {
 				culture = sephardic
 				religion = jewish
-				size = 1007007
+				size = 203067
 			}
 		}
 	}
 	s:STATE_GAZA = {
 		region_state:PAL = {
 			create_pop = {
+				culture = sunni
+				religion = sunni
+				size = 1130000
+			}
+			create_pop = {
 				culture = sephardic
 				religion = jewish
-				size = 2152009
+				size = 8000
 			}
 		}
 	}
-	s:STATE_LEBANON = {
+	s:STATE_LEBANON = { 
 		region_state:LEB = {
 			create_pop = {
-				culture = mashriqi
-				size = 4329980
+				culture = sunni
+				religion = sunni
+				size = 2121210
+			}
+			create_pop = {
+				culture = shiite
+				religion = shiite
+				size = 2207790
 			}
 		}
 	}
-	s:STATE_SYRIA = {
+	s:STATE_SYRIA = { 16640000
 		region_state:SYR = {
 			create_pop = {
-				culture = mashriqi
-				size = 8709009
-			}
-		}
-	}
-	s:STATE_ALEPPO = {
-		region_state:SYR = {
-			create_pop = {
-				culture = mashriqi
+				culture = sunni
 				religion = sunni
-				size = 5002012
+				size = 12313600
 			}
-		}
-		region_state:TUR = {
 			create_pop = {
-				culture = mashriqi
-				religion = sunni
-				size = 2103000
+				culture = shiite
+				religion = shiite
+				size = 2662400
 			}
 		}
 	}
 	s:STATE_BAGHDAD = {
 		region_state:IRQ = {
 			create_pop = {
-				culture = mashriqi
-				size = 9233033
+				culture = kurdish
+				size = 4884000
+			}
+			create_pop = {
+				culture = shiite
+				size = 11721600
+			}
+			create_pop = {
+				culture = sunni
+				size = 7814400
 			}
 		}
 	}
@@ -202,36 +150,7 @@
 		region_state:IRQ = {
 			create_pop = {
 				culture = kurdish
-				size = 7554044
-			}
-		}
-	}
-	s:STATE_DEIR_EZ_ZOR = {
-		region_state:SYR = {
-			create_pop = {
-				culture = mashriqi
-				religion = sunni
-				size = 1763849
-			}
-		}
-		region_state:IRQ = {
-			create_pop = {
-				culture = mashriqi
-				size = 700901
-			}
-		}
-	}
-	s:STATE_BASRA = {
-		region_state:IRQ = {
-			create_pop = {
-				culture = mashriqi
-				size = 7233033
-			}
-		}
-		region_state:KWT = {
-			create_pop = {
-				culture = bedouin
-				size = 1955050
+				size = 1056000
 			}
 		}
 	}
@@ -239,7 +158,7 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = persian
-				size = 5002000
+				size = 4342423
 			}
 		}
 	}
@@ -247,7 +166,7 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = bedouin
-				size = 2207000
+				size = 783018
 			}
 		}
 	}
@@ -255,23 +174,15 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = baluchi
-				size = 3055000
-			}
-		}
-	}
-	s:STATE_KHORASAN = {
-		region_state:IRN = {
-			create_pop = {
-				culture = persian
-				size = 5585000
+				size = 2400000
 			}
 		}
 	}
 	s:STATE_KHUZESTAN = {
 		region_state:IRN = {
 			create_pop = {
-				culture = mashriqi
-				size = 3589000
+				culture = persian
+				size = 4173118
 			}
 		}
 	}
@@ -279,7 +190,7 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = persian
-				size = 5078000
+				size = 2589000
 			}
 		}
 	}
@@ -287,15 +198,7 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = mazanderani
-				size = 10100000
-			}
-		}
-	}
-	s:STATE_IRAKAJEMI = {
-		region_state:IRN = {
-			create_pop = {
-				culture = persian
-				size = 11310000
+				size = 2850625
 			}
 		}
 	}
@@ -303,7 +206,7 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = persian
-				size = 1009000
+				size = 570835
 			}
 		}
 	}
@@ -311,7 +214,7 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = azerbaijani
-				size = 7109000
+				size = 1264000
 			}
 		}
 	}
@@ -319,7 +222,7 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = persian
-				size = 3102000
+				size = 2000000
 			}
 		}
 	}
@@ -327,15 +230,7 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = kurdish
-				size = 3008000
-			}
-		}
-	}
-	s:STATE_PERSIAN_KURDISTAN = {
-		region_state:IRN = {
-			create_pop = {
-				culture = kurdish
-				size = 3023000
+				size = 485000
 			}
 		}
 	}
@@ -343,15 +238,7 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = luri
-				size = 3281000
-			}
-		}
-	}
-	s:STATE_HUDAVENDIGAR = {
-		region_state:TUR = {
-			create_pop = {
-				culture = turkish
-				size = 13765000
+				size = 1689650
 			}
 		}
 	}
@@ -359,7 +246,7 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 4301000
+				size = 870460
 			}
 		}
 	}
@@ -367,7 +254,7 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 4802000
+				size = 742690
 			}
 		}
 	}
@@ -375,7 +262,7 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 2897000
+				size = 102059 
 			}
 		}
 	}
@@ -383,7 +270,7 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = kurdish
-				size = 4302000
+				size = 1006776
 			}
 		}
 	}
@@ -391,7 +278,7 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 5230000
+				size = 1130710
 			}
 		}
 	}
@@ -399,7 +286,7 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 4602000
+				size = 214949
 			}
 		}
 	}
@@ -407,7 +294,7 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 3420000
+				size = 361235 
 			}
 		}
 	}
@@ -415,7 +302,7 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 1230000
+				size = 78473
 			}
 		}
 	}
@@ -423,7 +310,7 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 12120000
+				size = 3203362 
 			}
 		}
 	}

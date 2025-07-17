@@ -2379,11 +2379,11 @@ VNZ = {
 ISR = {
 	color = { 150  212  214 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { ashkenazi sephardic }
+	cultures = { ashkenazi sephardic sunni }
 	religion = jewish
 	capital = STATE_PALESTINE
 }
