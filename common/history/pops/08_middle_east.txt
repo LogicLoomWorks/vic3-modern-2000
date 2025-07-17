@@ -37,6 +37,7 @@
 				culture = bedouin
 				size = 231000
 			}
+		}
 	}
 	s:STATE_CYPRUS = {
 		region_state:CYP = {

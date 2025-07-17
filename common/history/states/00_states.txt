@@ -6144,10 +6144,6 @@ STATES = {
 	}
 	s:STATE_ISTRIA = {
 		create_state = {
-			country = c:ITA
-			owned_provinces = {  }
-		}
-		create_state = {
 			country = c:SLO
 			owned_provinces = { x56C78A x3060BF}
 		}
