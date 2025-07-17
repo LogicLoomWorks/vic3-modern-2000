@@ -196,10 +196,6 @@ STATES = {
 	}
 	s:STATE_POMERANIA = {
 		create_state = {
-			country = c:GER
-			owned_provinces = { xA04121 xE1A03A x567452 }
-		}
-		create_state = {
 			country = c:POL
 			owned_provinces = {x6A53CF xA9BD82 x3C26DD x86E6F2 xA0C020 xD4C37D x8D1E12 x89A2A9 xCDEAE4 xEF5730 x8C6982 x8001A0 x19AE19} 
 		}
@@ -2971,7 +2967,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:BEL
-			owned_provinces = { xB0A0C0 x916574 x2D32D7 x8080A0 xEF2040 x3A5FB9  }
+			owned_provinces = { xB0A0C0 x916574 x2D32D7 x8080A0 xEF2040 x3A5FB9 x486F6A }
 		}
 
 		add_homeland = cu:wallonian
@@ -5584,7 +5580,7 @@ STATES = {
 	s:STATE_KAUNAS = {
 		create_state = {
 			country = c:LIT
-			owned_provinces = { x0980C8 x0B6577 x21F318 x232B98 x406DC9 x6175AD x629C46 x7A5D64 x8060A0 x80D858 x95171C xA8FF51 xAF73F2 xBFE867 xC0A0A0 xCC4C28 xCD7291 xE0B943 }
+			owned_provinces = { x72FDF3 x0980C8 x0B6577 x21F318 x232B98 x406DC9 x6175AD x629C46 x7A5D64 x8060A0 x80D858 x95171C xA8FF51 xAF73F2 xBFE867 xC0A0A0 xCC4C28 xCD7291 xE0B943 }
 		}
 		
 		add_homeland = cu:lithuanian
@@ -6294,11 +6290,6 @@ STATES = {
 			owned_provinces = {xBF9F20 x9FD037 x47C900 xC04521 x7D6DC3 xEEF586 xAEA6D6 x5428E6 xABC4AE }
 		}
 		create_state = {
-			country = c:LIT
-			owned_provinces = {x72FDF3 }
-		}
-		
-		create_state = {
 			country = c:RUS
 			owned_provinces = {x40A0A0 x975566 xC020A0 x4121A0 x981EBE x2399A2 x1E73B9}
 		}
@@ -6318,7 +6309,7 @@ STATES = {
 	s:STATE_NORTH_RHINE = {
 		create_state = {
 			country = c:GER
-			owned_provinces = { "x2101E0" "x5101A0" "x518021" "x8001E0" "x834B66" "x9F4072" "xD08021" x486F6A x29CCD6}
+			owned_provinces = { "x2101E0" "x5101A0" "x518021" "x8001E0" "x834B66" "x9F4072" "xD08021" x29CCD6}
 		}
 		
 		add_homeland = cu:north_german
@@ -6518,7 +6509,7 @@ STATES = {
 	s:STATE_MECKLENBURG = {
 		create_state = {
 			country = c:GER
-			owned_provinces = { xD8F441 xE080A0 x4545BE x12E54F x24CA48 xE041A0 xD9A469}
+			owned_provinces = { xD8F441 xE080A0 x4545BE x12E54F x24CA48 xE041A0 xD9A469 xA04121 xE1A03A x567452}
 		}	
 		
 		add_homeland = cu:north_german
