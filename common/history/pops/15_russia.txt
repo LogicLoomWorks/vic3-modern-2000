@@ -249,7 +249,20 @@
 		region_state:BYE = {
 			create_pop = {
 				culture = byelorussian
-				size = 512334
+				size = 1866250
+			}
+		}
+			create_pop = {
+				culture = polish
+				size = 381034
+			}
+			create_pop = {
+				culture = russian
+				size = 125000
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 140000
 			}
 		}
 	}
@@ -257,27 +270,39 @@
 		region_state:BYE = {
 			create_pop = {
 				culture = byelorussian
-				size = 3817100
+				size = 3361100
+			}
+			create_pop = {
+				culture = russian
+				size = 456000
 			}
 		}
 	}
 	s:STATE_MOGILEV = { 
-		region_state:RUS = {
+		region_state:BYE = {
 			create_pop = {
 				culture = byelorussian
-				size = 514176
+				size = 2121250
 			}
+			create_pop = {
+				culture = russian
+				size = 300000
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 90000
+			}			
 		}
 	}
 	s:STATE_VITEBSK = { 
 		region_state:BYE = {
 			create_pop = {
 				culture = russian
-				size = 45399
+				size = 240000
 			}
 			create_pop = {
 				culture = byelorussian
-				size = 317823
+				size = 965400
 			}
 		}
 	}
