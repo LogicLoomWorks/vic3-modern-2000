@@ -93,9 +93,9 @@ STATE_WEST_PRUSSIA = {
 STATE_EAST_PRUSSIA = {
     id = 159
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x1E73B9" "x2399A2" "x40A0A0" "x4121A0" "x47C900" "x5428E6" "x72FDF3" "x7D6DC3" "x975566" "x981EBE" "x9FD037" "xABC4AE" "xAEA6D6" "xBF9F20" "xC020A0" "xC04521" "xEEF586" }
+    provinces = { "x1E73B9" "x2399A2" "x40A0A0" "x4121A0" "x47C900" "x5428E6" "x7D6DC3" "x975566" "x981EBE" "x9FD037" "xABC4AE" "xAEA6D6" "xBF9F20" "xC020A0" "xC04521" "xEEF586" }
     city = "x1E73B9"
-    port = "x72FDF3"
+    port = "x1E73B9"
     farm = "x2399A2"
     mine = "xC020A0"
     wood = "xEEF586"
@@ -103,7 +103,7 @@ STATE_EAST_PRUSSIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 17
-        bg_fishing = 10
+        bg_fishing = 6
     }
     naval_exit_id = 3000
 }

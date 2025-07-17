@@ -223,6 +223,7 @@
 				culture = berber
 				size = 607000
 			}
+		}
 	}
 	s:STATE_MAURITANIA = {
 		region_state:MAU = {
