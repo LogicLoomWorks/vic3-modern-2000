@@ -251,7 +251,6 @@
 				culture = byelorussian
 				size = 1866250
 			}
-		}
 			create_pop = {
 				culture = polish
 				size = 381034
