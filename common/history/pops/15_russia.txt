@@ -1,5 +1,240 @@
 ﻿# restructured this file to actually contain all russian and only russian states
 POPS = {
+	s:STATE_SAMARA = { 
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 1170657
+			}
+			create_pop = {
+				culture = tatar
+				size = 116076
+			}
+			create_pop = {
+				culture = mordvin
+				size = 145276
+			}
+			create_pop = {
+				culture = south_german
+				religion = protestant
+				size = 43939
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 50224
+			}
+			create_pop = {
+				culture = chuvash
+				size = 42970
+			}
+			create_pop = {
+				culture = bashkir
+				size = 24145
+			}
+		}
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 85000
+			}
+			create_pop = {
+				culture = tatar
+				size = 12000
+			}
+			create_pop = {
+				culture = bashkir
+				size = 31000
+			}
+			create_pop = {
+				culture = kazak
+				size = 42000
+			}
+		}
+	}
+	s:STATE_KAZAN = { 
+		region_state:RUS = {
+			create_pop = {
+				culture = tatar
+				size = 458719
+			}
+			create_pop = {
+				culture = tatar
+				religion = orthodox
+				size = 51351
+			}
+			create_pop = {
+				culture = russian
+				size = 462676
+			}
+			create_pop = {
+				culture = chuvash
+				size = 66257
+			}
+			create_pop = {
+				culture = bashkir
+				size = 46043
+			}
+			create_pop = {
+				culture = mordvin
+				size = 15722
+			}
+			create_pop = {
+				culture = mari
+				size = 8794
+			}
+		}
+	}
+	s:STATE_TARTARIA = { #Saratov - and DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 909377
+			}
+			create_pop = {
+				culture = tatar
+				size = 54224
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 62827
+			}
+			create_pop = {
+				culture = mordvin
+				size = 67811
+			}
+			create_pop = {
+				culture = chuvash
+				size = 17643
+			}
+			create_pop = {
+				culture = south_german
+				size = 20512
+			}
+			create_pop = {
+				culture = south_german
+				religion = protestant
+				size = 56900
+			}
+		}
+	}
+	s:STATE_ASTRAKHAN = { 
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 163230
+			}
+			create_pop = {
+				culture = kazak
+				size = 10351
+			}
+			create_pop = {
+				culture = kalmyk
+				size = 3605
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 45578
+			}
+			create_pop = {
+				culture = tatar
+				size = 11574
+			}
+			create_pop = {
+				culture = south_german
+				size = 11145
+			}
+			create_pop = {
+				culture = south_german
+				size = 19312
+				religion = protestant
+			}
+		}
+	}
+	s:STATE_DAGESTAN = { 
+		region_state:RUS = {
+			create_pop = {
+				culture = north_caucasian
+				size = 56100
+			}
+			create_pop = {
+				culture = sephardic
+				size = 7078
+			}
+			create_pop = {
+				culture = north_caucasian
+				religion = orthodox
+				size = 42200
+			}
+			create_pop = {
+				culture = armenian
+				size = 2440
+			}
+			create_pop = {
+				culture = kazak
+				size = 19615
+			}
+			create_pop = {
+				culture = russian
+				size = 32156
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 2777
+			}
+			create_pop = {
+				culture = persian
+				size = 4454
+			}
+		}
+		region_state:RUS = {
+			create_pop = {
+				culture = north_caucasian
+				size = 198000
+			}
+			create_pop = {
+				culture = chechen
+				size = 6309
+			}
+		}
+	}
+	s:STATE_KUBAN = { 
+		region_state:RUS = {
+			create_pop = {
+				culture = circassian
+				size = 149000
+			}
+			create_pop = {
+				culture = north_caucasian
+				size = 22000
+			}
+			create_pop = {
+				culture = greek
+				size = 10400
+			}
+			create_pop = {
+				culture = russian
+				size = 114400
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 124800
+			}
+			create_pop = {
+				culture = south_german
+				size = 9600
+			}
+		}
+		region_state:RUS = {
+			create_pop = {
+				culture = circassian
+				size = 540000
+			}
+			create_pop = {
+				culture = north_caucasian
+				size = 50000
+			}
+		}
+	}
 	s:STATE_INGRIA = { #DONE
 		region_state:RUS = {
 			create_pop = {
@@ -322,39 +557,6 @@ POPS = {
 			create_pop = {
 				culture = north_caucasian
 				size = 13000
-			}
-		}
-	}
-	s:STATE_ELIZAVETPOL = { 
-		region_state:RUS = {
-			create_pop = {
-				culture = azerbaijani
-				size = 91660
-			}
-			create_pop = {
-				culture = azerbaijani
-				religion = sunni
-				size = 55000
-			}
-			create_pop = {
-				culture = kurdish
-				size = 12999
-			}
-			create_pop = {
-				culture = russian
-				size = 2909
-			}
-			create_pop = {
-				culture = armenian
-				size = 92855
-			}
-			create_pop = {
-				culture = south_german
-				size = 681
-			}
-			create_pop = {
-				culture = north_caucasian
-				size = 4691
 			}
 		}
 	}
