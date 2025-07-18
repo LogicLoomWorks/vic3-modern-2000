@@ -246,94 +246,62 @@
 		}
 	}
 	s:STATE_BREST = { 
-		region_state:RUS = {
+		region_state:BYE = {
 			create_pop = {
 				culture = byelorussian
-				size = 512334
-			}
-			create_pop = {
-				culture = lithuanian
-				size = 10524
-			}
-			create_pop = {
-				culture = ukrainian
-				size = 133659
+				size = 1866250
 			}
 			create_pop = {
 				culture = polish
-				size = 22504
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 59387
+				size = 381034
 			}
 			create_pop = {
 				culture = russian
-				size = 32924
+				size = 125000
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 140000
 			}
 		}
 	}
 	s:STATE_MINSK = { 
-		region_state:RUS = {
-			create_pop = {
-				culture = polish
-				size = 29910
-			}
+		region_state:BYE = {
 			create_pop = {
 				culture = byelorussian
-				size = 569714
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 149520
+				size = 3361100
 			}
 			create_pop = {
 				culture = russian
-				size = 38883
+				size = 456000
 			}
 		}
 	}
 	s:STATE_MOGILEV = { 
-		region_state:RUS = {
-			create_pop = {
-				culture = russian
-				size = 23216
-			}
+		region_state:BYE = {
 			create_pop = {
 				culture = byelorussian
-				size = 514176
+				size = 2121250
 			}
 			create_pop = {
-				culture = ashkenazi
-				size = 81190
+				culture = russian
+				size = 300000
 			}
 			create_pop = {
-				culture = polish
-				size = 6240
-			}
+				culture = ukrainian
+				size = 90000
+			}			
 		}
 	}
 	s:STATE_VITEBSK = { 
-		region_state:RUS = {
+		region_state:BYE = {
 			create_pop = {
 				culture = russian
-				size = 45399
+				size = 240000
 			}
 			create_pop = {
 				culture = byelorussian
-				size = 317823
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 37901
-			}
-			create_pop = {
-				culture = polish
-				size = 5933
-			}
-			create_pop = {
-				culture = latvian
-				size = 3077
+				size = 965400
 			}
 		}
 	}

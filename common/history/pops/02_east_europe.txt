@@ -181,7 +181,7 @@
 	s:STATE_SILESIA = {
 		region_state:POL = {
 			create_pop = {
-				culture = north_german
+				culture = polish
 				size = 8800490
 			}
 		}
@@ -189,7 +189,7 @@
 	s:STATE_WEST_PRUSSIA = {
 		region_state:POL = {
 			create_pop = {
-				culture = north_german
+				culture = polish
 				size = 4208930
 			}
 		}
@@ -197,15 +197,21 @@
 	s:STATE_EAST_PRUSSIA = {
 		region_state:POL = {
 			create_pop = {
-				culture = north_german
+				culture = polish
 				size = 1530520
+			}
+		}
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 10
 			}
 		}
 	}
 	s:STATE_POSEN = {
 		region_state:POL = {
 			create_pop = {
-				culture = north_german
+				culture = polish
 				size = 3443670
 			}
 		}
@@ -219,22 +225,10 @@
 		}
 	}
 	s:STATE_EAST_GALICIA = {
-		region_state:AUS = {
-			create_pop = {
-				culture = polish
-				size = 832800
-			}
+		region_state:UKR = {
 			create_pop = {
 				culture = ukrainian
-				size = 1544404
-			}
-			create_pop = {
-				culture = south_german
-				size = 20004
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 180000
+				size = 10
 			}
 		}
 	}

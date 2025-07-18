@@ -481,7 +481,7 @@
 	s:STATE_POMERANIA = {
 		region_state:POL = {
 			create_pop = {
-				culture = north_german
+				culture = polish
 				size = 1913150
 			}
 		}

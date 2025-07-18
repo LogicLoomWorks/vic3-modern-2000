@@ -82,6 +82,14 @@
 		}
 	}
 
+	s:STATE_HAIL = {
+		region_state:SAU = {
+			create_pop = {
+				culture = bedouin
+				size = 231000
+			}
+		}
+	}
 
 	s:STATE_CYPRUS = {
 		region_state:CYP = {
