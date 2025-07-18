@@ -4,11 +4,13 @@
 	s:STATE_NEJD = {
 		region_state:SAU = {
 			create_pop = {
-				culture = shiite
+				culture = bedouin
+				religion = shiite
 				size = 1725000
 			}
 			create_pop = {
-				culture = sunni
+				culture = bedouin
+				religion = sunni
 				size = 9775000
 			}
 		}
@@ -16,7 +18,8 @@
 		s:STATE_HAIL = {
 		region_state:SAU = {
 			create_pop = {
-				culture = sunni
+				culture = bedou
+				religion = sunni
 				size = 800000
 			}
 	}
@@ -26,15 +29,13 @@
 		region_state:OMA = {
 			create_pop = {
 				culture = bedouin
-				size = 1750000
+				religion = shiite
+				size = 416000
 			}
 			create_pop = {
-				culture = shiite
-				size = 125000
-			}
-			create_pop = {
-				culture = sunni
-				size = 625000
+				culture = bedouin
+				religion = sunni
+				size = 2083000
 			}
 		}
 	}
@@ -43,20 +44,19 @@
 	s:STATE_ABU_DHABI = {
 		region_state:UAE = {
 			create_pop = {
-				culture = sunni
+				culture = bedouin
+				religion = sunni
 				size = 861900
 			}
 			create_pop = {
-				culture = shiite
+				culture = bedouin
+				religion = shiite
 				size = 152100
 			}
 			create_pop = {
-				culture = protestant
+				culture = 
+				religion = protestant
 				size = 130000
-			}
-			create_pop = {
-				culture = bedouin
-				size = 156000
 			}
 		}		
 	}
@@ -82,14 +82,6 @@
 		}
 	}
 
-	s:STATE_HAIL = {
-		region_state:SAU = {
-			create_pop = {
-				culture = bedouin
-				size = 231000
-			}
-		}
-	}
 
 	s:STATE_CYPRUS = {
 		region_state:CYP = {
@@ -123,7 +115,7 @@
 				size = 2227500
 			}
 			create_pop = {
-				culture = sunni
+				culture = bedouin
 				religion = sunni
 				size = 1138584
 			}
@@ -134,7 +126,7 @@
 	s:STATE_WEST_BANK = {
 		region_state:PAL = {
 			create_pop = {
-				culture = sunni
+				culture = bedouin
 				religion = sunni
 				size = 1943658
 			}
@@ -148,7 +140,7 @@
 	s:STATE_GAZA = {
 		region_state:PAL = {
 			create_pop = {
-				culture = sunni
+				culture = bedouin
 				religion = sunni
 				size = 1130000
 			}
@@ -164,15 +156,17 @@
 	s:STATE_LEBANON = { 
 		region_state:LEB = {
 			create_pop = {
-				culture = sunni
+				culture = bedouin
+				religion = sunni
 				size = 1240000
 			}
 			create_pop = {
-				culture = shiite
+				culture = bedouin
+				religion = shiite
 				size = 1200000
 			}
 			create_pop = {
-				culture = protestant
+				religion = protestant
 				size = 1360000
 			}
 			
@@ -183,19 +177,22 @@
 	s:STATE_SYRIA = {
 		region_state:SYR = {
 			create_pop = {
-				culture = sunni
+				culture = bedouin
+				religion = sunni
 				size = 13500000
 			}
 			create_pop = {
-				culture = shiite
+				culture = bedouin
+				religion = shiite
 				size = 540000
 			}
 			create_pop = {
-				culture = protestant
+				religion = protestant
 				size = 1800000
 			}
 			create_pop = {
-				culture = jewish
+				culture = sephardic
+				religion = jewish
 				size = 90000
 			}
 		}
