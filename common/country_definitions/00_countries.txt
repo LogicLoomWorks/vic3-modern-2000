@@ -2383,7 +2383,7 @@ ISR = {
 	
 	tier = principality
 	
-	cultures = { ashkenazi sephardic sunni }
+	cultures = { ashkenazi sephardic }
 	religion = jewish
 	capital = STATE_PALESTINE
 }

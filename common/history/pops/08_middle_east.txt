@@ -1,36 +1,87 @@
 ﻿POPS = {
+
+
 	s:STATE_NEJD = {
 		region_state:SAU = {
 			create_pop = {
-				culture = bedouin
-				size = 3728161
+				culture = shiite
+				size = 1725000
+			}
+			create_pop = {
+				culture = sunni
+				size = 9775000
 			}
 		}
 	}
+		s:STATE_HAIL = {
+		region_state:SAU = {
+			create_pop = {
+				culture = sunni
+				size = 800000
+			}
+	}
+
+
 	s:STATE_OMAN = {
 		region_state:OMA = {
 			create_pop = {
 				culture = bedouin
-				size = 2282131
+				size = 1750000
+			}
+			create_pop = {
+				culture = shiite
+				size = 125000
+			}
+			create_pop = {
+				culture = sunni
+				size = 625000
 			}
 		}
 	}
+
+
 	s:STATE_ABU_DHABI = {
 		region_state:UAE = {
 			create_pop = {
+				culture = sunni
+				size = 861900
+			}
+			create_pop = {
+				culture = shiite
+				size = 152100
+			}
+			create_pop = {
+				culture = protestant
+				size = 130000
+			}
+			create_pop = {
 				culture = bedouin
-				size = 505000
+				size = 156000
 			}
 		}		
 	}
+
+
 	s:STATE_YEMEN = {
 		region_state:YEM = {
 			create_pop = {
 				culture = yemenite
-				size = 16624141
+				religion = sunni
+				size = 10065000
+			}
+			create_pop = {
+				culture = yemenite
+				religion = shiite
+				size = 8235000
+			}
+			create_pop = {
+				culture = yemenite
+				religion = jewish
+				size = 183000
 			}
 		}
 	}
+
 	s:STATE_HAIL = {
 		region_state:SAU = {
 			create_pop = {
@@ -39,6 +90,7 @@
 			}
 		}
 	}
+
 	s:STATE_CYPRUS = {
 		region_state:CYP = {
 			create_pop = {
@@ -56,6 +108,8 @@
 			}
 		}
 	}
+
+
 	s:STATE_PALESTINE = {
 		region_state:ISR = {
 			create_pop = {
@@ -75,6 +129,8 @@
 			}
 		}
 	}
+
+
 	s:STATE_WEST_BANK = {
 		region_state:PAL = {
 			create_pop = {
@@ -103,34 +159,49 @@
 			}
 		}
 	}
+
+
 	s:STATE_LEBANON = { 
 		region_state:LEB = {
 			create_pop = {
 				culture = sunni
-				religion = sunni
-				size = 2121210
+				size = 1240000
 			}
 			create_pop = {
 				culture = shiite
-				religion = shiite
-				size = 2207790
+				size = 1200000
 			}
+			create_pop = {
+				culture = protestant
+				size = 1360000
+			}
+			
 		}
 	}
-	s:STATE_SYRIA = { 16640000
+
+
+	s:STATE_SYRIA = {
 		region_state:SYR = {
 			create_pop = {
 				culture = sunni
-				religion = sunni
-				size = 12313600
+				size = 13500000
 			}
 			create_pop = {
 				culture = shiite
-				religion = shiite
-				size = 2662400
+				size = 540000
+			}
+			create_pop = {
+				culture = protestant
+				size = 1800000
+			}
+			create_pop = {
+				culture = jewish
+				size = 90000
 			}
 		}
 	}
+
+
 	s:STATE_BAGHDAD = {
 		region_state:IRQ = {
 			create_pop = {
@@ -139,35 +210,61 @@
 			}
 			create_pop = {
 				culture = shiite
-				size = 11721600
+				size = 2537000
 			}
 			create_pop = {
 				culture = sunni
-				size = 7814400
+				size = 1677000
+			}
+			create_pop = {
+				culture = protestant
+				size = 86000
 			}
 		}
 	}
 	s:STATE_MOSUL = {
 		region_state:IRQ = {
 			create_pop = {
-				culture = kurdish
-				size = 1056000
+				culture = sunni
+				size = 3000000
+			}
+			create_pop = {
+				culture = shiite
+				size = 600000
+			}
+			create_pop = {
+				culture = protestant
+				size = 400000
 			}
 		}
 	}
+
+
 	s:STATE_FARS = {
 		region_state:IRN = {
 			create_pop = {
 				culture = persian
-				size = 4342423
+				religion = shiite
+				size = 3515000
+			}
+			create_pop = {
+				culture = persian
+				religion = sunni
+				size = 185000
 			}
 		}
 	}
 	s:STATE_LARISTAN = {
 		region_state:IRN = {
 			create_pop = {
-				culture = bedouin
-				size = 783018
+				culture = persian
+				religion = shiite
+				size = 360000
+			}
+			create_pop = {
+				culture = persian
+				religion = sunni
+				size = 40000
 			}
 		}
 	}
@@ -175,7 +272,23 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = baluchi
-				size = 2400000
+				religion = sunni
+				size = 140250
+			}
+			create_pop = {
+				culture = baluchi
+				religion = shiite
+				size = 24750
+			}
+			create_pop = {
+				culture = persian
+				religion = sunni
+				size = 140250
+			}
+			create_pop = {
+				culture = persian
+				religion = shiite
+				size = 794750
 			}
 		}
 	}
@@ -183,7 +296,23 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = persian
-				size = 4173118
+				religion = sunni
+				size = 140250
+			}
+			create_pop = {
+				culture = persian
+				religion = shiite
+				size = 2664750
+			}
+			create_pop = {
+				culture = luri
+				religion = sunni
+				size = 24750
+			}
+			create_pop = {
+				culture = luri
+				religion = shiite
+				size = 470250
 			}
 		}
 	}
@@ -191,7 +320,18 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = persian
-				size = 2589000
+				religion = shiite
+				size = 3330000
+			}
+			create_pop = {
+				culture = azerbaijani
+				religion = shiite
+				size = 296000
+			}
+			create_pop = {
+				culture = luri
+				religion = shiite
+				size = 74000
 			}
 		}
 	}
@@ -199,7 +339,13 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = mazanderani
-				size = 2850625
+				religion = shiite
+				size = 2340000
+			}
+			create_pop = {
+				culture = persian
+				religion = shiite
+				size = 260000
 			}
 		}
 	}
@@ -207,7 +353,23 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = persian
-				size = 570835
+				religion = shiite
+				size = 617400
+			}
+			create_pop = {
+				culture = persian
+				religion = sunni
+				size = 12600
+			}
+			create_pop = {
+				culture = mazanderani
+				religion = shiite
+				size = 68600
+			}
+			create_pop = {
+				culture = mazanderani
+				religion = sunni
+				size = 1400
 			}
 		}
 	}
@@ -215,7 +377,33 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = azerbaijani
-				size = 1264000
+				religion = shiite
+				size = 1303560
+			}
+			create_pop = {
+				culture = azerbaijani
+				religion = protestant
+				size = 26440
+			}
+			create_pop = {
+				culture = persian
+				religion = shiite
+				size = 41160
+			}
+			create_pop = {
+				culture = persian
+				religion = protestant
+				size = 840
+			}
+			create_pop = {
+				culture = armenian
+				religion = shiite
+				size = 27440
+			}
+			create_pop = {
+				culture = armenian
+				religion = protestant
+				size = 560
 			}
 		}
 	}
@@ -223,15 +411,82 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = persian
-				size = 2000000
+				religion = shiite
+				size = 22230000
+			}
+			create_pop = {
+				culture = persian
+				religion = sunni
+				size = 117000
+			}
+			create_pop = {
+				culture = baluchi
+				religion = sunni
+				size = 172900
+			}
+			create_pop = {
+				culture = baluchi
+				religion = shiite
+				size = 9100
+			}
+			create_pop = {
+				culture = luri
+				religion = shiite
+				size = 74100
+			}
+			create_pop = {
+				culture = luri
+				religion = sunni
+				size = 3900
 			}
 		}
 	}
 	s:STATE_URMIA = {
 		region_state:IRN = {
 			create_pop = {
+				culture = azerbaijani
+				religion = shiite
+				size = 1183000
+			}
+			create_pop = {
+				culture = azerbaijani
+				religion = sunni
+				size = 546000
+			}
+			create_pop = {
+				culture = azerbaijani
+				religion = protestant
+				size = 91000
+			}
+			create_pop = {
 				culture = kurdish
-				size = 485000
+				religion = shiite
+				size = 354900
+			}
+			create_pop = {
+				culture = kurdish
+				religion = sunni
+				size = 163800
+			}
+			create_pop = {
+				culture = kurdish
+				religion = protestant
+				size = 27300
+			}
+			create_pop = {
+				culture = armenian
+				religion = shiite
+				size = 59150
+			}
+			create_pop = {
+				culture = armenian
+				religion = sunni
+				size = 27300
+			}
+			create_pop = {
+				culture = armenian
+				religion = protestant
+				size = 4550
 			}
 		}
 	}
@@ -239,10 +494,28 @@
 		region_state:IRN = {
 			create_pop = {
 				culture = luri
-				size = 1689650
+				religion = shiite
+				size = 1587600
+			}
+			create_pop = {
+				culture = luri
+				religion = sunni
+				size = 32400
+			}
+			create_pop = {
+				culture = kurdish
+				religion = shiite
+				size = 176400
+			}
+			create_pop = {
+				culture = kurdish
+				religion = sunni
+				size = 3600
 			}
 		}
 	}
+
+
 	s:STATE_AYDIN = {
 		region_state:TUR = {
 			create_pop = {
@@ -316,3 +589,4 @@
 		}
 	}
 }
+
