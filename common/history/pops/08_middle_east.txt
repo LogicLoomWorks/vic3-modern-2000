@@ -15,6 +15,7 @@
 			}
 		}
 	}
+	}
 		s:STATE_HAIL = {
 		region_state:SAU = {
 			create_pop = {
@@ -54,7 +55,7 @@
 				size = 152100
 			}
 			create_pop = {
-				culture = 
+				culture = chechen
 				religion = protestant
 				size = 130000
 			}
@@ -166,6 +167,7 @@
 				size = 1200000
 			}
 			create_pop = {
+				culture = chechen
 				religion = protestant
 				size = 1360000
 			}
@@ -187,6 +189,7 @@
 				size = 540000
 			}
 			create_pop = {
+				culture = chechen
 				religion = protestant
 				size = 1800000
 			}
@@ -203,18 +206,17 @@
 		region_state:IRQ = {
 			create_pop = {
 				culture = kurdish
-				size = 4884000
+				religion = shiite
+				size = 5477367
 			}
 			create_pop = {
-				culture = shiite
-				size = 2537000
+				culture = kurdish
+				religion = sunni
+				size = 3620632
 			}
 			create_pop = {
-				culture = sunni
-				size = 1677000
-			}
-			create_pop = {
-				culture = protestant
+				culture = chechen
+				religion = protestant
 				size = 86000
 			}
 		}
@@ -222,15 +224,18 @@
 	s:STATE_MOSUL = {
 		region_state:IRQ = {
 			create_pop = {
-				culture = sunni
+				culture = kurdish
+				religion = sunni
 				size = 3000000
 			}
 			create_pop = {
-				culture = shiite
+				culture = kurdish
+				religion = shiite
 				size = 600000
 			}
 			create_pop = {
-				culture = protestant
+				culture = chechen
+				religion = protestant
 				size = 400000
 			}
 		}
@@ -517,7 +522,13 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 870460
+				religion = sunni
+				size = 882000
+			}
+			create_pop = {
+				culture = kurdish
+				religion = sunni
+				size = 18000
 			}
 		}
 	}
@@ -525,7 +536,13 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 742690
+				religion = sunni
+				size = 2254000
+			}
+			create_pop = {
+				culture = kurdish
+				religion = sunni
+				size = 46000
 			}
 		}
 	}
@@ -533,7 +550,8 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 102059 
+				religion = sunni
+				size = 370000
 			}
 		}
 	}
@@ -541,7 +559,13 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = kurdish
-				size = 1006776
+				religion = sunni
+				size = 1120000
+			}
+			create_pop = {
+				culture = turkish
+				religion = sunni
+				size = 280000
 			}
 		}
 	}
@@ -549,7 +573,13 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 1130710
+				religion = sunni
+				size = 1600000
+			}
+			create_pop = {
+				culture = kurdish
+				religion = sunni
+				size = 400000
 			}
 		}
 	}
@@ -557,7 +587,13 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 214949
+				religion = sunni
+				size = 970000
+			}
+			create_pop = {
+				culture = chechen
+				religion = sunni
+				size = 300000
 			}
 		}
 	}
@@ -565,7 +601,18 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 361235 
+				religion = sunni
+				size = 572000 
+			}
+			create_pop = {
+				culture = kurdish
+				religion = sunni
+				size = 264000 
+			}
+			create_pop = {
+				culture = circassian
+				religion = sunni
+				size = 44000 
 			}
 		}
 	}
@@ -573,7 +620,33 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 78473
+				religion = sunni
+				size = 118800
+			}
+			create_pop = {
+				culture = turkish
+				religion = sunni
+				size = 29700
+			}
+			create_pop = {
+				culture = kurdish
+				religion = sunni
+				size = 92400
+			}
+			create_pop = {
+				culture = kurdish
+				religion = shiite
+				size = 23100
+			}
+			create_pop = {
+				culture = azerbaijani
+				religion = sunni
+				size = 26400
+			}
+			create_pop = {
+				culture = azerbaijani
+				religion = shiite
+				size = 6600
 			}
 		}
 	}
@@ -581,7 +654,18 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 3203362 
+				religion = sunni
+				size = 3825000 
+			}
+			create_pop = {
+				culture = kurdish
+				religion = sunni
+				size = 585000 
+			}
+			create_pop = {
+				culture = circassian
+				religion = sunni
+				size = 90000 
 			}
 		}
 	}
