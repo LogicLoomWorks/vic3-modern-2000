@@ -586,7 +586,15 @@
 		region_state:SAF = {
 			create_pop = {
 				culture = boer
-				size = 13965000
+				size = 2500000
+			}
+			create_pop = {
+				culture = british
+				size = 874000
+			}
+			create_pop = {
+				culture = xhosa
+				size = 1074000
 			}
 		}
 	}
