@@ -479,11 +479,29 @@
 			}
 		}
 	}
+	s:STATE_LOURENCO_MARQUES = {
+		region_state:MOZ = {
+			create_pop = {
+				culture = nguni
+				size = 4929000
+			}
+		}
+	}
+
+	# Namibia
 	s:STATE_NAMAQUALAND = {
 		region_state:NMB = {
 			create_pop = {
 				culture = khoisan
-				size = 498000
+				size = 201300
+			}
+			create_pop = {
+				culture = boer
+				size = 235000
+			}
+			create_pop = {
+				culture = british
+				size = 36600
 			}
 		}
 	}
@@ -491,11 +509,24 @@
 		region_state:NMB = {
 			create_pop = {
 				culture = herero
-				size = 1300000
+				size = 1024800
+			}
+			create_pop = {
+				culture = kavango_bantu
+				size = 183000
+			}
+			create_pop = {
+				culture = north_german
+				size = 12000 
+			}
+			create_pop = {
+				culture = boer
+				size = 100000
 			}
 		}
 	}
-# South Africa
+
+	# South Africa
 	s:STATE_ZULULAND = {
 		region_state:SAF = {
 			create_pop = {
@@ -639,19 +670,13 @@
 			}
 		}
 	}
+
+	# Botswana
 	s:STATE_BOTSWANA = {
 		region_state:BOT = {
 			create_pop = {
 				culture = tswana
 				size = 1660000
-			}
-		}
-	}
-	s:STATE_LOURENCO_MARQUES = {
-		region_state:MOZ = {
-			create_pop = {
-				culture = nguni
-				size = 4929000
 			}
 		}
 	}
