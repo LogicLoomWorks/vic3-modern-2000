@@ -547,11 +547,111 @@
 		}
 	}
 	s:STATE_TRANSVAAL = {
-			# Assuming it's Mpumalanga, Limpopo and Gauteng
+			# Assuming it's Mpumalanga, Half of North-West Limpopo and Gauteng
 		region_state:SAF = {
+				# Gauteng
+			create_pop = {
+				culture = boer
+				size = 1269000
+			}
+			create_pop = {
+				culture = british
+				size = 1105000
+			}
+			create_pop = {
+				culture = nguni # Ndebele
+				size = 171000
+			}
+			create_pop = {
+				culture = xhosa
+				size = 671000
+			}
+			create_pop = {
+				culture = zulu
+				size = 1902000
+			}
+			create_pop = {
+				culture = sotho # Pedi
+				size = 945000
+			}
 			create_pop = {
 				culture = sotho
-				size = 9000000
+				size = 1160000
+			}
+			create_pop = {
+				culture = tswana
+				size = 741000
+			}
+			create_pop = {
+				culture = sotho # Swati
+				size = 122000
+			}
+			create_pop = {
+				culture = sotho # Venda
+				size = 154000
+			}
+			create_pop = {
+				culture = nguni # Tsonga
+				size = 500000
+			}
+				# Limpopo
+			create_pop = {
+				culture = boer
+				size = 122000
+			}
+			create_pop = {
+				culture = sotho	# Pedi
+				size = 2750000
+			}
+			create_pop = {
+				culture = sotho # Venda
+				size = 840000
+			}
+			create_pop = {
+				culture = nguni # Tsonga
+				size = 1180000
+			}
+				# Mpumalanga
+			create_pop = {
+				culture = boer
+				size = 192000
+			}
+			create_pop = {
+				culture = nguni # Ndebele
+				size = 377000
+			}
+			create_pop = {
+				culture = zulu
+				size = 823000
+			}
+			create_pop = {
+				culture = sotho # Pedi
+				size = 336000
+			}
+			create_pop = {
+				culture = sotho
+				size = 114000
+			}
+			create_pop = {
+				culture = sotho # Swati
+				size = 963000
+			}
+			create_pop = {
+				culture = nguni # Tsonga
+				size = 117000
+			}
+				# Half North-West
+			create_pop = {
+				culture = xhosa
+				size = 105000
+			}
+			create_pop = {
+				culture = tswana
+				size = 1158000
+			}
+			create_pop = {
+				culture = boer
+				size = 145000
 			}
 		}
 		region_state:SWZ = {
