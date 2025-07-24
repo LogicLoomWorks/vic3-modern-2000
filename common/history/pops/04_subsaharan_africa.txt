@@ -516,6 +516,10 @@
 				size = 183000
 			}
 			create_pop = {
+				culture = tswana
+				size = 109800
+			}
+			create_pop = {
 				culture = north_german
 				size = 12000 
 			}
