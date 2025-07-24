@@ -495,11 +495,24 @@
 			}
 		}
 	}
+# South Africa
 	s:STATE_ZULULAND = {
 		region_state:SAF = {
 			create_pop = {
+				culture = boer
+				size = 140000
+			}
+			create_pop = {
+				culture = british
+				size = 1285000
+			}
+			create_pop = {
+				culture = xhosa
+				size = 220000
+			}
+			create_pop = {
 				culture = zulu
-				size = 6500000
+				size = 7624000
 			}
 		}
 		region_state:LES = {
