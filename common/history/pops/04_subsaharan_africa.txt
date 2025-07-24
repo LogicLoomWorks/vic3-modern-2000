@@ -599,10 +599,29 @@
 		}
 	}
 	s:STATE_NORTHERN_CAPE = {
+			# Assuming Northern Cape and half of North West
 		region_state:SAF = {
+				# Northern Cape
 			create_pop = {
-				culture = sotho
-				size = 5000000
+				culture = boer
+				size = 560000
+			}
+			create_pop = {
+				culture = tswana
+				size = 170000
+			}
+				# Half North-West
+			create_pop = {
+				culture = xhosa
+				size = 105000
+			}
+			create_pop = {
+				culture = tswana
+				size = 1158000
+			}
+			create_pop = {
+				culture = boer
+				size = 145000
 			}
 		}
 	}
