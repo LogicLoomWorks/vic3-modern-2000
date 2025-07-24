@@ -558,7 +558,7 @@
 				size = 1105000
 			}
 			create_pop = {
-				culture = nguni # Ndebele
+				culture = nguni 
 				size = 2345000
 			}
 			create_pop = {
@@ -570,7 +570,7 @@
 				size = 2725000
 			}
 			create_pop = {
-				culture = sotho # Pedi
+				culture = sotho 
 				size = 7384000
 			}
 			create_pop = {
@@ -625,7 +625,6 @@
 	s:STATE_NORTHERN_CAPE = {
 			# Assuming Northern Cape and half of North West
 		region_state:SAF = {
-				# Northern Cape
 			create_pop = {
 				culture = boer
 				size = 705000
