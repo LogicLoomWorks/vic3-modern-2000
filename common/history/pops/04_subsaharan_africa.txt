@@ -497,7 +497,7 @@
 			}
 			create_pop = {
 				culture = boer
-				size = 235000
+				size = 150000
 			}
 			create_pop = {
 				culture = british
@@ -525,7 +525,7 @@
 			}
 			create_pop = {
 				culture = boer
-				size = 100000
+				size = 51300
 			}
 		}
 	}
