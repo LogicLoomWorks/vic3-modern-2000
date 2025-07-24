@@ -512,12 +512,29 @@
 	s:STATE_VRYSTAAT = {
 		region_state:SAF = {
 			create_pop = {
+				culture = boer
+				size = 323000 
+			}
+			create_pop = {
+				culture = xhosa
+				size = 246000 
+			}
+			create_pop = {
+				culture = zulu
+				size = 138000 
+			}
+			create_pop = {
 				culture = sotho
-				size = 5500000
+				size = 1743000
+			}
+			create_pop = {
+				culture = tswana
+				size = 185000 
 			}
 		}
 	}
 	s:STATE_TRANSVAAL = {
+			# Assuming it's Mpumalanga, Limpopo and Gauteng
 		region_state:SAF = {
 			create_pop = {
 				culture = sotho
@@ -534,12 +551,25 @@
 	s:STATE_EASTERN_CAPE = {
 		region_state:SAF = {
 			create_pop = {
+				culture = boer
+				size = 600000 
+			}
+			create_pop = {
+				culture = british
+				size = 232000
+			}
+			create_pop = {
 				culture = xhosa
-				size = 7000000
+				size = 5369000
+			}
+			create_pop = {
+				culture = sotho
+				size = 152000
 			}
 		}
 	}
 	s:STATE_CAPE_COLONY = {
+			# Assuming Western Cape
 		region_state:SAF = {
 			create_pop = {
 				culture = boer
@@ -572,3 +602,4 @@
 		}
 	}
 }
+
