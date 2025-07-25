@@ -251,20 +251,6 @@
 			}
 		}
 	}
-	s:STATE_KAZEMBE = {
-		region_state:ZAM = {
-			create_pop = {
-				culture = lunda
-				size = 3873000
-			}
-		}
-		region_state:MLW = {
-			create_pop = {
-				culture = lunda
-				size = 7000000
-			}
-		}
-	}
 	s:STATE_SOMALILAND = {
 		region_state:SOM = {
 			create_pop = {
@@ -302,20 +288,6 @@
 			create_pop = {
 				culture = nilotic
 				size = 3203000
-			}
-		}
-	}
-	s:STATE_MOCAMBIQUE = {
-		region_state:MOZ = {
-			create_pop = {
-				culture = makua
-				size = 6000000
-			}	
-		}
-		region_state:MLW = {
-			create_pop = {
-				culture = makua
-				size = 4180000
 			}
 		}
 	}
@@ -455,6 +427,7 @@
 			}
 		}
 	}
+
 	s:STATE_ZAMBIA = {
 		region_state:ZAM = {
 			create_pop = {
@@ -463,30 +436,144 @@
 			}
 		}
 	}
+	s:STATE_KAZEMBE = {
+		region_state:ZAM = {
+			create_pop = {
+				culture = lunda
+				size = 3873000
+			}
+		}
+		# Malawi
+			# Source was Wikipedia
+		region_state:MLW = {
+			create_pop = {
+				culture = chewa
+				size = 2640000
+			}
+			create_pop = {
+				culture = lomwe
+				size = 1870000
+			}
+			create_pop = {
+				culture = yao
+				size = 1430000
+			}
+			create_pop = {
+				culture = sena
+				size = 330000
+			}
+			create_pop = {
+				culture = lacustrine_bantu
+				size = 4730000 
+			}
+		}
+	}
+
+	## Mozambique
+		# Source is wikipedia, 2007 Census and Guesswork, sorry
 	s:STATE_ZAMBEZIA = {
 		region_state:MOZ = {
 			create_pop = {
 				culture = sena
-				size = 6860000
+				size = 500000
 			}
-		}
-	}
-	s:STATE_ZAMBEZI = {
-		region_state:ZIM = {
 			create_pop = {
 				culture = shona
-				size = 11856000
+				size = 2307000
+			}
+			create_pop = {
+				culture = lacustrine_bantu
+				size = 431000
+			}
+			create_pop = {
+				culture = makua
+				size = 2940000
+			}
+			create_pop = {
+				culture = swahili
+				size = 154000
 			}
 		}
-	}
+	} 	
 	s:STATE_LOURENCO_MARQUES = {
 		region_state:MOZ = {
 			create_pop = {
 				culture = nguni
-				size = 4929000
+				size = 1617000
+			}
+			create_pop = {
+				culture = makua
+				size = 1261000
+			}
+			create_pop = {
+				culture = sotho
+				size = 500000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 100000
 			}
 		}
 	}
+	s:STATE_MOCAMBIQUE = {
+		region_state:MOZ = {
+			create_pop = {
+				culture = makua
+				size = 5089656
+			}
+			create_pop = {
+				culture = portuguese
+				size = 90000
+			}	
+			create_pop = {
+				culture = swahili
+				size = 105000
+			}	
+			create_pop = {
+				culture = chewa
+				size = 133000
+			}
+			create_pop = {
+				culture = yao
+				size = 1079000
+			}
+		}
+#		region_state:MLW = {
+#			create_pop = {
+#				culture = makua
+#				size = 4180000
+#			}
+#		}
+	}
+
+	## Zimbabwe
+		# Makoni, Sinfree & Makoni, Busi & Mashiri, Pedzisai. (2006)
+		# Zimbabwe Colonial and Post-Colonial Language Policy and Planning Practices.
+	s:STATE_ZAMBEZI = {
+		region_state:ZIM = {
+			create_pop = {	
+				culture = shona
+				size = 8417760
+			}
+			create_pop = {	
+				culture = nguni
+				size = 1896960
+			}
+			create_pop = {	
+				culture = boer
+				size = 118560
+			}
+			create_pop = {	
+				culture = british
+				size = 118560
+			}
+			create_pop = {	
+				culture = lacustrine_bantu
+				size = 1304160
+			}
+		}
+	}
+
 
 	# Namibia
 	s:STATE_NAMAQUALAND = {
@@ -550,6 +637,7 @@
 				size = 7624000
 			}
 		}
+		# Lesotho
 		region_state:LES = {
 			create_pop = {
 				culture = sotho
@@ -613,6 +701,7 @@
 				size = 1899000
 			}
 		}
+		# Eswatini
 		region_state:SWZ = {
 			create_pop = {
 				culture = sotho
