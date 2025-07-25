@@ -298,12 +298,12 @@
 				size = 6000000
 			}	
 		}
-		region_state:MLW = {
-			create_pop = {
-				culture = makua
-				size = 4180000
-			}
-		}
+#		region_state:MLW = {
+#			create_pop = {
+#				culture = makua
+#				size = 4180000
+#			}
+#		}
 	}
 	s:STATE_WADDAI = {
 		region_state:CHD = {
@@ -458,10 +458,28 @@
 				size = 3873000
 			}
 		}
+		# Malawi
+			# Source was Wikipedia
 		region_state:MLW = {
 			create_pop = {
-				culture = lunda
-				size = 7000000
+				culture = chewa
+				size = 2640000
+			}
+			create_pop = {
+				culture = lomwe
+				size = 1870000
+			}
+			create_pop = {
+				culture = yao
+				size = 1430000
+			}
+			create_pop = {
+				culture = sena
+				size = 330000
+			}
+			create_pop = {
+				culture = lacustrine_bantu
+				size = 4730000 
 			}
 		}
 	}
