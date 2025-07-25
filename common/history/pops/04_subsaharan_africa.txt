@@ -479,11 +479,29 @@
 			}
 		}
 	}
+	s:STATE_LOURENCO_MARQUES = {
+		region_state:MOZ = {
+			create_pop = {
+				culture = nguni
+				size = 4929000
+			}
+		}
+	}
+
+	# Namibia
 	s:STATE_NAMAQUALAND = {
 		region_state:NMB = {
 			create_pop = {
 				culture = khoisan
-				size = 498000
+				size = 201300
+			}
+			create_pop = {
+				culture = boer
+				size = 150000
+			}
+			create_pop = {
+				culture = british
+				size = 36600
 			}
 		}
 	}
@@ -491,15 +509,45 @@
 		region_state:NMB = {
 			create_pop = {
 				culture = herero
-				size = 1300000
+				size = 1024800
+			}
+			create_pop = {
+				culture = kavango_bantu
+				size = 183000
+			}
+			create_pop = {
+				culture = tswana
+				size = 109800
+			}
+			create_pop = {
+				culture = north_german
+				size = 12000 
+			}
+			create_pop = {
+				culture = boer
+				size = 51300
 			}
 		}
 	}
+
+	# South Africa
 	s:STATE_ZULULAND = {
 		region_state:SAF = {
 			create_pop = {
+				culture = boer
+				size = 140000
+			}
+			create_pop = {
+				culture = british
+				size = 1285000
+			}
+			create_pop = {
+				culture = xhosa
+				size = 220000
+			}
+			create_pop = {
 				culture = zulu
-				size = 6500000
+				size = 7624000
 			}
 		}
 		region_state:LES = {
@@ -512,16 +560,57 @@
 	s:STATE_VRYSTAAT = {
 		region_state:SAF = {
 			create_pop = {
+				culture = boer
+				size = 323000 
+			}
+			create_pop = {
+				culture = xhosa
+				size = 246000 
+			}
+			create_pop = {
+				culture = zulu
+				size = 138000 
+			}
+			create_pop = {
 				culture = sotho
-				size = 5500000
+				size = 1743000
+			}
+			create_pop = {
+				culture = tswana
+				size = 185000 
 			}
 		}
 	}
 	s:STATE_TRANSVAAL = {
+			# Assuming it's Mpumalanga, Half of North-West Limpopo and Gauteng
 		region_state:SAF = {
 			create_pop = {
-				culture = sotho
-				size = 9000000
+				culture = boer
+				size = 1728000
+			}
+			create_pop = {
+				culture = british
+				size = 1105000
+			}
+			create_pop = {
+				culture = nguni 
+				size = 2345000
+			}
+			create_pop = {
+				culture = xhosa
+				size = 776000
+			}
+			create_pop = {
+				culture = zulu
+				size = 2725000
+			}
+			create_pop = {
+				culture = sotho 
+				size = 7384000
+			}
+			create_pop = {
+				culture = tswana
+				size = 1899000
 			}
 		}
 		region_state:SWZ = {
@@ -534,27 +623,59 @@
 	s:STATE_EASTERN_CAPE = {
 		region_state:SAF = {
 			create_pop = {
+				culture = boer
+				size = 600000 
+			}
+			create_pop = {
+				culture = british
+				size = 232000
+			}
+			create_pop = {
 				culture = xhosa
-				size = 7000000
+				size = 5369000
+			}
+			create_pop = {
+				culture = sotho
+				size = 152000
 			}
 		}
 	}
 	s:STATE_CAPE_COLONY = {
+			# Assuming Western Cape
 		region_state:SAF = {
 			create_pop = {
 				culture = boer
-				size = 13965000
+				size = 2500000
+			}
+			create_pop = {
+				culture = british
+				size = 874000
+			}
+			create_pop = {
+				culture = xhosa
+				size = 1074000
 			}
 		}
 	}
 	s:STATE_NORTHERN_CAPE = {
+			# Assuming Northern Cape and half of North West
 		region_state:SAF = {
 			create_pop = {
-				culture = sotho
-				size = 5000000
+				culture = boer
+				size = 705000
+			}
+			create_pop = {
+				culture = tswana
+				size = 1328000
+			}
+			create_pop = {
+				culture = xhosa
+				size = 105000
 			}
 		}
 	}
+
+	# Botswana
 	s:STATE_BOTSWANA = {
 		region_state:BOT = {
 			create_pop = {
@@ -563,12 +684,5 @@
 			}
 		}
 	}
-	s:STATE_LOURENCO_MARQUES = {
-		region_state:MOZ = {
-			create_pop = {
-				culture = nguni
-				size = 4929000
-			}
-		}
-	}
 }
+
