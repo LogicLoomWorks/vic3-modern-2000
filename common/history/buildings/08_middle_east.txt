@@ -1,0 +1,220 @@
+BUILDINGS={
+
+	
+	s:STATE_NEJD = {
+		region_state:SAU = {
+			create_building={
+				building="government_administration"
+				add_ownership={
+					building={
+						country="c:SAU"
+						levels=5
+						region="STATE_NEJD"
+					}
+				}
+			}
+			create_building={
+				building="construction_sector"
+				add_ownership={
+					building={
+						country="c:SAU"
+						levels=4
+						region="STATE_NEJD"
+					}
+				}
+			}
+			create_building={
+				building="trade_center"
+				add_ownership={
+					building={
+						country="c:SAU"
+						levels=2
+						region="STATE_NEJD"
+					}
+				}
+			}
+		}
+	}
+		s:STATE_HAIL = {
+		region_state:SAU = {
+			
+		}
+	}
+
+
+	s:STATE_OMAN = {
+		region_state:OMA = {
+			
+		}
+	}
+
+
+	s:STATE_ABU_DHABI = {
+		region_state:UAE = {
+			
+		}		
+	}
+
+
+	s:STATE_YEMEN = {
+		region_state:YEM = {
+			
+		}
+	}
+
+
+	s:STATE_CYPRUS = {
+		region_state:CYP = {
+			
+		}
+	}
+
+
+	s:STATE_PALESTINE = {
+		region_state:ISR = {
+			
+		}
+	}
+
+
+	s:STATE_WEST_BANK = {
+		region_state:PAL = {
+			
+		}
+	}
+	s:STATE_GAZA = {
+		region_state:PAL = {
+			
+		}
+	}
+
+
+	s:STATE_LEBANON = { 
+		region_state:LEB = {
+			
+		}
+	}
+
+
+	s:STATE_SYRIA = {
+		region_state:SYR = {
+			
+		}
+	}
+
+
+	s:STATE_BAGHDAD = {
+		region_state:IRQ = {
+			
+		}
+	}
+	s:STATE_MOSUL = {
+		region_state:IRQ = {
+			
+		}
+	}
+
+
+	s:STATE_FARS = {
+		region_state:IRN = {
+			
+		}
+	}
+	s:STATE_LARISTAN = {
+		region_state:IRN = {
+			
+		}
+	}
+	s:STATE_SISTAN = {
+		region_state:IRN = {
+			
+		}
+	}
+	s:STATE_KHUZESTAN = {
+		region_state:IRN = {
+			
+		}
+	}
+	s:STATE_ISFAHAN = {
+		region_state:IRN = {
+			
+		}
+	}
+	s:STATE_MAZANDARAN = {
+		region_state:IRN = {
+			
+		}
+	}
+	s:STATE_SEMNAN = {
+		region_state:IRN = {
+			
+		}
+	}
+	s:STATE_TABRIZ = {
+		region_state:IRN = {
+			
+		}
+	}
+	s:STATE_KERMAN = {
+		region_state:IRN = {
+			
+		}
+	}
+	s:STATE_URMIA = {
+		region_state:IRN = {
+			
+		}
+	}
+	s:STATE_LURISTAN = {
+		region_state:IRN = {
+			
+		}
+	}
+
+
+	s:STATE_AYDIN = {
+		region_state:TUR = {
+			
+		}
+	}
+	s:STATE_KONYA = {
+		region_state:TUR = {
+			
+		}
+	}
+	s:STATE_KASTAMONU = {
+		region_state:TUR = {
+			
+		}
+	}
+	s:STATE_DIYARBAKIR = {
+		region_state:TUR = {
+			
+		}
+	}
+	s:STATE_ADANA = {
+		region_state:TUR = {
+
+		}
+	}
+	s:STATE_TRABZON = {
+		region_state:TUR = {
+			
+		}
+	}
+	s:STATE_ERZURUM = {
+		region_state:TUR = {
+			
+		}
+	}
+	s:STATE_KARS = {
+		region_state:TUR = {
+			
+		}
+	}
+	s:STATE_ANKARA = {
+		region_state:TUR = {
+			
+		}
+	}
+}
