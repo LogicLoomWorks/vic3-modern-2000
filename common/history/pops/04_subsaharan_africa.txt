@@ -251,20 +251,6 @@
 			}
 		}
 	}
-	s:STATE_KAZEMBE = {
-		region_state:ZAM = {
-			create_pop = {
-				culture = lunda
-				size = 3873000
-			}
-		}
-		region_state:MLW = {
-			create_pop = {
-				culture = lunda
-				size = 7000000
-			}
-		}
-	}
 	s:STATE_SOMALILAND = {
 		region_state:SOM = {
 			create_pop = {
@@ -455,6 +441,8 @@
 			}
 		}
 	}
+
+	## Zambia
 	s:STATE_ZAMBIA = {
 		region_state:ZAM = {
 			create_pop = {
@@ -463,19 +451,26 @@
 			}
 		}
 	}
+	s:STATE_KAZEMBE = {
+		region_state:ZAM = {
+			create_pop = {
+				culture = lunda
+				size = 3873000
+			}
+		}
+		region_state:MLW = {
+			create_pop = {
+				culture = lunda
+				size = 7000000
+			}
+		}
+	}
+
 	s:STATE_ZAMBEZIA = {
 		region_state:MOZ = {
 			create_pop = {
 				culture = sena
 				size = 6860000
-			}
-		}
-	}
-	s:STATE_ZAMBEZI = {
-		region_state:ZIM = {
-			create_pop = {
-				culture = shona
-				size = 11856000
 			}
 		}
 	}
@@ -487,6 +482,35 @@
 			}
 		}
 	}
+
+	## Zimbabwe
+		# Makoni, Sinfree & Makoni, Busi & Mashiri, Pedzisai. (2006)
+		# Zimbabwe Colonial and Post-Colonial Language Policy and Planning Practices.
+	s:STATE_ZAMBEZI = {
+		region_state:ZIM = {
+			create_pop = {	
+				culture = shona
+				size = 8417760
+			}
+			create_pop = {	
+				culture = nguni
+				size = 1896960
+			}
+			create_pop = {	
+				culture = boer
+				size = 118560
+			}
+			create_pop = {	
+				culture = british
+				size = 118560
+			}
+			create_pop = {	
+				culture = lacustrine_bantu
+				size = 1304160
+			}
+		}
+	}
+
 
 	# Namibia
 	s:STATE_NAMAQUALAND = {
