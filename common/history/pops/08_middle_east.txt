@@ -15,12 +15,26 @@
 			}
 		}
 	}
-		s:STATE_HAIL = {
+	s:STATE_HAIL = {
 		region_state:SAU = {
 			create_pop = {
 				culture = bedouin
 				religion = sunni
 				size = 800000
+			}
+		}
+	}
+	s:STATE_HEDJAZ = {
+		region_state:SAU = {
+			create_pop = {
+				culture = bedouin
+				religion = sunni
+				size = 6500000
+			}
+			create_pop = {
+				culture = bedouin
+				religion = sunni
+				size = 1500000
 			}
 		}
 	}
