@@ -291,20 +291,6 @@
 			}
 		}
 	}
-	s:STATE_MOCAMBIQUE = {
-		region_state:MOZ = {
-			create_pop = {
-				culture = makua
-				size = 6000000
-			}	
-		}
-#		region_state:MLW = {
-#			create_pop = {
-#				culture = makua
-#				size = 4180000
-#			}
-#		}
-	}
 	s:STATE_WADDAI = {
 		region_state:CHD = {
 			create_pop = {
@@ -442,7 +428,6 @@
 		}
 	}
 
-	## Zambia
 	s:STATE_ZAMBIA = {
 		region_state:ZAM = {
 			create_pop = {
@@ -484,21 +469,81 @@
 		}
 	}
 
+	## Mozambique
+		# Source is wikipedia, 2007 Census and Guesswork, sorry
 	s:STATE_ZAMBEZIA = {
 		region_state:MOZ = {
 			create_pop = {
 				culture = sena
-				size = 6860000
+				size = 500000
+			}
+			create_pop = {
+				culture = shona
+				size = 2307000
+			}
+			create_pop = {
+				culture = lacustrine_bantu
+				size = 431000
+			}
+			create_pop = {
+				culture = makua
+				size = 2940000
+			}
+			create_pop = {
+				culture = swahili
+				size = 154000
 			}
 		}
-	}
+	} 	
 	s:STATE_LOURENCO_MARQUES = {
 		region_state:MOZ = {
 			create_pop = {
 				culture = nguni
-				size = 4929000
+				size = 1617000
+			}
+			create_pop = {
+				culture = makua
+				size = 1261000
+			}
+			create_pop = {
+				culture = sotho
+				size = 500000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 100000
 			}
 		}
+	}
+	s:STATE_MOCAMBIQUE = {
+		region_state:MOZ = {
+			create_pop = {
+				culture = makua
+				size = 5089656
+			}
+			create_pop = {
+				culture = portuguese
+				size = 90000
+			}	
+			create_pop = {
+				culture = swahili
+				size = 105000
+			}	
+			create_pop = {
+				culture = chewa
+				size = 133000
+			}
+			create_pop = {
+				culture = yao
+				size = 1079000
+			}
+		}
+#		region_state:MLW = {
+#			create_pop = {
+#				culture = makua
+#				size = 4180000
+#			}
+#		}
 	}
 
 	## Zimbabwe
@@ -592,6 +637,7 @@
 				size = 7624000
 			}
 		}
+		# Lesotho
 		region_state:LES = {
 			create_pop = {
 				culture = sotho
@@ -655,6 +701,7 @@
 				size = 1899000
 			}
 		}
+		# Eswatini
 		region_state:SWZ = {
 			create_pop = {
 				culture = sotho
