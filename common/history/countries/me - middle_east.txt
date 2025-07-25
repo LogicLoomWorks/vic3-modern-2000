@@ -1,0 +1,14 @@
+COUNTRIES = {
+	c:ISR ?= { effect_starting_technology_tier_4_tech = yes }
+	c:UAE ?= { effect_starting_technology_tier_4_tech = yes }
+	c:TUR ?= { effect_starting_technology_tier_3_tech = yes }
+	c:IRN ?= { effect_starting_technology_tier_3_tech = yes }
+	c:SAU ?= { effect_starting_technology_tier_3_tech = yes }
+	c:JOR ?= { effect_starting_technology_tier_3_tech = yes }
+	c:OMA ?= { effect_starting_technology_tier_3_tech = yes }
+	c:LEB ?= { effect_starting_technology_tier_3_tech = yes }
+	c:SYR ?= { effect_starting_technology_tier_3_tech = yes }
+	c:IRQ ?= { effect_starting_technology_tier_3_tech = yes }
+	c:YEM ?= { effect_starting_technology_tier_2_tech = yes }
+	c:PAL ?= { effect_starting_technology_tier_2_tech = yes }
+}

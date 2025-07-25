@@ -4,32 +4,37 @@ BUILDINGS={
 	s:STATE_NEJD = {
 		region_state:SAU = {
 			create_building={
-				building="government_administration"
+				building="building_government_administration"
 				add_ownership={
 					building={
-						country="c:SAU"
+						country= c:SAU
 						levels=5
-						region="STATE_NEJD"
+						region = STATE_NEJD
+						type="building_government_administration"
 					}
 				}
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
 			}
 			create_building={
-				building="construction_sector"
+				building="building_construction_sector"
 				add_ownership={
 					building={
 						country="c:SAU"
 						levels=4
-						region="STATE_NEJD"
+						region = "STATE_NEJD"
+						type = "building_construction_sector"
 					}
 				}
+				activate_production_methods = { "pm_steel_frame_buildings" }
 			}
 			create_building={
-				building="trade_center"
+				building="building_trade_center"
 				add_ownership={
-					building={
+				building={
 						country="c:SAU"
-						levels=2
-						region="STATE_NEJD"
+						levels=3
+						region = "STATE_NEJD"
+						type = "building_trade_center"
 					}
 				}
 			}
