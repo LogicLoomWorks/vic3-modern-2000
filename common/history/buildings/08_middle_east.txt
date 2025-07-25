@@ -38,6 +38,28 @@ BUILDINGS={
 					}
 				}
 			}
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+				building={
+						country="c:SAU"
+						levels=3
+						region = "STATE_NEJD"
+						type = "building_shipyards"
+					}
+				}
+			}
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						country="c:SAU"
+						levels=1
+						region = "STATE_NEJD"
+						type = "building_wheat_farm"
+					}
+				}
+			}
 		}
 	}
 		s:STATE_HAIL = {
