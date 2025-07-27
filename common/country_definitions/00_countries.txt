@@ -5566,7 +5566,7 @@ MLW = {
 	tier = kingdom
 	
 	cultures = { chewa lunda lacustrine_bantu kavango_bantu lomwe yao }
-	capital = TATE_KAZEMBE
+	capital = STATE_KAZEMBE
 }
 
 MOZ = {
