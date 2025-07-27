@@ -3,41 +3,61 @@ BUILDINGS={
 	
 	s:STATE_NEJD = {
 		region_state:SAU = {
-			create_building={
+			create_building={ # administrative clergy, telephone switchboards
 				building="building_government_administration"
 				add_ownership={
 					building={
 						country= c:SAU
-						levels=5
+						levels=3
 						region = STATE_NEJD
 						type="building_government_administration"
 					}
 				}
-				activate_production_methods={ "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+				activate_production_methods={
+        			"pm_professional_bureaucrats"
+    			}
 			}
+		
+
 			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					building={
 						country="c:SAU"
-						levels=4
+						levels=3
 						region = "STATE_NEJD"
 						type = "building_construction_sector"
 					}
 				}
-				activate_production_methods = { "pm_steel_frame_buildings" }
+				activate_production_methods={
+					"pm_steel_frame_buildings"
+				}
 			}
-			create_building={
-				building="building_trade_center"
-				add_ownership={
-				building={
-						country="c:SAU"
-						levels=3
-						region = "STATE_NEJD"
+
+			create_building={ #regular trading
+				building = "building_trade_center"
+				add_ownership = {
+					building = {
 						type = "building_trade_center"
+						country = "c:SAU"
+						levels = 3
+						region = STATE_NEJD
 					}
 				}
 			}
+
+			create_building={ #cargo port
+    			building="building_port"
+    			add_ownership={
+        			building={
+            		country="c:SAU"
+            		levels=2
+            		region="STATE_NEJD"
+            		type="building_port"
+        		}
+    		}
+		}	
+			
 			create_building={
 				building="building_shipyards"
 				add_ownership={
@@ -49,7 +69,20 @@ BUILDINGS={
 					}
 				}
 			}
+
 			create_building={
+				building="building_shipyards"
+				add_ownership={
+				building={
+						country="c:SAU"
+						levels=1
+						region = "STATE_NEJD"
+						type = "building_shipyards"
+					}
+				}
+			}
+
+			create_building={ #fertilizers
 				building="building_wheat_farm"
 				add_ownership={
 					building={
@@ -60,8 +93,36 @@ BUILDINGS={
 					}
 				}
 			}
+			create_building={ #fertilizers
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						country="c:SAU"
+						levels=1
+						region = "STATE_NEJD"
+						type = "building_rye_farm"
+					}
+				}
+			}
+
+			create_building={ #clerical educators
+				building="building_university"
+				add_ownership={
+					building={
+						country="c:SAU"
+						levels=1
+						region = "STATE_NEJD"
+						type = "building_university"
+					}
+				}
+				activate_production_methods={
+					"pm_philosophy_department"
+				}
+			}
 		}
 	}
+
+	
 		s:STATE_HAIL = {
 		region_state:SAU = {
 			
