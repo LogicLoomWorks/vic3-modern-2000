@@ -3727,7 +3727,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="ROK"
+						country="c:ROK"
 						levels=2
 					}
 				}

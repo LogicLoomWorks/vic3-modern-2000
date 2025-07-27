@@ -3,8 +3,8 @@
 @fifth = @[1/5]
 @sixth = @[1/6]
 
-@canton_scale_cross_x = @[ ( 333 / 768 ) + 0.001 ]
-@canton_scale_cross_y = @[ ( 205 / 512 ) + 0.001 ]
+@canton_scale_cross_x = @[(333/768) + 0.001 ]
+@canton_scale_cross_y = @[(205/512) + 0.001 ]
 
 @canton_scale_sweden_x = @[ ( 255 / 768 ) + 0.001 ]
 @canton_scale_sweden_y = @[ ( 204 / 512 ) + 0.001 ]
