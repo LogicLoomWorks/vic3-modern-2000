@@ -518,7 +518,7 @@
 		region_state:MKD = {
 			create_pop = {
 				culture = bulgarian
-				size = 2052789
+				size = 2057252
 			}
 		}
 	}
