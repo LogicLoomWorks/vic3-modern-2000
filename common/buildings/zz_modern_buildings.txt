@@ -1,0 +1,178 @@
+﻿# Draft scaffold for vic3-modern-2000
+# Note: adjust building_group schema to your exact vanilla version if required.
+# Note: prompt requested mobile_communications; using mobile_telecommunications as the closest observed key from earlier tech work.
+# Note: if space_systems is absent in your tech tree, substitute the closest available key (likely space_commercialization) and keep the comment.
+
+building_rare_earth_mine = {
+	building_group = bg_modern_mining
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { materials_science }
+	production_method_groups = { pmg_rare_earth_extraction pmg_modern_mining_automation }
+}
+
+building_lithium_mine = {
+	building_group = bg_modern_mining
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { materials_science }
+	production_method_groups = { pmg_lithium_extraction pmg_modern_mining_automation }
+}
+
+building_natural_gas_plant = {
+	building_group = bg_modern_extraction
+	buildable = yes
+	expandable = yes
+	production_method_groups = { pmg_natural_gas_extraction pmg_modern_extraction_automation pmg_fuel_processing_specialization }
+}
+
+building_semiconductor_fab = {
+	building_group = bg_modern_manufacturing
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { microprocessors }
+	production_method_groups = { pmg_semiconductor_fab pmg_modern_factory_automation }
+}
+
+building_electronics_factory = {
+	building_group = bg_modern_manufacturing
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { consumer_electronics }
+	production_method_groups = { pmg_electronics_factory pmg_modern_factory_automation pmg_electronics_specialization }
+}
+
+building_pharmaceutical_lab = {
+	building_group = bg_modern_manufacturing
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { biotech_engineering }
+	# blueprint: genomics biotechnology → biotech_engineering (implemented mod tech)
+	production_method_groups = { pmg_pharmaceutical_lab pmg_knowledge_work_automation }
+}
+
+building_software_studio = {
+	building_group = bg_modern_manufacturing
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { internet_infrastructure }
+	# blueprint: internet_networking → internet_infrastructure
+	production_method_groups = { pmg_software_studio pmg_knowledge_work_automation }
+}
+
+building_telecom_network = {
+	building_group = bg_modern_infrastructure
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { mobile_telecommunications }
+	production_method_groups = { pmg_telecom_network pmg_network_automation }
+}
+
+building_battery_factory = {
+	building_group = bg_modern_manufacturing
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { electric_vehicles }
+	# blueprint: battery_technology → electric_vehicles (nearest implemented mod tech)
+	production_method_groups = { pmg_battery_factory pmg_modern_factory_automation }
+}
+
+building_data_center = {
+	building_group = bg_modern_manufacturing
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { cloud_computing }
+	production_method_groups = { pmg_data_center pmg_network_automation pmg_data_center_specialization }
+}
+
+building_financial_hub = {
+	building_group = bg_modern_manufacturing
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { digital_currency }
+	# blueprint: fintech → digital_currency (nearest implemented mod tech)
+	production_method_groups = { pmg_financial_hub pmg_knowledge_work_automation }
+}
+
+building_media_studio = {
+	building_group = bg_modern_manufacturing
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { social_media }
+	production_method_groups = { pmg_media_studio pmg_knowledge_work_automation }
+}
+
+building_nuclear_power_plant = {
+	building_group = bg_modern_power
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { nuclear_energy }
+	production_method_groups = { pmg_nuclear_generation pmg_power_automation }
+}
+
+building_solar_wind_farm = {
+	building_group = bg_modern_power
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { renewable_energy }
+	production_method_groups = { pmg_renewable_generation pmg_power_automation }
+}
+
+building_guided_munitions_plant = {
+	building_group = bg_modern_military_industry
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { precision_weapons }
+	production_method_groups = { pmg_guided_munitions_plant pmg_military_industry_automation pmg_military_hardware_specialization }
+}
+
+building_cyber_operations_center = {
+	building_group = bg_modern_military
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { artificial_intelligence }
+	# blueprint: cyber_warfare → artificial_intelligence (nearest implemented mod tech)
+	production_method_groups = { pmg_cyber_operations pmg_knowledge_work_automation }
+}
+
+building_intelligence_agency = {
+	building_group = bg_modern_government
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { big_data_analytics }
+	# blueprint: signals_intelligence → big_data_analytics (matches law substitution comment)
+	production_method_groups = { pmg_intelligence_agency pmg_government_digital_automation }
+}
+
+building_space_launch_facility = {
+	building_group = bg_modern_government
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { space_commercialization }
+	# blueprint: space_systems → space_commercialization (matches buildings file comment)
+	production_method_groups = { pmg_space_launch_facility pmg_government_digital_automation pmg_space_program_specialization }
+}
+
+# Prerequisite fix: both buildings below were referenced in scripted triggers
+# (has_nuclear_capability, is_great_power_2000) but were absent from this file.
+
+building_uranium_mine = {
+	# Dedicated uranium extraction; used by has_nuclear_capability to confirm
+	# domestic uranium access for nuclear programs.
+	building_group = bg_modern_mining
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { materials_science }
+	production_method_groups = { pmg_uranium_extraction pmg_modern_mining_automation }
+}
+
+building_military_hardware_factory = {
+	# Large-scale military hardware production; used by is_great_power_2000
+	# to approximate military-industrial capacity.
+	building_group = bg_modern_military_industry
+	buildable = yes
+	expandable = yes
+	unlocking_technologies = { precision_weapons }
+	production_method_groups = { pmg_military_hardware_factory pmg_military_industry_automation }
+}
+

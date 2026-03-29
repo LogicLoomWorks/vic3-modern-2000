@@ -1,0 +1,35 @@
+﻿l_english:
+ # ── Country Modifiers ──────────────────────────────────────────────────────
+ modifier_climate_penalty:0 "Climate Crisis Pressure"
+ modifier_climate_penalty_desc:0 "Extreme weather events, infrastructure strain, and agricultural disruption are imposing compounding costs on the national economy. Construction pipelines slow, tax revenues are disrupted, and institutional capacity is stretched."
+
+ modifier_digital_economy_bonus:0 "Digital Economy Dividend"
+ modifier_digital_economy_bonus_desc:0 "A high density of networked infrastructure and digital services is generating productivity gains across the economy. Tax collection is more efficient, new investment is cheaper to deploy, and institutional capacity benefits from better data and coordination."
+
+ modifier_sanctions_target:0 "Economic Sanctions"
+ modifier_sanctions_target_desc:0 "This country is subject to coordinated economic sanctions. Access to foreign capital and technology is restricted, trade revenues are suppressed, and diplomatic standing is curtailed by the ongoing isolation."
+
+ modifier_sanctions_sender:0 "Sanctions Cost"
+ modifier_sanctions_sender_desc:0 "Maintaining economic sanctions carries a cost: severed trade ties and reduced throughput on blocked routes impose a marginal drag on the sanctioning country's own revenues."
+
+ modifier_nuclear_arsenal:0 "Nuclear Arsenal"
+ modifier_nuclear_arsenal_desc:0 "This country maintains an operational nuclear deterrent. The strategic weight it confers boosts prestige and diplomatic leverage but draws international scrutiny that makes infamy accumulate faster."
+
+ modifier_cyber_attack_victim:0 "Cyber Attack Disruption"
+ modifier_cyber_attack_victim_desc:0 "A targeted cyber attack has disrupted financial networks, government systems, and critical digital infrastructure. Tax collection, construction coordination, and institutional function are all temporarily degraded while systems are restored."
+
+ modifier_green_transition_subsidy:0 "Green Transition Subsidy"
+ modifier_green_transition_subsidy_desc:0 "State investment in the clean energy transition is flowing into the economy. Construction of renewable and sustainable infrastructure is accelerating, research institutions are expanding, and the country is accumulating international prestige as a climate leader."
+
+ modifier_brain_drain:0 "Brain Drain"
+ modifier_brain_drain_desc:0 "Skilled workers and academics are emigrating faster than they can be replaced. Research capacity is contracting, engineering pipelines are thinning, and the bureaucratic state is losing the technical competence it depends on."
+
+ modifier_tech_hub:0 "Technology Hub"
+ modifier_tech_hub_desc:0 "Agglomeration effects from a critical mass of tech sector activity are generating compounding benefits: faster construction of advanced facilities, deeper institutional capacity, stronger diplomatic influence through technology exports, and rising international prestige."
+
+ # ── State Modifiers ────────────────────────────────────────────────────────
+ modifier_special_economic_zone:0 "Special Economic Zone"
+ modifier_special_economic_zone_desc:0 "This region has been designated a Special Economic Zone with preferential regulations, tax treatment, and infrastructure investment. Construction is faster, trade throughput is higher, and the zone draws migrants and investment from across the country."
+
+ modifier_military_base:0 "Military Base"
+ modifier_military_base_desc:0 "A significant military installation anchors this region. Infrastructure investment follows strategic priority, and the presence of military personnel and support industries sustains local population growth."

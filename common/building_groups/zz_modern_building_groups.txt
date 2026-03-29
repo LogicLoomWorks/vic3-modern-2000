@@ -1,0 +1,36 @@
+﻿# Draft scaffold for vic3-modern-2000
+# These groups are intentionally lightweight. Align fields with your vanilla schema if your current patch expects additional parameters.
+
+bg_modern_mining = {
+	parent_group = bg_resource
+	capped_by_resources = yes
+}
+
+bg_modern_extraction = {
+	parent_group = bg_resource
+	capped_by_resources = yes
+}
+
+bg_modern_manufacturing = {
+	parent_group = bg_manufacturing
+}
+
+bg_modern_infrastructure = {
+	parent_group = bg_infrastructure
+}
+
+bg_modern_power = {
+	parent_group = bg_power
+}
+
+bg_modern_military_industry = {
+	parent_group = bg_manufacturing
+}
+
+bg_modern_military = {
+	parent_group = bg_government
+}
+
+bg_modern_government = {
+	parent_group = bg_government
+}

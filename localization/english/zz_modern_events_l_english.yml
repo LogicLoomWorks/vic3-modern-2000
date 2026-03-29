@@ -1,0 +1,175 @@
+﻿ l_english:
+ # ============================================================
+ # EVENT LOCALIZATION
+ # vic3-modern-2000 — Prompt 2.5
+ # Format: event_id.t = title, .d = description, .f = flavor,
+ #         .a/.b/.c = option text
+ # ============================================================
+
+ # ---- nuclear_test_detected.1 ----
+ nuclear_test_detected.1.t:0 "Hour of the Test"
+ nuclear_test_detected.1.d:0 "Our uranium enrichment program has reached sufficient maturity. With reactors operational and domestic uranium stockpiles secured, our scientists say we are ready to detonate. The world watches for the flash."
+ nuclear_test_detected.1.f:0 "The decision cannot be undone."
+ nuclear_test_detected.1.a:0 "Conduct the nuclear test. Let the world take notice."
+ nuclear_test_detected.1.b:0 "Delay — continue preparations under greater secrecy."
+ nuclear_test_detected.1.c:0 "Abort the program. Stand down under international pressure."
+
+ # ---- nuclear_crisis_response.1 ----
+ nuclear_crisis_response.1.t:0 "Nuclear Test Detected"
+ nuclear_crisis_response.1.d:0 "Seismic sensors and satellite imagery confirm it — a foreign power has conducted a nuclear weapons test. The international community expects a response from us as a great power."
+ nuclear_crisis_response.1.f:0 "How we respond will define our strategic posture."
+ nuclear_crisis_response.1.a:0 "Publicly condemn the test and lead a sanctions coalition."
+ nuclear_crisis_response.1.b:0 "Engage the country diplomatically — seek bilateral talks."
+ nuclear_crisis_response.1.c:0 "Accelerate our own military programs in response."
+
+ # ---- nuclear_arms_race.1 ----
+ nuclear_arms_race.1.t:0 "The Arms Race Intensifies"
+ nuclear_arms_race.1.d:0 "Both sides of the rivalry now possess nuclear arsenals, and neither is prepared to blink. Military planners warn that our current posture may be insufficient to deter a first strike."
+ nuclear_arms_race.1.f:0 "The logic of mutual destruction demands constant vigilance — or negotiation."
+ nuclear_arms_race.1.a:0 "Expand military-industrial capacity and modernize the arsenal."
+ nuclear_arms_race.1.b:0 "Propose arms limitation talks with our rival."
+ nuclear_arms_race.1.c:0 "Maintain current posture — strategic patience."
+
+ # ---- nuclear_accident.1 ----
+ nuclear_accident.1.t:0 "Nuclear Incident"
+ nuclear_accident.1.d:0 "A catastrophic malfunction at one of our nuclear power plants has caused a radiation leak. Initial reports are confused, but the scale of the incident is significant. How we respond will define public trust for a generation."
+ nuclear_accident.1.f:0 "The truth will emerge eventually — the question is how."
+ nuclear_accident.1.a:0 "Contain the information — manage the narrative carefully."
+ nuclear_accident.1.b:0 "Issue full public disclosure and commit to a clean-up program."
+ nuclear_accident.1.c:0 "Request international technical assistance."
+
+ # ---- disarmament_talks.1 ----
+ disarmament_talks.1.t:0 "Disarmament Talks"
+ disarmament_talks.1.d:0 "International pressure from our infamy level and the visible nuclear standoff has produced a diplomatic opening. Representatives have arrived to discuss arms reduction. The question is whether we are prepared to make concessions."
+ disarmament_talks.1.f:0 "Nuclear credibility is hard-won and easily surrendered."
+ disarmament_talks.1.a:0 "Agree to an arms reduction treaty — relinquish the arsenal."
+ disarmament_talks.1.b:0 "Maintain deterrence but join a non-proliferation framework."
+ disarmament_talks.1.c:0 "Walk out — we will not be lectured on our sovereign security."
+
+ # ---- cyber_attack_launched.1 ----
+ cyber_attack_launched.1.t:0 "Cyber Operation: Target Identified"
+ cyber_attack_launched.1.d:0 "Our Cyber Operations Center has identified a critical vulnerability in a rival's digital infrastructure. We have a narrow window to act. Command awaits authorization."
+ cyber_attack_launched.1.f:0 "Attribution is deniable — for now."
+ cyber_attack_launched.1.a:0 "Execute the offensive operation."
+ cyber_attack_launched.1.b:0 "Probe systems without committing to a full attack."
+ cyber_attack_launched.1.c:0 "Stand down — maintain a defensive posture."
+
+ # ---- cyber_retaliation.1 ----
+ cyber_retaliation.1.t:0 "Cyber Retaliation"
+ cyber_retaliation.1.d:0 "Our own networks are now under attack. Technical analysis confirms this is a counter-strike following our cyber operation. The attacker has exploited the same classes of vulnerability we used against them."
+ cyber_retaliation.1.f:0 "Escalation has a momentum of its own."
+ cyber_retaliation.1.a:0 "Launch a counter-operation — escalate the cyber conflict."
+ cyber_retaliation.1.b:0 "Absorb the attack and de-escalate through back channels."
+ cyber_retaliation.1.c:0 "Attribute the attack publicly and demand diplomatic reparations."
+
+ # ---- cyber_espionage_discovered.1 ----
+ cyber_espionage_discovered.1.t:0 "Foreign Espionage Discovered"
+ cyber_espionage_discovered.1.d:0 "Our Intelligence Agency has uncovered a sophisticated foreign espionage network operating within our digital infrastructure. Classified data may have been exfiltrated. The source traces back to a known rival."
+ cyber_espionage_discovered.1.f:0 "Every network has vulnerabilities. The question is who finds them first."
+ cyber_espionage_discovered.1.a:0 "Expel agents and harden our digital defenses."
+ cyber_espionage_discovered.1.b:0 "Run a counter-intelligence operation against the network."
+ cyber_espionage_discovered.1.c:0 "Publicize the breach — expose the aggressor internationally."
+
+ # ---- data_breach_scandal.1 ----
+ data_breach_scandal.1.t:0 "Mass Data Breach"
+ data_breach_scandal.1.d:0 "Records from our national data infrastructure have been stolen and are circulating online. Tens of millions of citizens are affected. The breach originated from a misconfigured server cluster and has been known internally for months."
+ data_breach_scandal.1.f:0 "Trust in the digital state has never been more fragile."
+ data_breach_scandal.1.a:0 "Contain the story — manage public messaging."
+ data_breach_scandal.1.b:0 "Full disclosure: release the details and offer remediation."
+ data_breach_scandal.1.c:0 "Introduce comprehensive data protection legislation."
+
+ # ---- climate_summit.1 ----
+ climate_summit.1.t:0 "International Climate Summit"
+ climate_summit.1.d:0 "World leaders have gathered to negotiate binding commitments on emissions reductions and climate financing. Our delegation must stake out a position that balances domestic energy interests with our standing in the international order."
+ climate_summit.1.f:0 "The planet's future is, inconveniently, also a political question."
+ climate_summit.1.a:0 "Commit to ambitious targets and lead with green investment."
+ climate_summit.1.b:0 "Sign the framework agreement — moderate, defensible commitments."
+ climate_summit.1.c:0 "Reject binding commitments — economic growth takes priority."
+
+ # ---- extreme_weather.1 ----
+ extreme_weather.1.t:0 "Extreme Weather Crisis"
+ extreme_weather.1.d:0 "A series of extreme weather events — droughts, floods, and heat waves — has simultaneously struck multiple regions. Agricultural output is disrupted, infrastructure is damaged, and climate scientists are calling it the new normal."
+ extreme_weather.1.f:0 "The climate is sending a bill no government can refuse forever."
+ extreme_weather.1.a:0 "Emergency infrastructure repair program — rebuild resilient systems."
+ extreme_weather.1.b:0 "Emergency relief spending — stabilize the immediate crisis."
+ extreme_weather.1.c:0 "Blame external forces and rally domestic political support."
+
+ # ---- oil_price_shock.1 ----
+ oil_price_shock.1.t:0 "Oil Price Shock"
+ oil_price_shock.1.d:0 "Global oil markets have been disrupted by geopolitical instability in major producing regions. Fuel prices have spiked, industrial costs are rising, and our fossil-dependent economy is absorbing the full impact of the shock."
+ oil_price_shock.1.f:0 "The price of dependency is paid in full."
+ oil_price_shock.1.a:0 "Emergency energy rationing — ride out the shock."
+ oil_price_shock.1.b:0 "Fast-track renewable energy investment as a permanent fix."
+ oil_price_shock.1.c:0 "Secure alternative fossil supply chains regardless of source."
+
+ # ---- renewable_breakthrough.1 ----
+ renewable_breakthrough.1.t:0 "Renewable Energy Breakthrough"
+ renewable_breakthrough.1.d:0 "Our research institutions have achieved a significant improvement in renewable energy technology — dramatically lower costs and higher efficiency than any deployed system. The window to capitalize on this is narrow before rivals replicate the advance."
+ renewable_breakthrough.1.f:0 "First-mover advantage in the energy transition is real — and fleeting."
+ renewable_breakthrough.1.a:0 "Invest heavily — build out the technology at national scale."
+ renewable_breakthrough.1.b:0 "License the technology internationally for prestige and revenue."
+ renewable_breakthrough.1.c:0 "Slow deployment — protect incumbent energy interests."
+
+ # ---- populist_surge.1 ----
+ populist_surge.1.t:0 "Populist Surge"
+ populist_surge.1.d:0 "A wave of nationalist populism is sweeping the country, driven by economic dislocation and distrust of elites. Political parties with authoritarian tendencies are surging in polls, and our democratic institutions are under pressure."
+ populist_surge.1.f:0 "Democracies die in elections as often as in coups."
+ populist_surge.1.a:0 "Engage the movement — co-opt moderate demands."
+ populist_surge.1.b:0 "Reinforce democratic institutions and fund civic resilience."
+ populist_surge.1.c:0 "Ride the wave — embrace populist framing for advantage."
+
+ # ---- tech_backlash.1 ----
+ tech_backlash.1.t:0 "Tech Backlash"
+ tech_backlash.1.d:0 "Public anger at digital surveillance, data monopolies, and algorithmic manipulation has reached a breaking point. Protests, boycotts, and parliamentary investigations are converging on the question of who controls the digital commons."
+ tech_backlash.1.f:0 "Technology giveth, and technology taketh away — trust."
+ tech_backlash.1.a:0 "Introduce digital rights protections and break up monopolies."
+ tech_backlash.1.b:0 "Maintain the surveillance apparatus — stability above freedom."
+ tech_backlash.1.c:0 "Offer regulatory concessions — partial reform."
+
+ # ---- corruption_scandal.1 ----
+ corruption_scandal.1.t:0 "Corruption Scandal"
+ corruption_scandal.1.d:0 "Investigative journalists have published evidence of a major corruption network involving government officials and corporate interests. Public confidence in the state has fallen sharply, and international partners are watching closely."
+ corruption_scandal.1.f:0 "Every system of power generates its own parasites."
+ corruption_scandal.1.a:0 "Independent investigation and prosecutions — full accountability."
+ corruption_scandal.1.b:0 "Suppress the scandal — protect the network."
+ corruption_scandal.1.c:0 "Scapegoat mid-level officials — cosmetic accountability."
+
+ # ---- mass_protest.1 ----
+ mass_protest.1.t:0 "Mass Protest"
+ mass_protest.1.d:0 "Tens of thousands have taken to the streets in the capital and major cities. The protesters demand political reform, economic justice, or an end to a foreign military commitment. The government must decide how to respond."
+ mass_protest.1.f:0 "The street has a voice of its own."
+ mass_protest.1.a:0 "Announce reform concessions — meet the protesters halfway."
+ mass_protest.1.b:0 "Disperse protests by force — restore order immediately."
+ mass_protest.1.c:0 "Open dialogue — establish a consultative reform process."
+
+ # ---- democratic_election_crisis.1 ----
+ democratic_election_crisis.1.t:0 "Election Crisis"
+ democratic_election_crisis.1.d:0 "The outcome of a major election is in dispute. Allegations of irregularities, legal challenges, and street protests have paralyzed the certification process. The constitutional framework is being tested as never before."
+ democratic_election_crisis.1.f:0 "A democracy that cannot certify its own elections is already failing."
+ democratic_election_crisis.1.a:0 "Uphold the results — defend the constitutional process at all costs."
+ democratic_election_crisis.1.b:0 "Delay certification — pursue legal review of disputed counts."
+ democratic_election_crisis.1.c:0 "Consolidate power — suspend normal procedures indefinitely."
+
+ # ---- financial_crisis.1 ----
+ financial_crisis.1.t:0 "Financial Crisis"
+ financial_crisis.1.d:0 "A cascade of bank failures and market collapses has sent shockwaves through our financial sector. Credit markets are seizing, major institutions are illiquid, and economists warn of a depression-level contraction without urgent action."
+ financial_crisis.1.f:0 "Finance is the nervous system of the modern economy — and it is in shock."
+ financial_crisis.1.a:0 "Emergency state bailout — stabilize the financial sector."
+ financial_crisis.1.b:0 "Let insolvent institutions fail — structural reform through crisis."
+ financial_crisis.1.c:0 "Emergency capital controls and international coordination."
+
+ # ---- trade_war_escalation.1 ----
+ trade_war_escalation.1.t:0 "Trade War Escalation"
+ trade_war_escalation.1.d:0 "Retaliatory tariffs and export controls are escalating into a full-scale trade war. Supply chains are fragmenting, and both sides are absorbing real economic costs. A decision point has arrived: escalate, negotiate, or redirect."
+ trade_war_escalation.1.f:0 "Economic wars have no clean victories."
+ trade_war_escalation.1.a:0 "Escalate — broaden sanctions and impose further tariffs."
+ trade_war_escalation.1.b:0 "Negotiate — propose a mutual tariff rollback."
+ trade_war_escalation.1.c:0 "Redirect trade toward alternative partners."
+
+ # ---- tech_boom.1 ----
+ tech_boom.1.t:0 "Technology Boom"
+ tech_boom.1.d:0 "A confluence of breakthroughs in semiconductors, software, and digital services has ignited a technology investment boom. Capital is flooding in from around the world, and our tech sector is growing faster than our institutions can process."
+ tech_boom.1.f:0 "Boom times are the hardest to manage well."
+ tech_boom.1.a:0 "Channel the boom into public digital infrastructure."
+ tech_boom.1.b:0 "Let the private sector lead — minimal state intervention."
+ tech_boom.1.c:0 "Redistribute gains through a sovereign wealth or redistribution fund."

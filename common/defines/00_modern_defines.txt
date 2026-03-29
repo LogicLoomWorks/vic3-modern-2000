@@ -1,0 +1,16 @@
+﻿# vic3-modern-2000: Override core game dates for the year 2000 start.
+#
+# This file is loaded after the vanilla 00_defines.txt, so only keys declared
+# here are overridden — all other NGame values remain at their defaults.
+#
+# Syntax mirrors vanilla: common/defines/00_defines.txt
+#   NGame = {
+#       START_DATE = "1836.1.1"
+#       END_DATE   = "1936.1.1"
+#   }
+
+NGame = {
+	START_DATE                 = "2000.1.1"
+	END_DATE                   = "2036.1.1"
+	DEFAULT_LAW_ACTIVATION_DATE = "2000.1.1"
+}

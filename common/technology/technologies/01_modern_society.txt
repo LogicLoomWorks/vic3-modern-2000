@@ -1,0 +1,425 @@
+﻿### ERA 6 — INFORMATION AGE — Society
+
+globalization = {
+	# The accelerating flow of goods, capital, and people erodes the barriers that once separated national economies
+	# Enables free_trade law enactment; boosts industrialists and diplomatic reach
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/globalization.dds"
+	category = society
+
+	modifier = {
+		country_influence_mult = 0.1
+		country_max_declared_interests_add = 1
+		country_prestige_mult = 0.05
+		ig_industrialists_pol_str_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		internet_infrastructure
+	}
+
+	ai_weight = {
+		value = 2
+
+		if = {
+			limit = {
+				country_rank >= rank_value:major_power
+			}
+			add = 2
+		}
+	}
+}
+
+human_rights_framework = {
+	# International conventions, treaty bodies, and domestic legislation give legal force to universal rights
+	# Enables slavery_banned and protected_speech law enactment; strengthens intelligentsia and trade unions
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/human_rights_framework.dds"
+	category = society
+
+	modifier = {
+		country_legitimacy_base_add = 5
+		country_law_enactment_time_mult = -0.05
+		ig_intelligentsia_pol_str_mult = 0.15
+		ig_trade_unions_pol_str_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		egalitarianism
+	}
+
+	ai_weight = {
+		value = 2
+	}
+}
+
+microfinance = {
+	# Small uncollateralized loans extend credit to entrepreneurs and households previously excluded from formal banking
+	# Enables cooperative_ownership and land_reform law enactment; boosts petty bourgeoisie
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/microfinance.dds"
+	category = society
+
+	modifier = {
+		country_minting_mult = 0.05
+		country_loan_interest_rate_add = -0.01
+		ig_petty_bourgeoisie_pol_str_mult = 0.15
+	}
+
+	unlocking_technologies = {
+		central_banking
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_agrarian_expansion
+					has_strategy = ai_strategy_plantation_economy
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+digital_democracy = {
+	# Online civic platforms lower the cost of political participation and extend government accountability
+	# Enables universal_suffrage and census_voting law enactment; improves education access
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/digital_democracy.dds"
+	category = society
+
+	modifier = {
+		country_authority_mult = 0.05
+		state_education_access_add = 0.05
+		country_legitimacy_base_add = 3
+		ig_intelligentsia_pol_str_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		internet_infrastructure
+		human_rights_framework
+	}
+
+	ai_weight = {
+		value = 2
+	}
+}
+
+environmental_regulation = {
+	# Statutory limits on emissions, protected area designations, and environmental impact assessments give legal teeth to conservation
+	# Enables pollution_cap and environmental_protection law enactment
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/environmental_regulation.dds"
+	category = society
+
+	modifier = {
+		ig_intelligentsia_pol_str_mult = 0.1
+		ig_landowners_pol_str_mult = -0.05
+		ig_industrialists_pol_str_mult = -0.05
+	}
+
+	unlocking_technologies = {
+		empiricism
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+### ERA 7 — DIGITAL AGE — Society
+
+social_media = {
+	# Platforms connecting billions of users reshape public opinion, organize movements, and redefine political communication
+	# Amplifies political movements; boosts intelligentsia and petty bourgeoisie as drivers of public discourse
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/social_media.dds"
+	category = society
+
+	modifier = {
+		country_authority_mult = 0.05
+		ig_intelligentsia_pol_str_mult = 0.1
+		ig_petty_bourgeoisie_pol_str_mult = 0.1
+		country_legitimacy_base_add = 3
+	}
+
+	unlocking_technologies = {
+		mobile_telecommunications
+		globalization
+	}
+
+	ai_weight = {
+		value = 2
+	}
+}
+
+big_data_analytics = {
+	# Collecting and processing vast behavioral datasets gives governments and corporations unprecedented insight into populations
+	# Enables bureaucratic_efficiency and surveillance_state law enactment; accelerates all law passage
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/big_data_analytics.dds"
+	category = society
+
+	modifier = {
+		country_authority_mult = 0.1
+		country_bureaucracy_mult = 0.1
+		country_law_enactment_time_mult = -0.1
+	}
+
+	unlocking_technologies = {
+		cloud_computing
+		digital_democracy
+	}
+
+	ai_weight = {
+		value = 2
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_industrial_expansion
+			}
+			add = 1
+		}
+	}
+}
+
+international_criminal_court = {
+	# A permanent tribunal with jurisdiction over genocide, crimes against humanity, and war crimes institutionalizes accountability at the global scale
+	# Enables war_crimes_tribunal diplomatic actions; boosts prestige and diplomatic reach of compliant powers
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/international_criminal_court.dds"
+	category = society
+
+	modifier = {
+		country_prestige_mult = 0.1
+		country_influence_mult = 0.1
+		country_max_declared_interests_add = 1
+		ig_intelligentsia_pol_str_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		human_rights_framework
+		globalization
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				country_rank >= rank_value:major_power
+			}
+			add = 2
+		}
+	}
+}
+
+climate_science = {
+	# Atmospheric modeling, satellite observation, and coordinated international research programs build a rigorous empirical foundation for climate policy
+	# Enables emissions_target and carbon_tax law enactment; strengthens intelligentsia as policy drivers
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/climate_science.dds"
+	category = society
+
+	modifier = {
+		state_harvest_condition_flood_impact_mult = -0.1
+		state_harvest_condition_disease_outbreak_impact_mult = -0.1
+		ig_intelligentsia_pol_str_mult = 0.15
+	}
+
+	unlocking_technologies = {
+		environmental_regulation
+		renewable_energy
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+sovereign_wealth_funds = {
+	# State-owned investment vehicles channel commodity revenues and trade surpluses into diversified global asset portfolios
+	# Enables state_investment_fund and resource_nationalization law enactment
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/sovereign_wealth_funds.dds"
+	category = society
+
+	modifier = {
+		country_minting_mult = 0.1
+		country_loan_interest_rate_add = -0.02
+		country_max_weekly_construction_progress_add = 5
+		ig_industrialists_pol_str_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		microfinance
+		globalization
+	}
+
+	ai_weight = {
+		value = 2
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_resource_expansion
+			}
+			add = 2
+		}
+	}
+}
+
+### ERA 8 — NEAR FUTURE — Society
+
+universal_basic_income = {
+	# An unconditional floor payment to every citizen decouples subsistence from employment and reorders labor market incentives
+	# Enables ubi_policy law enactment; shifts power from organized labor toward rural folk and petty bourgeoisie
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/universal_basic_income.dds"
+	category = society
+
+	modifier = {
+		country_legitimacy_base_add = 10
+		ig_rural_folk_pol_str_mult = 0.15
+		ig_petty_bourgeoisie_pol_str_mult = 0.1
+		ig_trade_unions_pol_str_mult = -0.1
+	}
+
+	unlocking_technologies = {
+		social_media
+		big_data_analytics
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_agrarian_expansion
+					has_strategy = ai_strategy_plantation_economy
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+digital_currency = {
+	# Central bank digital currencies and blockchain tokens disintermediate traditional banking and give states direct monetary transmission tools
+	# Enables digital_legal_tender law enactment; strengthens industrialists and petty bourgeoisie as early adopters
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/digital_currency.dds"
+	category = society
+
+	modifier = {
+		country_minting_mult = 0.15
+		country_loan_interest_rate_add = -0.03
+		ig_industrialists_pol_str_mult = 0.1
+		ig_petty_bourgeoisie_pol_str_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		big_data_analytics
+		sovereign_wealth_funds
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_industrial_expansion
+			}
+			add = 1
+		}
+	}
+}
+
+ai_governance = {
+	# Regulatory frameworks for algorithmic decision-making, data rights, and autonomous systems define who controls the digital economy
+	# Enables ai_regulation and data_sovereignty law enactment; empowers intelligentsia as the expert class in AI policy
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/ai_governance.dds"
+	category = society
+
+	modifier = {
+		country_authority_mult = 0.1
+		country_bureaucracy_mult = 0.15
+		country_law_enactment_time_mult = -0.1
+		ig_intelligentsia_pol_str_mult = 0.15
+	}
+
+	unlocking_technologies = {
+		artificial_intelligence
+		big_data_analytics
+	}
+
+	ai_weight = {
+		value = 2
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_industrial_expansion
+			}
+			add = 1
+		}
+	}
+}
+
+carbon_neutral_economy = {
+	# Mandatory net-zero targets, carbon pricing mechanisms, and green industrial policy redirect the entire productive base toward emissions elimination
+	# Enables carbon_neutrality_commitment and green_new_deal law enactment
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/carbon_neutral_economy.dds"
+	category = society
+
+	modifier = {
+		state_harvest_condition_flood_impact_mult = -0.2
+		ig_industrialists_pol_str_mult = -0.1
+		ig_intelligentsia_pol_str_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		climate_science
+		carbon_capture
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+space_law = {
+	# Treaties on orbital debris, resource extraction rights, and jurisdiction above the Kármán line begin to regulate humanity's extraterrestrial future
+	# Enables space_resource_rights diplomatic action; major powers gain expanded sphere of influence in orbit
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/space_law.dds"
+	category = society
+
+	modifier = {
+		country_prestige_mult = 0.15
+		country_influence_mult = 0.15
+		country_max_declared_interests_add = 2
+		ig_armed_forces_pol_str_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		space_commercialization
+		international_criminal_court
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				country_rank >= rank_value:major_power
+			}
+			add = 2
+		}
+	}
+}

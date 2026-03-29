@@ -1,0 +1,24 @@
+﻿l_english:
+ ideology_neoliberal:0 "Neoliberal"
+ ideology_neoliberal_desc:0 "Competitive markets, open trade, and minimal state intervention are the most reliable path to prosperity. The state should enforce contracts and property rights, then get out of the way. Public provision of services should give way to private provision where efficiency can be demonstrated. Free trade lifts all boats; comparative advantage should determine specialization. Individual liberty is the supreme political value."
+
+ ideology_social_democratic:0 "Social Democratic"
+ ideology_social_democratic_desc:0 "Capitalism is acceptable as an engine of growth but requires democratic regulation to distribute its gains fairly and cushion its disruptions. Universal healthcare, robust welfare, workers' rights, and strong public institutions are not luxuries but preconditions for a stable and dignified society. Markets serve the public; the public does not serve markets."
+
+ ideology_nationalist_populist:0 "Nationalist Populist"
+ ideology_nationalist_populist_desc:0 "The nation is a real community with a distinct culture, history, and interest that international institutions and global markets routinely subordinate to the preferences of cosmopolitan elites. Trade policy should protect workers, not shareholders. Borders should protect citizens, not facilitate the movement of cheap labor. The state should be strong, the culture should be preserved, and the people who built the country should be its first priority."
+
+ ideology_green_progressive:0 "Green Progressive"
+ ideology_green_progressive_desc:0 "The ecological crisis is also a crisis of inequality, and the two cannot be addressed separately. A just transition to a carbon-neutral economy must be accompanied by universal basic income, open borders, and the dismantling of the military-industrial complex. The old politics of growth has exhausted its future; a new politics of sufficiency, solidarity, and planetary limits must replace it."
+
+ ideology_technocratic:0 "Technocratic"
+ ideology_technocratic_desc:0 "Complex modern problems require expert analysis, not popular sentiment. Evidence-based policymaking, long-term strategic planning, and the insulation of key decisions from electoral short-termism produce better outcomes than any ideology. The state should regulate data, invest in technology, maintain credible deterrence, and manage migration to optimize human capital — all without excessive deference to any ideological orthodoxy."
+
+ ideology_religious_conservative:0 "Religious Conservative"
+ ideology_religious_conservative_desc:0 "Faith provides the moral foundation without which no political order can be legitimate. The family, the community, and the church are the primary institutions of human life; the state should support rather than supplant them. Traditional values are not prejudices to be overcome but accumulated wisdom to be honored. A society that loses its spiritual center has nothing left but appetites."
+
+ ideology_authoritarian_statist:0 "Authoritarian Statist"
+ ideology_authoritarian_statist_desc:0 "A strong, centralized state is the precondition for national survival in a competitive and dangerous world. Civil society, the press, and foreign-aligned capital must be subordinated to national security. Economic autarky reduces vulnerability to foreign pressure. The citizen's primary obligation is to the collective; rights that undermine social order are indulgences the state cannot afford."
+
+ ideology_libertarian:0 "Libertarian"
+ ideology_libertarian_desc:0 "Every person is sovereign over their own life. The state has no legitimate authority to conscript, surveil, restrict movement, mandate healthcare, or regulate speech. Free markets and voluntary association produce order more efficiently and justly than any government program. The minimal state that secures property rights and national defense, and otherwise stands aside, is the only state consistent with human dignity."

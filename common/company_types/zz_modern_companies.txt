@@ -1,0 +1,284 @@
+﻿company_tech_giant = {
+    icon = "gfx/interface/icons/company_icons/company_tech_giant.dds"
+
+    building_types = {
+        building_software_studio
+        building_electronics_factory
+        building_data_center
+    }
+
+    potential = {
+        has_technology_researched = internet_infrastructure
+    }
+
+    possible = {
+        has_technology_researched = cloud_computing
+        any_scope_state = {
+            OR = {
+                has_building = building_software_studio
+                has_building = building_data_center
+            }
+        }
+    }
+
+    prosperity_modifier = {
+        building_throughput_add = 0.05
+        building_employment_engineers_add = 500
+        building_employment_academics_add = 250
+    }
+
+    ai_will_do = {
+        value = 1
+        if = {
+            limit = {
+                has_technology_researched = artificial_intelligence
+            }
+            add = 2
+        }
+    }
+}
+
+company_energy_corp = {
+    icon = "gfx/interface/icons/company_icons/company_energy_corp.dds"
+
+    building_types = {
+        building_natural_gas_plant
+        building_nuclear_power_plant
+        building_solar_wind_farm
+        building_uranium_mine
+    }
+
+    potential = {
+        has_technology_researched = advanced_petrochemicals
+    }
+
+    possible = {
+        any_scope_state = {
+            OR = {
+                has_building = building_natural_gas_plant
+                has_building = building_nuclear_power_plant
+                has_building = building_solar_wind_farm
+            }
+        }
+    }
+
+    prosperity_modifier = {
+        building_throughput_add = 0.05
+        building_employment_engineers_add = 300
+    }
+
+    ai_will_do = {
+        value = 1
+        if = {
+            limit = {
+                has_technology_researched = renewable_energy
+            }
+            add = 1
+        }
+        if = {
+            limit = {
+                has_law = law_green_mandate
+            }
+            add = 1
+        }
+    }
+}
+
+company_pharma_corp = {
+    icon = "gfx/interface/icons/company_icons/company_pharma_corp.dds"
+
+    building_types = {
+        building_pharmaceutical_lab
+    }
+
+    potential = {
+        has_technology_researched = biotech_engineering
+    }
+
+    possible = {
+        any_scope_state = {
+            has_building = building_pharmaceutical_lab
+        }
+    }
+
+    prosperity_modifier = {
+        building_throughput_add = 0.08
+        building_employment_academics_add = 400
+        building_employment_engineers_add = 200
+    }
+
+    ai_will_do = {
+        value = 1
+        if = {
+            limit = {
+                has_law = law_universal_healthcare
+            }
+            add = 2
+        }
+        if = {
+            limit = {
+                has_law = law_hybrid_healthcare
+            }
+            add = 1
+        }
+    }
+}
+
+company_defense_contractor = {
+    icon = "gfx/interface/icons/company_icons/company_defense_contractor.dds"
+
+    building_types = {
+        building_guided_munitions_plant
+        building_military_hardware_factory
+    }
+
+    potential = {
+        has_technology_researched = gps_navigation
+    }
+
+    possible = {
+        any_scope_state = {
+            OR = {
+                has_building = building_guided_munitions_plant
+                has_building = building_military_hardware_factory
+            }
+        }
+    }
+
+    prosperity_modifier = {
+        building_throughput_add = 0.05
+        building_employment_engineers_add = 400
+        building_employment_machinists_add = 600
+    }
+
+    ai_will_do = {
+        value = 1
+        if = {
+            limit = {
+                has_law = law_professional_military
+            }
+            add = 1
+        }
+        if = {
+            limit = {
+                has_law = law_tech_centric_force
+            }
+            add = 2
+        }
+    }
+}
+
+company_financial_conglomerate = {
+    icon = "gfx/interface/icons/company_icons/company_financial_conglomerate.dds"
+
+    building_types = {
+        building_financial_hub
+    }
+
+    potential = {
+        has_technology_researched = globalization
+    }
+
+    possible = {
+        any_scope_state = {
+            has_building = building_financial_hub
+        }
+    }
+
+    prosperity_modifier = {
+        building_throughput_add = 0.06
+        building_employment_clerks_add = 800
+        building_employment_academics_add = 300
+    }
+
+    ai_will_do = {
+        value = 1
+        if = {
+            limit = {
+                has_law = law_free_trade
+            }
+            add = 2
+        }
+        if = {
+            limit = {
+                has_technology_researched = sovereign_wealth_funds
+            }
+            add = 1
+        }
+    }
+}
+
+company_telecom_provider = {
+    icon = "gfx/interface/icons/company_icons/company_telecom_provider.dds"
+
+    building_types = {
+        building_telecom_network
+    }
+
+    potential = {
+        has_technology_researched = mobile_telecommunications
+    }
+
+    possible = {
+        any_scope_state = {
+            has_building = building_telecom_network
+        }
+    }
+
+    prosperity_modifier = {
+        building_throughput_add = 0.05
+        building_employment_engineers_add = 350
+        building_employment_clerks_add = 500
+    }
+
+    ai_will_do = {
+        value = 1
+        if = {
+            limit = {
+                has_technology_researched = fiber_optics
+            }
+            add = 1
+        }
+    }
+}
+
+company_media_conglomerate = {
+    icon = "gfx/interface/icons/company_icons/company_media_conglomerate.dds"
+
+    building_types = {
+        building_media_studio
+    }
+
+    potential = {
+        has_technology_researched = internet_infrastructure
+    }
+
+    possible = {
+        any_scope_state = {
+            has_building = building_media_studio
+        }
+        NOT = { has_law = law_state_controlled_media }
+    }
+
+    prosperity_modifier = {
+        building_throughput_add = 0.06
+        building_employment_clerks_add = 400
+        building_employment_academics_add = 200
+    }
+
+    ai_will_do = {
+        value = 1
+        if = {
+            limit = {
+                has_law = law_unregulated_media
+            }
+            add = 2
+        }
+        if = {
+            limit = {
+                has_technology_researched = social_media
+            }
+            add = 1
+        }
+    }
+}

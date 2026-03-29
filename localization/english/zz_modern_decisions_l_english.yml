@@ -1,0 +1,44 @@
+﻿ l_english:
+ # ============================================================
+ # DECISION TITLES AND DESCRIPTIONS
+ # vic3-modern-2000 — Prompt 2.5
+ # ============================================================
+
+ # --- decision_establish_special_economic_zone ---
+ decision_establish_special_economic_zone:0 "Establish Special Economic Zone"
+ decision_establish_special_economic_zone_desc:0 "Designate a state as a Special Economic Zone, offering streamlined regulations, trade incentives, and infrastructure investment. Requires free trade or strategic decoupling policy and §Y500§! treasury."
+ decision_establish_special_economic_zone_effects_desc:0 "A domestic state gains the Special Economic Zone modifier for 10 years, boosting construction efficiency, trade throughput, and migration pull."
+
+ # --- decision_launch_space_program ---
+ decision_launch_space_program:0 "Launch National Space Program"
+ decision_launch_space_program_desc:0 "Commit the nation's scientific and industrial capacity to a dedicated space launch program. Requires an operational Space Launch Facility and §Y1000§! treasury representing electronics, refined fuel, and steel expenditure."
+ decision_launch_space_program_effects_desc:0 "Grants substantial prestige and a five-year Tech Hub modifier as space investment attracts talent and signals technological capability."
+
+ # --- decision_cyber_offensive ---
+ decision_cyber_offensive:0 "Launch Cyber Offensive"
+ decision_cyber_offensive_desc:0 "Direct our Cyber Operations Center to execute an offensive operation against a rival's digital infrastructure. Requires an operational Cyber Operations Center and at least one rival country."
+ decision_cyber_offensive_effects_desc:0 "Applies the Cyber Attack Victim modifier to a rival for 12 months, disrupting their financial and institutional efficiency. Triggers the cyber attack event chain."
+
+ # --- decision_impose_sanctions ---
+ decision_impose_sanctions:0 "Impose Economic Sanctions"
+ decision_impose_sanctions_desc:0 "As a great power, we can leverage our economic weight to impose targeted sanctions on a rival country, restricting their trade and finances. Requires great-power status and at least one recognized rival."
+ decision_impose_sanctions_effects_desc:0 "Applies Sanctions Target modifier to a rival for 3 years and Sanctions Sender modifier to ourselves. Triggers the trade war escalation event chain."
+
+ # --- decision_offer_development_aid ---
+ decision_offer_development_aid:0 "Offer Development Aid"
+ decision_offer_development_aid_desc:0 "Provide economic development assistance to a neighboring or subject country, supplying resources approximating electronics and pharmaceutical goods. Requires §Y300§! treasury and at least one eligible recipient."
+ decision_offer_development_aid_effects_desc:0 "Grants prestige from humanitarian leadership and applies a development modifier to the recipient, improving their construction efficiency and institutional capacity."
+
+ # --- decision_military_intervention ---
+ decision_military_intervention:0 "Authorize Military Intervention"
+ decision_military_intervention_desc:0 "Authorize a military intervention commitment, deploying professional or tech-centric forces into a forward operating posture. Requires a professional or technology-centric military doctrine, great-power status, domestic military hardware production, and §Y500§! treasury."
+ decision_military_intervention_effects_desc:0 "Applies a Military Base modifier to a domestic production state for 5 years and generates infamy from the intervention commitment. Actual war prosecution proceeds through the standard diplomatic system."
+
+ # ============================================================
+ # DIPLOMATIC PLAY APPROXIMATION NOTE (displayed in mod notes)
+ # ============================================================
+
+ # Note: diplomatic_play_military_intervention and
+ # diplomatic_play_sanctions_enforcement are implemented as decisions
+ # + events + modifiers rather than native diplomatic_play files.
+ # See Prompt 2.5 implementation report for full rationale.

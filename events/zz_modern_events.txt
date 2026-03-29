@@ -1,0 +1,936 @@
+﻿namespace = nuclear_test_detected
+
+nuclear_test_detected.1 = {
+	type = country_event
+
+	title = nuclear_test_detected.1.t
+	desc = nuclear_test_detected.1.d
+	flavor = nuclear_test_detected.1.f
+
+	trigger = {
+		has_law = law_nuclear_proliferation
+		any_scope_state = {
+			has_building = building_uranium_mine
+		}
+		any_scope_state = {
+			has_building = building_nuclear_power_plant
+		}
+		NOT = { has_modifier = modifier_nuclear_arsenal }
+	}
+
+	option = {
+		name = nuclear_test_detected.1.a
+		effect_nuclear_test = yes
+		every_country = {
+			limit = {
+				country_rank >= rank_value:major_power
+				NOT = { THIS = ROOT }
+			}
+			trigger_event = { id = nuclear_crisis_response.1 }
+		}
+	}
+
+	option = {
+		name = nuclear_test_detected.1.b
+		change_prestige = -5
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 6
+		}
+	}
+
+	option = {
+		name = nuclear_test_detected.1.c
+		change_prestige = -15
+		change_infamy = -5
+	}
+}
+
+namespace = nuclear_crisis_response
+
+nuclear_crisis_response.1 = {
+	type = country_event
+
+	title = nuclear_crisis_response.1.t
+	desc = nuclear_crisis_response.1.d
+	flavor = nuclear_crisis_response.1.f
+
+	option = {
+		name = nuclear_crisis_response.1.a
+		change_prestige = 10
+		change_infamy = 5
+		add_modifier = {
+			name = modifier_sanctions_sender
+			months = 24
+		}
+	}
+
+	option = {
+		name = nuclear_crisis_response.1.b
+		change_prestige = 5
+		change_infamy = 2
+	}
+
+	option = {
+		name = nuclear_crisis_response.1.c
+		change_prestige = -5
+		change_infamy = 8
+		add_modifier = {
+			name = modifier_military_base
+			months = 36
+		}
+		trigger_event = { id = nuclear_arms_race.1 }
+	}
+}
+
+namespace = nuclear_arms_race
+
+nuclear_arms_race.1 = {
+	type = country_event
+
+	title = nuclear_arms_race.1.t
+	desc = nuclear_arms_race.1.d
+	flavor = nuclear_arms_race.1.f
+
+	trigger = {
+		is_great_power_2000 = yes
+		has_modifier = modifier_nuclear_arsenal
+		any_rival_country = {
+			has_modifier = modifier_nuclear_arsenal
+		}
+	}
+
+	option = {
+		name = nuclear_arms_race.1.a
+		change_infamy = 10
+		change_prestige = 15
+		add_modifier = {
+			name = modifier_military_base
+			years = 5
+		}
+		add_treasury = -300
+	}
+
+	option = {
+		name = nuclear_arms_race.1.b
+		change_prestige = 20
+		change_infamy = -5
+		trigger_event = { id = disarmament_talks.1 }
+	}
+
+	option = {
+		name = nuclear_arms_race.1.c
+		change_prestige = -5
+	}
+}
+
+namespace = nuclear_accident
+
+nuclear_accident.1 = {
+	type = country_event
+
+	title = nuclear_accident.1.t
+	desc = nuclear_accident.1.d
+	flavor = nuclear_accident.1.f
+
+	trigger = {
+		any_scope_state = {
+			has_building = building_nuclear_power_plant
+		}
+		OR = {
+			has_law = law_nuclear_deterrence
+			has_law = law_nuclear_proliferation
+		}
+	}
+
+	option = {
+		name = nuclear_accident.1.a
+		change_infamy = 15
+		add_modifier = {
+			name = modifier_climate_penalty
+			months = 36
+		}
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 24
+		}
+	}
+
+	option = {
+		name = nuclear_accident.1.b
+		change_prestige = -10
+		add_treasury = -400
+		add_modifier = {
+			name = modifier_climate_penalty
+			months = 18
+		}
+		change_infamy = -5
+	}
+
+	option = {
+		name = nuclear_accident.1.c
+		change_prestige = 5
+		change_infamy = -5
+		add_modifier = {
+			name = modifier_green_transition_subsidy
+			months = 12
+		}
+	}
+}
+
+namespace = disarmament_talks
+
+disarmament_talks.1 = {
+	type = country_event
+
+	title = disarmament_talks.1.t
+	desc = disarmament_talks.1.d
+	flavor = disarmament_talks.1.f
+
+	trigger = {
+		is_great_power_2000 = yes
+		has_modifier = modifier_nuclear_arsenal
+		infamy >= 20
+	}
+
+	option = {
+		name = disarmament_talks.1.a
+		remove_modifier = modifier_nuclear_arsenal
+		change_prestige = 15
+		change_infamy = -20
+	}
+
+	option = {
+		name = disarmament_talks.1.b
+		change_prestige = 5
+		change_infamy = -10
+	}
+
+	option = {
+		name = disarmament_talks.1.c
+		change_prestige = -10
+		change_infamy = 10
+		add_modifier = {
+			name = modifier_nuclear_arsenal
+			years = 10
+		}
+	}
+}
+
+namespace = cyber_attack_launched
+
+cyber_attack_launched.1 = {
+	type = country_event
+
+	title = cyber_attack_launched.1.t
+	desc = cyber_attack_launched.1.d
+	flavor = cyber_attack_launched.1.f
+
+	trigger = {
+		any_scope_state = {
+			has_building = building_cyber_operations_center
+		}
+		any_rival_country = {
+			always = yes
+		}
+	}
+
+	option = {
+		name = cyber_attack_launched.1.a
+		random_rival_country = {
+			limit = { always = yes }
+			add_modifier = {
+				name = modifier_cyber_attack_victim
+				months = 12
+			}
+		}
+		change_prestige = 10
+		change_infamy = 5
+		trigger_event = { id = cyber_retaliation.1 }
+	}
+
+	option = {
+		name = cyber_attack_launched.1.b
+		change_prestige = 5
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 12
+		}
+	}
+
+	option = {
+		name = cyber_attack_launched.1.c
+		change_prestige = 5
+		change_infamy = -3
+	}
+}
+
+namespace = cyber_retaliation
+
+cyber_retaliation.1 = {
+	type = country_event
+
+	title = cyber_retaliation.1.t
+	desc = cyber_retaliation.1.d
+	flavor = cyber_retaliation.1.f
+
+	option = {
+		name = cyber_retaliation.1.a
+		add_modifier = {
+			name = modifier_cyber_attack_victim
+			months = 6
+		}
+		change_prestige = 5
+		change_infamy = 8
+	}
+
+	option = {
+		name = cyber_retaliation.1.b
+		change_prestige = -5
+		change_infamy = -5
+	}
+
+	option = {
+		name = cyber_retaliation.1.c
+		change_prestige = 10
+		change_infamy = 5
+		add_modifier = {
+			name = modifier_sanctions_sender
+			months = 12
+		}
+	}
+}
+
+namespace = cyber_espionage_discovered
+
+cyber_espionage_discovered.1 = {
+	type = country_event
+
+	title = cyber_espionage_discovered.1.t
+	desc = cyber_espionage_discovered.1.d
+	flavor = cyber_espionage_discovered.1.f
+
+	trigger = {
+		any_scope_state = {
+			has_building = building_intelligence_agency
+		}
+		any_rival_country = {
+			any_scope_state = {
+				has_building = building_cyber_operations_center
+			}
+		}
+	}
+
+	option = {
+		name = cyber_espionage_discovered.1.a
+		change_prestige = 10
+		change_infamy = 5
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 18
+		}
+	}
+
+	option = {
+		name = cyber_espionage_discovered.1.b
+		change_prestige = 5
+	}
+
+	option = {
+		name = cyber_espionage_discovered.1.c
+		change_prestige = 15
+		change_infamy = 8
+		random_rival_country = {
+			limit = {
+				any_scope_state = {
+					has_building = building_cyber_operations_center
+				}
+			}
+			add_modifier = {
+				name = modifier_sanctions_target
+				months = 18
+			}
+		}
+	}
+}
+
+namespace = data_breach_scandal
+
+data_breach_scandal.1 = {
+	type = country_event
+
+	title = data_breach_scandal.1.t
+	desc = data_breach_scandal.1.d
+	flavor = data_breach_scandal.1.f
+
+	trigger = {
+		is_tech_leader = yes
+		any_scope_state = {
+			has_building = building_data_center
+		}
+	}
+
+	option = {
+		name = data_breach_scandal.1.a
+		change_infamy = 10
+		change_prestige = -5
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 18
+		}
+	}
+
+	option = {
+		name = data_breach_scandal.1.b
+		change_prestige = -10
+		change_infamy = -5
+		add_treasury = -200
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 24
+		}
+	}
+
+	option = {
+		name = data_breach_scandal.1.c
+		change_prestige = 10
+		add_treasury = -300
+		add_modifier = {
+			name = modifier_tech_hub
+			months = 24
+		}
+	}
+}
+
+namespace = climate_summit
+
+climate_summit.1 = {
+	type = country_event
+
+	title = climate_summit.1.t
+	desc = climate_summit.1.d
+	flavor = climate_summit.1.f
+
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = climate_summit.1.a
+		change_prestige = 20
+		add_modifier = {
+			name = modifier_green_transition_subsidy
+			years = 3
+		}
+		add_treasury = -200
+	}
+
+	option = {
+		name = climate_summit.1.b
+		change_prestige = 10
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 12
+		}
+	}
+
+	option = {
+		name = climate_summit.1.c
+		change_prestige = -10
+		change_infamy = 5
+		add_treasury = 100
+	}
+}
+
+namespace = extreme_weather
+
+extreme_weather.1 = {
+	type = country_event
+
+	title = extreme_weather.1.t
+	desc = extreme_weather.1.d
+	flavor = extreme_weather.1.f
+
+	trigger = {
+		always = yes
+	}
+
+	immediate = {
+		effect_climate_crisis_tick = yes
+	}
+
+	option = {
+		name = extreme_weather.1.a
+		add_treasury = -300
+		remove_modifier = modifier_climate_penalty
+		add_modifier = {
+			name = modifier_green_transition_subsidy
+			months = 12
+		}
+	}
+
+	option = {
+		name = extreme_weather.1.b
+		add_treasury = -150
+		change_prestige = 5
+	}
+
+	option = {
+		name = extreme_weather.1.c
+		change_prestige = -5
+		change_infamy = 5
+	}
+}
+
+namespace = oil_price_shock
+
+oil_price_shock.1 = {
+	type = country_event
+
+	title = oil_price_shock.1.t
+	desc = oil_price_shock.1.d
+	flavor = oil_price_shock.1.f
+
+	trigger = {
+		is_fossil_dependent = yes
+	}
+
+	option = {
+		name = oil_price_shock.1.a
+		add_treasury = -200
+		change_prestige = -5
+		add_modifier = {
+			name = modifier_climate_penalty
+			months = 24
+		}
+	}
+
+	option = {
+		name = oil_price_shock.1.b
+		add_treasury = -400
+		change_prestige = 10
+		add_modifier = {
+			name = modifier_green_transition_subsidy
+			years = 3
+		}
+	}
+
+	option = {
+		name = oil_price_shock.1.c
+		add_treasury = -150
+		change_infamy = 5
+		add_modifier = {
+			name = modifier_sanctions_sender
+			months = 18
+		}
+	}
+}
+
+namespace = renewable_breakthrough
+
+renewable_breakthrough.1 = {
+	type = country_event
+
+	title = renewable_breakthrough.1.t
+	desc = renewable_breakthrough.1.d
+	flavor = renewable_breakthrough.1.f
+
+	trigger = {
+		has_technology_researched = renewable_energy
+		OR = {
+			has_law = law_mixed_transition
+			has_law = law_green_mandate
+		}
+	}
+
+	option = {
+		name = renewable_breakthrough.1.a
+		change_prestige = 20
+		add_treasury = -300
+		add_modifier = {
+			name = modifier_green_transition_subsidy
+			years = 5
+		}
+	}
+
+	option = {
+		name = renewable_breakthrough.1.b
+		change_prestige = 30
+		add_treasury = 100
+		add_modifier = {
+			name = modifier_tech_hub
+			years = 2
+		}
+	}
+
+	option = {
+		name = renewable_breakthrough.1.c
+		change_prestige = -10
+		add_treasury = 50
+		add_modifier = {
+			name = modifier_climate_penalty
+			months = 18
+		}
+	}
+}
+
+namespace = populist_surge
+
+populist_surge.1 = {
+	type = country_event
+
+	title = populist_surge.1.t
+	desc = populist_surge.1.d
+	flavor = populist_surge.1.f
+
+	trigger = {
+		is_modern_democracy = yes
+		OR = {
+			has_modifier = modifier_brain_drain
+			has_modifier = modifier_sanctions_target
+			has_modifier = modifier_climate_penalty
+		}
+	}
+
+	option = {
+		name = populist_surge.1.a
+		change_prestige = -5
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 12
+		}
+	}
+
+	option = {
+		name = populist_surge.1.b
+		change_prestige = 15
+		add_treasury = -150
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 18
+		}
+	}
+
+	option = {
+		name = populist_surge.1.c
+		change_prestige = 5
+		change_infamy = 8
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 24
+		}
+	}
+}
+
+namespace = tech_backlash
+
+tech_backlash.1 = {
+	type = country_event
+
+	title = tech_backlash.1.t
+	desc = tech_backlash.1.d
+	flavor = tech_backlash.1.f
+
+	trigger = {
+		is_tech_leader = yes
+		OR = {
+			has_law = law_surveillance_state
+			NOT = { has_law = law_digital_freedom }
+		}
+	}
+
+	option = {
+		name = tech_backlash.1.a
+		change_prestige = 20
+		add_treasury = -150
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 24
+		}
+	}
+
+	option = {
+		name = tech_backlash.1.b
+		change_prestige = -15
+		change_infamy = 10
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 30
+		}
+	}
+
+	option = {
+		name = tech_backlash.1.c
+		change_prestige = 5
+		add_treasury = -75
+	}
+}
+
+namespace = corruption_scandal
+
+corruption_scandal.1 = {
+	type = country_event
+
+	title = corruption_scandal.1.t
+	desc = corruption_scandal.1.d
+	flavor = corruption_scandal.1.f
+
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = corruption_scandal.1.a
+		change_prestige = 15
+		add_treasury = -200
+		change_infamy = -5
+	}
+
+	option = {
+		name = corruption_scandal.1.b
+		change_prestige = -10
+		change_infamy = 10
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 18
+		}
+	}
+
+	option = {
+		name = corruption_scandal.1.c
+		change_prestige = -5
+		change_infamy = 5
+		add_treasury = -100
+	}
+}
+
+namespace = mass_protest
+
+mass_protest.1 = {
+	type = country_event
+
+	title = mass_protest.1.t
+	desc = mass_protest.1.d
+	flavor = mass_protest.1.f
+
+	trigger = {
+		OR = {
+			NOT = { is_modern_democracy = yes }
+			infamy >= 15
+		}
+	}
+
+	option = {
+		name = mass_protest.1.a
+		change_prestige = 10
+		add_treasury = -150
+		change_infamy = -5
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 18
+		}
+	}
+
+	option = {
+		name = mass_protest.1.b
+		change_prestige = -20
+		change_infamy = 15
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 24
+		}
+	}
+
+	option = {
+		name = mass_protest.1.c
+		change_prestige = 5
+		add_treasury = -75
+		change_infamy = -3
+	}
+}
+
+namespace = democratic_election_crisis
+
+democratic_election_crisis.1 = {
+	type = country_event
+
+	title = democratic_election_crisis.1.t
+	desc = democratic_election_crisis.1.d
+	flavor = democratic_election_crisis.1.f
+
+	trigger = {
+		is_modern_democracy = yes
+		OR = {
+			infamy >= 10
+			has_law = law_surveillance_state
+			has_law = law_state_controlled_media
+		}
+	}
+
+	option = {
+		name = democratic_election_crisis.1.a
+		change_prestige = 20
+		change_infamy = -10
+		add_treasury = -150
+	}
+
+	option = {
+		name = democratic_election_crisis.1.b
+		change_prestige = -5
+		change_infamy = 5
+	}
+
+	option = {
+		name = democratic_election_crisis.1.c
+		change_prestige = -25
+		change_infamy = 20
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 36
+		}
+	}
+}
+
+namespace = financial_crisis
+
+financial_crisis.1 = {
+	type = country_event
+
+	title = financial_crisis.1.t
+	desc = financial_crisis.1.d
+	flavor = financial_crisis.1.f
+
+	trigger = {
+		any_scope_state = {
+			has_building = building_financial_hub
+		}
+	}
+
+	option = {
+		name = financial_crisis.1.a
+		add_treasury = -500
+		change_prestige = -5
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 18
+		}
+	}
+
+	option = {
+		name = financial_crisis.1.b
+		add_treasury = -200
+		change_prestige = -15
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 24
+		}
+	}
+
+	option = {
+		name = financial_crisis.1.c
+		add_treasury = -250
+		change_prestige = 5
+		change_infamy = 5
+		add_modifier = {
+			name = modifier_sanctions_sender
+			months = 18
+		}
+	}
+}
+
+namespace = trade_war_escalation
+
+trade_war_escalation.1 = {
+	type = country_event
+
+	title = trade_war_escalation.1.t
+	desc = trade_war_escalation.1.d
+	flavor = trade_war_escalation.1.f
+
+	trigger = {
+		OR = {
+			has_modifier = modifier_sanctions_sender
+			has_modifier = modifier_sanctions_target
+		}
+	}
+
+	option = {
+		name = trade_war_escalation.1.a
+		change_prestige = 5
+		change_infamy = 10
+		add_modifier = {
+			name = modifier_sanctions_sender
+			months = 24
+		}
+	}
+
+	option = {
+		name = trade_war_escalation.1.b
+		remove_modifier = modifier_sanctions_sender
+		change_prestige = 10
+		change_infamy = -5
+	}
+
+	option = {
+		name = trade_war_escalation.1.c
+		change_prestige = 5
+		add_treasury = -200
+		random_scope_state = {
+			limit = { is_incorporated = yes }
+			add_modifier = {
+				name = modifier_special_economic_zone
+				years = 5
+			}
+		}
+	}
+}
+
+namespace = tech_boom
+
+tech_boom.1 = {
+	type = country_event
+
+	title = tech_boom.1.t
+	desc = tech_boom.1.d
+	flavor = tech_boom.1.f
+
+	trigger = {
+		is_tech_leader = yes
+		any_scope_state = {
+			OR = {
+				has_building = building_semiconductor_fab
+				has_building = building_software_studio
+			}
+		}
+	}
+
+	option = {
+		name = tech_boom.1.a
+		change_prestige = 20
+		add_treasury = 200
+		add_modifier = {
+			name = modifier_tech_hub
+			years = 5
+		}
+	}
+
+	option = {
+		name = tech_boom.1.b
+		change_prestige = 10
+		add_treasury = 400
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			years = 3
+		}
+	}
+
+	option = {
+		name = tech_boom.1.c
+		change_prestige = 15
+		add_treasury = 100
+		add_modifier = {
+			name = modifier_green_transition_subsidy
+			years = 3
+		}
+	}
+}

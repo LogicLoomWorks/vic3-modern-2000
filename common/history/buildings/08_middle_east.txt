@@ -1,4 +1,4 @@
-BUILDINGS={
+﻿BUILDINGS={
 
 	
 	s:STATE_NEJD = {
@@ -7,9 +7,9 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					building={
-						country= c:SAU
+						country="c:SAU"
 						levels=3
-						region = STATE_NEJD
+						region="STATE_NEJD"
 						type="building_government_administration"
 					}
 				}
@@ -41,7 +41,7 @@ BUILDINGS={
 						type = "building_trade_center"
 						country = "c:SAU"
 						levels = 3
-						region = STATE_NEJD
+						region = "STATE_NEJD"
 					}
 				}
 			}
@@ -58,30 +58,6 @@ BUILDINGS={
     		}
 		}	
 			
-			create_building={
-				building="building_shipyards"
-				add_ownership={
-				building={
-						country="c:SAU"
-						levels=3
-						region = "STATE_NEJD"
-						type = "building_shipyards"
-					}
-				}
-			}
-
-			create_building={
-				building="building_shipyards"
-				add_ownership={
-				building={
-						country="c:SAU"
-						levels=1
-						region = "STATE_NEJD"
-						type = "building_shipyards"
-					}
-				}
-			}
-
 			create_building={ #fertilizers
 				building="building_wheat_farm"
 				add_ownership={
@@ -122,7 +98,35 @@ BUILDINGS={
 		}
 	}
 
-	
+	s:STATE_HEJAZ = {
+		region_state:SAU = {
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+					building={
+						country="c:SAU"
+						levels=3
+						region="STATE_HEJAZ"
+						type="building_shipyards"
+					}
+				}
+			}
+
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+					building={
+						country="c:SAU"
+						levels=1
+						region="STATE_HEJAZ"
+						type="building_shipyards"
+					}
+				}
+			}
+		}
+	}
+
+
 		s:STATE_HAIL = {
 		region_state:SAU = {
 			

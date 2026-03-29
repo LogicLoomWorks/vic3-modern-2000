@@ -1,0 +1,369 @@
+﻿BUILDINGS = {
+	# Modern buildings for Middle East, Latin America, Africa, South Asia (year 2000).
+	# Supplements 08_middle_east.txt (existing vanilla-era content) without replacing it.
+	# All building keys from 2.1. Verify state names against common/history/states/.
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# SAUDI ARABIA
+	# Capital: STATE_NEJD (Riyadh)
+	# Dominant hydrocarbon economy. State-directed ARAMCO. Modest digital
+	# infrastructure. Growing financial sector (SAMA).
+	# ═══════════════════════════════════════════════════════════════════════
+
+	s:STATE_NEJD = {
+		region_state:SAU = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:SAU" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_intelligence_agency"
+				add_ownership = { country = { country = "c:SAU" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:SAU" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Eastern Province — al-Ahsa oil and gas fields (ARAMCO heartland)
+	# Verify: STATE_AL_HASA or STATE_EASTERN_ARABIA — adjust as needed
+	s:STATE_AL_HASA = {
+		region_state:SAU = {
+			create_building = {
+				building = "building_natural_gas_plant"
+				add_ownership = { country = { country = "c:SAU" levels = 3 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_military_hardware_factory"
+				add_ownership = { country = { country = "c:SAU" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# IRAN
+	# Capital: STATE_IRAKAJEMI (Tehran/Isfahan region)
+	# Major hydrocarbon exporter under US/UN sanctions.
+	# IRGC controls significant industrial base.
+	# Nuclear program active but undeclared.
+	# ═══════════════════════════════════════════════════════════════════════
+
+	s:STATE_IRAKAJEMI = {
+		region_state:IRN = {
+			create_building = {
+				building = "building_military_hardware_factory"
+				add_ownership = { country = { country = "c:IRN" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_guided_munitions_plant"
+				add_ownership = { country = { country = "c:IRN" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_intelligence_agency"
+				add_ownership = { country = { country = "c:IRN" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Khuzestan — major oil and gas production (Ahvaz fields)
+	# Verify: STATE_KHUZESTAN or STATE_ARABISTAN
+	s:STATE_KHUZESTAN = {
+		region_state:IRN = {
+			create_building = {
+				building = "building_natural_gas_plant"
+				add_ownership = { country = { country = "c:IRN" levels = 2 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Isfahan / Yazd — nuclear enrichment and uranium mining
+	# Verify: STATE_ISFAHAN or adjust to STATE_LURISTAN
+	s:STATE_ISFAHAN = {
+		region_state:IRN = {
+			create_building = {
+				building = "building_uranium_mine"
+				add_ownership = { country = { country = "c:IRN" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_nuclear_power_plant"
+				add_ownership = { country = { country = "c:IRN" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# ISRAEL
+	# Capital: STATE_PALESTINE
+	# "Startup Nation" — world-leading tech-to-GDP ratio in 2000.
+	# Compaq, Intel, Microsoft all had major R&D centres here.
+	# All in one state given Israel's small geographic footprint.
+	# ═══════════════════════════════════════════════════════════════════════
+
+	s:STATE_PALESTINE = {
+		region_state:ISR = {
+			create_building = {
+				building = "building_software_studio"
+				add_ownership = { country = { country = "c:ISR" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_semiconductor_fab"
+				add_ownership = { country = { country = "c:ISR" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_pharmaceutical_lab"
+				add_ownership = { country = { country = "c:ISR" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_intelligence_agency"
+				add_ownership = { country = { country = "c:ISR" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# TURKEY
+	# Capital: STATE_EASTERN_THRACE (Istanbul)
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Istanbul — finance and media hub
+	s:STATE_EASTERN_THRACE = {
+		region_state:TUR = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:TUR" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:TUR" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_media_studio"
+				add_ownership = { country = { country = "c:TUR" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Central Anatolia — Ankara: defense industry and government
+	# Verify: STATE_ANATOLIA or STATE_ANKARA
+	s:STATE_ANATOLIA = {
+		region_state:TUR = {
+			create_building = {
+				building = "building_military_hardware_factory"
+				add_ownership = { country = { country = "c:TUR" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_electronics_factory"
+				add_ownership = { country = { country = "c:TUR" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# MEXICO
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Central Mexico — Mexico City: finance, software, government
+	# Verify: STATE_MEXICO or STATE_VALLEY_OF_MEXICO
+	s:STATE_MEXICO = {
+		region_state:MEX = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:MEX" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_software_studio"
+				add_ownership = { country = { country = "c:MEX" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:MEX" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Veracruz — Gulf Coast oil and gas (PEMEX fields)
+	s:STATE_VERACRUZ = {
+		region_state:MEX = {
+			create_building = {
+				building = "building_natural_gas_plant"
+				add_ownership = { country = { country = "c:MEX" levels = 2 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# EGYPT
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Lower Egypt — Cairo: finance, state media, intelligence
+	s:STATE_LOWER_EGYPT = {
+		region_state:EGY = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:EGY" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:EGY" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_intelligence_agency"
+				add_ownership = { country = { country = "c:EGY" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Upper Egypt / Sinai — natural gas fields
+	s:STATE_UPPER_EGYPT = {
+		region_state:EGY = {
+			create_building = {
+				building = "building_natural_gas_plant"
+				add_ownership = { country = { country = "c:EGY" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# NIGERIA
+	# Verify tags: NGA. Verify states: STATE_YORUBALAND, STATE_NIGER_DELTA
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Yorubaland — Lagos: West Africa's largest city, finance and tech
+	s:STATE_YORUBALAND = {
+		region_state:NGA = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:NGA" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:NGA" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Niger Delta — dominant oil/gas production (Shell, Chevron, NNPC)
+	s:STATE_NIGER_DELTA = {
+		region_state:NGA = {
+			create_building = {
+				building = "building_natural_gas_plant"
+				add_ownership = { country = { country = "c:NGA" levels = 2 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# SOUTH AFRICA
+	# Verify tags: SAF
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Transvaal — Johannesburg: mining, military industry, uranium
+	s:STATE_TRANSVAAL = {
+		region_state:SAF = {
+			create_building = {
+				building = "building_rare_earth_mine"
+				add_ownership = { country = { country = "c:SAF" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_uranium_mine"
+				add_ownership = { country = { country = "c:SAF" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_military_hardware_factory"
+				add_ownership = { country = { country = "c:SAF" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Cape of Good Hope — Cape Town: finance, tech, services
+	s:STATE_CAPE_OF_GOOD_HOPE = {
+		region_state:SAF = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:SAF" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_software_studio"
+				add_ownership = { country = { country = "c:SAF" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# PAKISTAN
+	# Verify tags: PAK
+	# Pakistan in 2000: Musharraf military government (coup Oct 1999).
+	# Nuclear-armed (tested May 1998). Uranium mined domestically.
+	# Verify states: STATE_PUNJAB (ensure this is Pakistani Punjab, not Indian)
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Punjab — Lahore/Rawalpindi: military-industrial and nuclear complex
+	s:STATE_PUNJAB = {
+		region_state:PAK = {
+			create_building = {
+				building = "building_military_hardware_factory"
+				add_ownership = { country = { country = "c:PAK" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_uranium_mine"
+				add_ownership = { country = { country = "c:PAK" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Sindh — Karachi: telecom, natural gas (Sui fields)
+	s:STATE_SINDH = {
+		region_state:PAK = {
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:PAK" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_natural_gas_plant"
+				add_ownership = { country = { country = "c:PAK" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+}

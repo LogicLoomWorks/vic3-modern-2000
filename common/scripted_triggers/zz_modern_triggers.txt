@@ -1,0 +1,68 @@
+﻿# Modern Scripted Triggers — vic3-modern-2000
+# All triggers evaluated at country scope unless noted.
+
+is_modern_democracy = {
+    OR = {
+        has_government_type = gov_liberal_democracy
+        has_government_type = gov_parliamentary_democracy
+        has_government_type = gov_federal_republic
+        has_government_type = gov_illiberal_democracy
+    }
+    NOT = { has_law = law_state_controlled_media }
+    NOT = { has_law = law_surveillance_state }
+}
+
+has_nuclear_capability = {
+    OR = {
+        has_law = law_nuclear_deterrence
+        has_law = law_nuclear_proliferation
+    }
+    any_scope_state = {
+        has_building = building_nuclear_power_plant
+    }
+    any_scope_state = {
+        has_building = building_uranium_mine
+    }
+}
+
+is_tech_leader = {
+    has_technology_researched = internet_infrastructure
+    has_technology_researched = cloud_computing
+    any_scope_state = {
+        count >= 3
+        OR = {
+            has_building = building_semiconductor_fab
+            has_building = building_software_studio
+            has_building = building_data_center
+            has_building = building_telecom_network
+        }
+    }
+}
+
+is_fossil_dependent = {
+    has_law = law_fossil_dependent
+    any_scope_state = {
+        has_building = building_natural_gas_plant
+    }
+}
+
+is_great_power_2000 = {
+    OR = {
+        country_rank >= rank_value:major_power
+        AND = {
+            country_rank >= 3
+            has_technology_researched = internet_infrastructure
+            any_scope_state = {
+                count >= 2
+                has_building = building_military_hardware_factory
+            }
+            any_scope_state = {
+                count >= 1
+                OR = {
+                    has_building = building_semiconductor_fab
+                    has_building = building_data_center
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,981 @@
+﻿# Draft scaffold for vic3-modern-2000
+# This file prioritizes dependency completeness and cross-linking for Prompt 2.1.
+# Some modifier keys may need patch-specific normalization against your installed Victoria 3 version.
+
+pm_surface_rare_earth_extraction = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_rare_earth_elements_add = 25
+			building_output_uranium_add = 1
+			building_employment_laborers_add = 4500
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 250
+		}
+	}
+}
+
+pm_deep_rare_earth_extraction = {
+	unlocking_technologies = { materials_science }
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_rare_earth_elements_add = 35
+			building_output_uranium_add = 4
+			building_input_tools_add = 10
+			building_input_coal_add = 5
+			building_employment_laborers_add = 3600
+			building_employment_machinists_add = 900
+			building_employment_engineers_add = 500
+		}
+	}
+}
+
+pm_brine_lithium_extraction = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_lithium_add = 24
+			building_employment_laborers_add = 4200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+pm_hardrock_lithium_extraction = {
+	unlocking_technologies = { materials_science }
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_lithium_add = 34
+			building_input_tools_add = 8
+			building_input_electricity_add = 4
+			building_employment_laborers_add = 3400
+			building_employment_machinists_add = 900
+			building_employment_engineers_add = 450
+		}
+	}
+}
+
+pm_conventional_gas_fields = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_natural_gas_add = 30
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 900
+			building_employment_engineers_add = 350
+		}
+	}
+}
+
+pm_deep_gas_fields = {
+		unlocking_technologies = { materials_science }
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_natural_gas_add = 42
+			building_input_steel_add = 8
+			building_input_tools_add = 8
+			building_employment_laborers_add = 2400
+			building_employment_machinists_add = 1200
+			building_employment_engineers_add = 700
+		}
+	}
+}
+
+pm_grid_gas_supply = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_natural_gas_add = 8
+		}
+	}
+}
+
+pm_synthetic_fuel_refining = {
+	# Stand-in specialization until a dedicated refinery building is added.
+	unlocking_technologies = { materials_science }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_natural_gas_add = 15
+			building_output_refined_fuel_add = 18
+			building_employment_machinists_add = 400
+			building_employment_engineers_add = 250
+		}
+	}
+}
+
+pm_basic_fab_lines = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_rare_earth_elements_add = 15
+			building_input_chemicals_add = 10
+			building_output_semiconductors_add = 18
+			building_input_electricity_add = 8
+			building_employment_machinists_add = 1200
+			building_employment_engineers_add = 900
+			building_employment_academics_add = 200
+		}
+	}
+}
+
+pm_advanced_fab_lines = {
+		unlocking_technologies = { microprocessors }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_rare_earth_elements_add = 18
+			building_input_chemicals_add = 12
+			building_output_semiconductors_add = 28
+			building_input_electricity_add = 12
+			building_input_software_add = 3
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1200
+			building_employment_academics_add = 350
+		}
+	}
+}
+
+pm_consumer_electronics_assembly = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_semiconductors_add = 14
+			building_input_plastics_add = 10
+			building_output_electronics_add = 24
+			building_employment_machinists_add = 1600
+			building_employment_engineers_add = 500
+			building_employment_clerks_add = 300
+		}
+	}
+}
+
+pm_advanced_electronics_assembly = {
+	unlocking_technologies = { consumer_electronics }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_semiconductors_add = 18
+			building_input_plastics_add = 12
+			building_input_software_add = 2
+			building_output_electronics_add = 34
+			building_employment_machinists_add = 1400
+			building_employment_engineers_add = 900
+			building_employment_clerks_add = 400
+		}
+	}
+}
+
+pm_civilian_electronics_focus = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_electronics_add = 6
+		}
+	}
+}
+
+pm_dual_use_electronics_focus = {
+	# Helps satisfy the no-orphan requirement for military_hardware until a dedicated vehicle/aircraft chain exists.
+	unlocking_technologies = { precision_weapons }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_steel_add = 4
+			building_output_electronics_add = 3
+			building_output_military_hardware_add = 6
+			building_employment_engineers_add = 250
+		}
+	}
+}
+
+pm_generic_medicine_production = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_chemicals_add = 12
+			building_input_glass_add = 8
+			building_input_natural_gas_add = 4
+			building_output_pharmaceuticals_add = 20
+			building_employment_clerks_add = 500
+			building_employment_engineers_add = 600
+			building_employment_academics_add = 350
+		}
+	}
+}
+
+pm_biotech_drug_production = {
+	# blueprint: genomics → biotech_engineering (implemented mod tech; see law substitution comments)
+	unlocking_technologies = { biotech_engineering }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_chemicals_add = 15
+			building_input_glass_add = 8
+			building_input_natural_gas_add = 5
+			building_output_pharmaceuticals_add = 28
+			building_input_software_add = 2
+			building_employment_clerks_add = 450
+			building_employment_engineers_add = 700
+			building_employment_academics_add = 500
+		}
+	}
+}
+
+pm_enterprise_software_development = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_software_add = 18
+			building_input_financial_services_add = 4
+			building_employment_clerks_add = 800
+			building_employment_engineers_add = 700
+			building_employment_academics_add = 250
+		}
+	}
+}
+
+pm_platform_software_development = {
+	unlocking_technologies = { cloud_computing }
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_software_add = 28
+			building_input_digital_services_add = 4
+			building_input_financial_services_add = 5
+			building_employment_clerks_add = 700
+			building_employment_engineers_add = 900
+			building_employment_academics_add = 400
+		}
+	}
+}
+
+pm_lithium_ion_battery_lines = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_lithium_add = 14
+			building_input_chemicals_add = 12
+			building_output_batteries_add = 22
+			building_employment_machinists_add = 1300
+			building_employment_engineers_add = 500
+			building_employment_clerks_add = 250
+		}
+	}
+}
+
+pm_advanced_battery_lines = {
+	# blueprint: battery_technology → electric_vehicles (matches building substitution)
+	unlocking_technologies = { electric_vehicles }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_lithium_add = 18
+			building_input_chemicals_add = 14
+			building_input_rare_earth_elements_add = 4
+			building_output_batteries_add = 30
+			building_employment_machinists_add = 1200
+			building_employment_engineers_add = 800
+			building_employment_clerks_add = 300
+		}
+	}
+}
+
+pm_fixed_line_backbone = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electronics_add = 10
+			building_input_software_add = 6
+			building_input_batteries_add = 2
+			building_output_telecommunications_add = 18
+			building_employment_engineers_add = 700
+			building_employment_clerks_add = 900
+		}
+	}
+}
+
+pm_mobile_broadband_network = {
+	# Prompt used mobile_communications; mapped here to mobile_telecommunications based on the earlier tech pass.
+	unlocking_technologies = { mobile_telecommunications }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electronics_add = 12
+			building_input_software_add = 8
+			building_input_batteries_add = 3
+			building_output_telecommunications_add = 28
+			building_employment_engineers_add = 900
+			building_employment_clerks_add = 1100
+		}
+	}
+}
+
+pm_server_rack_operations = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electronics_add = 10
+			building_input_software_add = 8
+			building_input_electricity_add = 14
+			building_input_natural_gas_add = 2
+			building_output_digital_services_add = 20
+			building_employment_engineers_add = 600
+			building_employment_clerks_add = 800
+			building_employment_academics_add = 150
+		}
+	}
+}
+
+pm_hyperscale_computing = {
+	unlocking_technologies = { cloud_computing }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electronics_add = 14
+			building_input_software_add = 12
+			building_input_electricity_add = 20
+			building_input_natural_gas_add = 3
+			building_output_digital_services_add = 32
+			building_employment_engineers_add = 900
+			building_employment_clerks_add = 900
+			building_employment_academics_add = 300
+		}
+	}
+}
+
+pm_cloud_hosting_focus = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_digital_services_add = 6
+		}
+	}
+}
+
+pm_media_streaming_focus = {
+	unlocking_technologies = { social_media }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_media_add = 8
+			building_output_digital_services_add = 10
+			building_employment_clerks_add = 200
+		}
+	}
+}
+
+pm_investment_banking = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 5
+			building_input_telecommunications_add = 6
+			building_output_financial_services_add = 18
+			building_input_digital_services_add = 2
+			building_employment_clerks_add = 1100
+			building_employment_academics_add = 350
+		}
+	}
+}
+
+pm_fintech_platforms = {
+	# blueprint: fintech → digital_currency (matches building substitution)
+	unlocking_technologies = { digital_currency }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 8
+			building_input_telecommunications_add = 8
+			building_input_digital_services_add = 4
+			building_output_financial_services_add = 28
+			building_employment_clerks_add = 1000
+			building_employment_engineers_add = 450
+			building_employment_academics_add = 450
+		}
+	}
+}
+
+pm_broadcast_media = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electronics_add = 6
+			building_input_software_add = 3
+			building_output_media_add = 18
+			building_employment_clerks_add = 700
+			building_employment_academics_add = 300
+		}
+	}
+}
+
+pm_digital_media_platforms = {
+	unlocking_technologies = { social_media }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electronics_add = 8
+			building_input_software_add = 6
+			building_input_digital_services_add = 4
+			building_output_media_add = 28
+			building_employment_clerks_add = 900
+			building_employment_engineers_add = 300
+			building_employment_academics_add = 350
+		}
+	}
+}
+
+pm_light_water_reactors = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_uranium_add = 10
+			building_input_steel_add = 8
+			building_output_electricity_add = 38
+			building_input_pharmaceuticals_add = 1
+			building_employment_engineers_add = 800
+			building_employment_academics_add = 350
+			building_employment_laborers_add = 1000
+		}
+	}
+}
+
+pm_advanced_reactors = {
+	unlocking_technologies = { nuclear_energy }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_uranium_add = 12
+			building_input_steel_add = 10
+			building_input_software_add = 2
+			building_output_electricity_add = 48
+			building_input_pharmaceuticals_add = 1
+			building_employment_engineers_add = 1000
+			building_employment_academics_add = 500
+			building_employment_laborers_add = 800
+		}
+	}
+}
+
+pm_mixed_solar_wind = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_batteries_add = 8
+			building_input_steel_add = 6
+			building_output_electricity_add = 22
+			building_employment_engineers_add = 450
+			building_employment_laborers_add = 1600
+		}
+	}
+}
+
+pm_grid_scale_storage_renewables = {
+	unlocking_technologies = { renewable_energy }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_batteries_add = 12
+			building_input_steel_add = 8
+			building_input_electronics_add = 2
+			building_output_electricity_add = 30
+			building_employment_engineers_add = 650
+			building_employment_laborers_add = 1300
+		}
+	}
+}
+
+pm_precision_munitions_assembly = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electronics_add = 12
+			building_input_explosives_add = 10
+			building_input_steel_add = 8
+			building_output_guided_munitions_add = 20
+			building_employment_machinists_add = 1400
+			building_employment_engineers_add = 700
+			building_employment_officers_add = 100
+		}
+	}
+}
+
+pm_integrated_strike_systems = {
+	unlocking_technologies = { precision_weapons }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electronics_add = 16
+			building_input_semiconductors_add = 6
+			building_input_explosives_add = 12
+			building_input_steel_add = 10
+			building_output_guided_munitions_add = 28
+			building_output_military_hardware_add = 8
+			building_employment_machinists_add = 1300
+			building_employment_engineers_add = 1000
+			building_employment_officers_add = 150
+		}
+	}
+}
+
+pm_munitions_priority = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_guided_munitions_add = 8
+		}
+	}
+}
+
+pm_hardware_priority = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_military_hardware_add = 14
+			building_output_guided_munitions_add = -4
+			building_input_steel_add = 4
+		}
+	}
+}
+
+pm_defensive_cyber_operations = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 8
+			building_input_electronics_add = 6
+			building_input_telecommunications_add = 2
+			building_output_cyber_capability_add = 18
+			building_employment_engineers_add = 600
+			building_employment_academics_add = 450
+			building_employment_officers_add = 150
+		}
+	}
+}
+
+pm_offensive_cyber_operations = {
+	# blueprint: cyber_warfare → artificial_intelligence (matches building substitution)
+	unlocking_technologies = { artificial_intelligence }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 10
+			building_input_electronics_add = 8
+			building_input_telecommunications_add = 3
+			building_input_batteries_add = 1
+			building_output_cyber_capability_add = 28
+			building_employment_engineers_add = 700
+			building_employment_academics_add = 550
+			building_employment_officers_add = 200
+		}
+	}
+}
+
+pm_signals_collection = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_cyber_capability_add = 8
+			building_input_telecommunications_add = 6
+			building_input_pharmaceuticals_add = 1
+			building_employment_officers_add = 300
+			building_employment_academics_add = 300
+			building_employment_clerks_add = 500
+		}
+	}
+	country_modifiers = {
+		country_authority_add = 25
+		country_bureaucracy_add = 10
+	}
+}
+
+pm_integrated_intelligence_analysis = {
+	# blueprint: signals_intelligence → big_data_analytics (matches law substitution)
+	unlocking_technologies = { big_data_analytics }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_cyber_capability_add = 12
+			building_input_telecommunications_add = 8
+			building_input_pharmaceuticals_add = 1
+			building_input_software_add = 3
+			building_employment_officers_add = 350
+			building_employment_academics_add = 450
+			building_employment_clerks_add = 550
+		}
+	}
+	country_modifiers = {
+		country_authority_add = 40
+		country_bureaucracy_add = 15
+		country_innovation_add = 5
+	}
+}
+
+pm_orbital_launch_program = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electronics_add = 10
+			building_input_refined_fuel_add = 12
+			building_input_steel_add = 12
+			building_input_guided_munitions_add = 2
+			building_employment_engineers_add = 800
+			building_employment_academics_add = 500
+			building_employment_clerks_add = 200
+		}
+	}
+	country_modifiers = {
+		country_prestige_add = 10
+		country_innovation_add = 5
+	}
+}
+
+pm_heavy_lift_program = {
+	# blueprint: space_systems → space_commercialization (implemented mod tech; matches building)
+	unlocking_technologies = { space_commercialization }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electronics_add = 14
+			building_input_refined_fuel_add = 18
+			building_input_steel_add = 16
+			building_input_military_hardware_add = 6
+			building_input_guided_munitions_add = 3
+			building_employment_engineers_add = 1000
+			building_employment_academics_add = 650
+			building_employment_clerks_add = 250
+		}
+	}
+	country_modifiers = {
+		country_prestige_add = 18
+		country_innovation_add = 8
+	}
+}
+
+pm_civil_space_program = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 2
+		}
+	}
+	country_modifiers = {
+		country_prestige_add = 3
+	}
+}
+
+pm_strategic_space_program = {
+	# blueprint: space_systems → space_commercialization (matches building substitution)
+	unlocking_technologies = { space_commercialization }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_military_hardware_add = 3
+			building_input_software_add = 3
+		}
+	}
+	country_modifiers = {
+		country_prestige_add = 6
+		country_authority_add = 10
+	}
+}
+
+pm_manual_mining_operations = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_laborers_add = 1200
+		}
+	}
+}
+
+pm_automated_mining_systems = {
+	unlocking_technologies = { automation_robotics }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 4
+			building_input_electricity_add = 3
+			building_employment_laborers_add = -800
+			building_employment_machinists_add = 300
+			building_employment_engineers_add = 150
+		}
+	}
+}
+
+pm_ai_assisted_mining = {
+	unlocking_technologies = { artificial_intelligence }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 2
+			building_input_electricity_add = 4
+			building_employment_laborers_add = -1200
+			building_employment_engineers_add = 250
+			building_employment_academics_add = 100
+		}
+	}
+}
+
+pm_manual_extraction_operations = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_laborers_add = 1000
+		}
+	}
+}
+
+pm_automated_extraction_systems = {
+	unlocking_technologies = { automation_robotics }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 4
+			building_input_electricity_add = 3
+			building_employment_laborers_add = -700
+			building_employment_machinists_add = 300
+			building_employment_engineers_add = 150
+		}
+	}
+}
+
+pm_ai_assisted_extraction = {
+	unlocking_technologies = { artificial_intelligence }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 2
+			building_input_electricity_add = 4
+			building_employment_laborers_add = -1000
+			building_employment_engineers_add = 250
+			building_employment_academics_add = 100
+		}
+	}
+}
+
+pm_manual_factory_lines = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_laborers_add = 600
+			building_employment_machinists_add = 200
+		}
+	}
+}
+
+pm_automated_factory_lines = {
+	unlocking_technologies = { automation_robotics }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 3
+			building_input_electricity_add = 3
+			building_employment_laborers_add = -500
+			building_employment_machinists_add = 250
+			building_employment_engineers_add = 120
+		}
+	}
+}
+
+pm_ai_assisted_factory_lines = {
+	unlocking_technologies = { artificial_intelligence }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 2
+			building_input_electricity_add = 4
+			building_employment_laborers_add = -700
+			building_employment_engineers_add = 220
+			building_employment_academics_add = 80
+		}
+	}
+}
+
+pm_clerical_workflows = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_clerks_add = 500
+		}
+	}
+}
+
+pm_digital_workflows = {
+	unlocking_technologies = { internet_infrastructure }
+	# blueprint: internet_networking → internet_infrastructure (see law substitution comments)
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electricity_add = 2
+			building_employment_clerks_add = -300
+			building_employment_engineers_add = 120
+			building_employment_academics_add = 50
+		}
+	}
+}
+
+pm_ai_assisted_workflows = {
+	unlocking_technologies = { artificial_intelligence }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 2
+			building_input_electricity_add = 2
+			building_employment_clerks_add = -450
+			building_employment_engineers_add = 180
+			building_employment_academics_add = 120
+		}
+	}
+}
+
+pm_regional_network_operations = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_clerks_add = 350
+		}
+	}
+}
+
+pm_smart_network_operations = {
+	unlocking_technologies = { internet_infrastructure }
+	# blueprint: internet_networking → internet_infrastructure (see law substitution comments)
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 2
+			building_employment_clerks_add = -200
+			building_employment_engineers_add = 100
+		}
+	}
+}
+
+pm_autonomous_network_operations = {
+	unlocking_technologies = { artificial_intelligence }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 3
+			building_input_electricity_add = 2
+			building_employment_clerks_add = -300
+			building_employment_engineers_add = 160
+			building_employment_academics_add = 60
+		}
+	}
+}
+
+pm_manual_grid_management = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_laborers_add = 300
+			building_employment_engineers_add = 100
+		}
+	}
+}
+
+pm_digital_grid_management = {
+	unlocking_technologies = { internet_infrastructure }
+	# blueprint: internet_networking → internet_infrastructure (see law substitution comments)
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 1
+			building_employment_laborers_add = -150
+			building_employment_engineers_add = 120
+			building_employment_clerks_add = 50
+		}
+	}
+}
+
+pm_autonomous_grid_management = {
+	unlocking_technologies = { artificial_intelligence }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 2
+			building_input_electronics_add = 1
+			building_employment_laborers_add = -250
+			building_employment_engineers_add = 180
+			building_employment_academics_add = 50
+		}
+	}
+}
+
+pm_conventional_military_manufacture = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_laborers_add = 400
+			building_employment_officers_add = 50
+		}
+	}
+}
+
+pm_automated_military_manufacture = {
+	unlocking_technologies = { automation_robotics }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 3
+			building_input_electricity_add = 3
+			building_employment_laborers_add = -250
+			building_employment_machinists_add = 120
+			building_employment_engineers_add = 80
+		}
+	}
+}
+
+pm_ai_directed_military_manufacture = {
+	unlocking_technologies = { artificial_intelligence }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 2
+			building_input_electricity_add = 4
+			building_employment_laborers_add = -350
+			building_employment_engineers_add = 180
+			building_employment_academics_add = 60
+		}
+	}
+}
+
+pm_analog_state_capacity = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_employment_clerks_add = 400
+			building_employment_officers_add = 100
+		}
+	}
+}
+
+pm_digital_state_capacity = {
+	unlocking_technologies = { internet_infrastructure }
+	# blueprint: internet_networking → internet_infrastructure (see law substitution comments)
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 2
+			building_employment_clerks_add = -200
+			building_employment_engineers_add = 120
+			building_employment_academics_add = 50
+		}
+	}
+}
+
+pm_ai_augmented_state_capacity = {
+	unlocking_technologies = { artificial_intelligence }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_software_add = 3
+			building_input_digital_services_add = 2
+			building_employment_clerks_add = -300
+			building_employment_engineers_add = 180
+			building_employment_academics_add = 100
+		}
+	}
+}
+
+##############################################################################
+# URANIUM MINE production methods
+# Added as prerequisite fix: building_uranium_mine was referenced in
+# has_nuclear_capability trigger but was missing from buildings file.
+##############################################################################
+
+pm_conventional_uranium_mining = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_uranium_add = 25
+			building_employment_laborers_add = 4000
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+pm_advanced_uranium_mining = {
+	unlocking_technologies = { materials_science }
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_uranium_add = 40
+			building_input_tools_add = 8
+			building_input_coal_add = 5
+			building_employment_laborers_add = 3200
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 450
+		}
+	}
+}
+
+##############################################################################
+# MILITARY HARDWARE FACTORY production methods
+# Added as prerequisite fix: building_military_hardware_factory was referenced
+# in is_great_power_2000 trigger but was missing from buildings file.
+##############################################################################
+
+pm_conventional_military_hardware = {
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_steel_add = 12
+			building_input_tools_add = 8
+			building_output_military_hardware_add = 18
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 600
+			building_employment_clerks_add = 300
+		}
+	}
+}
+
+pm_advanced_military_hardware = {
+	unlocking_technologies = { precision_weapons }
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_steel_add = 15
+			building_input_tools_add = 10
+			building_input_electronics_add = 5
+			building_output_military_hardware_add = 30
+			building_output_guided_munitions_add = 3
+			building_employment_machinists_add = 1800
+			building_employment_engineers_add = 900
+			building_employment_clerks_add = 350
+		}
+	}
+}
+

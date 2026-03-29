@@ -1,0 +1,3 @@
+﻿# This file is intentionally empty.
+# Vic3 events must be placed in events/ (root), not common/events/.
+# The actual event definitions are in events/zz_modern_events.txt

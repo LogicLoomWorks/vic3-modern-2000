@@ -1,0 +1,316 @@
+﻿je_nuclear_ambitions = {
+	icon = "gfx/interface/icons/journal_entries/je_technological_progression.dds"
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		has_law = law_nuclear_proliferation
+	}
+
+	possible = {
+		has_law = law_nuclear_proliferation
+		any_scope_state = {
+			has_building = building_uranium_mine
+		}
+	}
+
+	fail = {
+		has_law = law_nuclear_disarmament
+	}
+
+	complete = {
+		has_law = law_nuclear_proliferation
+		has_modifier = modifier_nuclear_arsenal
+		any_scope_state = {
+			has_building = building_uranium_mine
+		}
+		any_scope_state = {
+			has_building = building_nuclear_power_plant
+		}
+	}
+
+	on_complete = {
+		change_prestige = 50
+		add_modifier = {
+			name = modifier_nuclear_arsenal
+			years = 10
+		}
+	}
+
+	on_fail = {
+		remove_modifier = modifier_nuclear_arsenal
+		change_infamy = -10
+	}
+
+	weight = {
+		value = 100
+		modifier = {
+			add = 50
+			is_great_power_2000 = yes
+		}
+	}
+}
+
+je_energy_transition = {
+	icon = "gfx/interface/icons/journal_entries/je_industrialization.dds"
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		OR = {
+			has_law = law_mixed_transition
+			has_law = law_green_mandate
+		}
+	}
+
+	possible = {
+		OR = {
+			has_law = law_mixed_transition
+			has_law = law_green_mandate
+		}
+	}
+
+	fail = {
+		has_law = law_fossil_dependent
+	}
+
+	complete = {
+		has_law = law_green_mandate
+		any_scope_state = {
+			count >= 3
+			OR = {
+				has_building = building_solar_wind_farm
+				has_building = building_nuclear_power_plant
+			}
+		}
+		has_technology_researched = renewable_energy
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_green_transition_subsidy
+			years = 5
+		}
+		change_prestige = 25
+	}
+
+	on_fail = {
+		change_prestige = -10
+	}
+
+	weight = {
+		value = 100
+		modifier = {
+			add = 75
+			has_law = law_green_mandate
+		}
+		modifier = {
+			add = -50
+			is_fossil_dependent = yes
+		}
+	}
+}
+
+je_digital_transformation = {
+	icon = "gfx/interface/icons/journal_entries/je_modernization.dds"
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		has_technology_researched = internet_infrastructure
+	}
+
+	possible = {
+		has_technology_researched = internet_infrastructure
+	}
+
+	complete = {
+		is_tech_leader = yes
+		any_scope_state = {
+			count >= 2
+			has_building = building_telecom_network
+		}
+		any_scope_state = {
+			count >= 2
+			has_building = building_software_studio
+		}
+		any_scope_state = {
+			count >= 1
+			has_building = building_data_center
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_tech_hub
+			years = 5
+		}
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			years = 5
+		}
+		change_prestige = 40
+	}
+
+	weight = {
+		value = 100
+		modifier = {
+			add = 50
+			is_tech_leader = yes
+		}
+	}
+}
+
+je_great_power_competition = {
+	icon = "gfx/interface/icons/journal_entries/je_great_game.dds"
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+		is_great_power_2000 = yes
+	}
+
+	possible = {
+		is_great_power_2000 = yes
+	}
+
+	fail = {
+		NOT = { country_rank >= rank_value:major_power }
+		NOT = { is_great_power_2000 = yes }
+	}
+
+	complete = {
+		country_rank >= rank_value:major_power
+		any_scope_state = {
+			count >= 3
+			has_building = building_military_hardware_factory
+		}
+		any_scope_state = {
+			count >= 3
+			OR = {
+				has_building = building_semiconductor_fab
+				has_building = building_data_center
+			}
+		}
+		has_technology_researched = cloud_computing
+	}
+
+	on_complete = {
+		change_prestige = 100
+		add_modifier = {
+			name = modifier_tech_hub
+			years = 3
+		}
+	}
+
+	on_fail = {
+		change_prestige = -50
+	}
+
+	weight = {
+		value = 100
+		modifier = {
+			add = 100
+			country_rank >= rank_value:major_power
+		}
+	}
+}
+
+je_democratic_backsliding = {
+	icon = "gfx/interface/icons/journal_entries/je_political_agitation.dds"
+	group = je_group_political_movements
+
+	is_shown_when_inactive = {
+		is_modern_democracy = yes
+	}
+
+	possible = {
+		is_modern_democracy = yes
+	}
+
+	complete = {
+		is_modern_democracy = yes
+		has_law = law_digital_freedom
+		OR = {
+			has_law = law_regulated_free_press
+			has_law = law_unregulated_media
+		}
+		NOT = { has_law = law_surveillance_state }
+	}
+
+	fail = {
+		NOT = { is_modern_democracy = yes }
+	}
+
+	on_complete = {
+		change_prestige = 30
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 24
+		}
+	}
+
+	on_fail = {
+		change_prestige = -30
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 36
+		}
+	}
+
+	weight = {
+		value = 100
+		modifier = {
+			add = 50
+			has_law = law_surveillance_state
+		}
+		modifier = {
+			add = 25
+			has_law = law_state_controlled_media
+		}
+	}
+}
+
+je_democratization = {
+	icon = "gfx/interface/icons/journal_entries/je_political_agitation.dds"
+	group = je_group_political_movements
+
+	is_shown_when_inactive = {
+		NOT = { is_modern_democracy = yes }
+	}
+
+	possible = {
+		NOT = { is_modern_democracy = yes }
+	}
+
+	complete = {
+		is_modern_democracy = yes
+	}
+
+	fail = {
+		NOT = { is_modern_democracy = yes }
+		has_law = law_surveillance_state
+		has_law = law_state_controlled_media
+		has_law = law_closed_borders
+	}
+
+	on_complete = {
+		change_prestige = 60
+		add_modifier = {
+			name = modifier_digital_economy_bonus
+			months = 36
+		}
+	}
+
+	on_fail = {
+		change_prestige = -20
+		add_modifier = {
+			name = modifier_brain_drain
+			months = 24
+		}
+	}
+
+	weight = {
+		value = 100
+		modifier = {
+			add = 100
+			is_great_power_2000 = yes
+		}
+	}
+}

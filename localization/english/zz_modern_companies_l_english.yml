@@ -1,0 +1,22 @@
+﻿l_english:
+ # ── Company Types ──────────────────────────────────────────────────────────
+ company_tech_giant:0 "Technology Giant"
+ company_tech_giant_desc:0 "A dominant platform or software corporation that has achieved market-defining scale in digital services, consumer electronics, or cloud infrastructure. When prospering, it concentrates engineering talent and accelerates output across the software, electronics, and data-center sectors. In recession, talent attrition and falling valuations ripple through the broader tech economy."
+
+ company_energy_corp:0 "Energy Corporation"
+ company_energy_corp_desc:0 "A vertically integrated energy company operating across fossil, nuclear, and renewable generation. Its scale allows capital-intensive projects that smaller operators cannot finance. Prosperous conditions unlock engineering hiring surges and throughput gains; recessionary conditions hit all extraction and generation equally."
+
+ company_pharma_corp:0 "Pharmaceutical Corporation"
+ company_pharma_corp_desc:0 "A major pharmaceutical research and manufacturing company that combines clinical R&D with industrial-scale production. Prosperity draws academics and bioengineers into the country's lab sector; recession exposes the fragility of high-fixed-cost drug development pipelines."
+
+ company_defense_contractor:0 "Defense Contractor"
+ company_defense_contractor_desc:0 "A private defense firm supplying guided munitions, military vehicles, and weapons platforms to national armed forces and export markets. Its fortunes track defense budgets and geopolitical tension. Prosperity adds engineers and machinists to the military-industrial base; recession contracts procurement and employment alike."
+
+ company_financial_conglomerate:0 "Financial Conglomerate"
+ company_financial_conglomerate_desc:0 "A diversified financial group operating across banking, asset management, insurance, and capital markets. At its peak it provides deep liquidity and draws clerks and analysts from across the economy; in recession its risk exposure amplifies economic downturns more sharply than most sectors."
+
+ company_telecom_provider:0 "Telecommunications Provider"
+ company_telecom_provider_desc:0 "A national or regional telecommunications operator managing mobile, broadband, and fiber networks. Prosperity expands coverage and engineering headcount; the sector is resilient but not immune to recessionary contraction in capital expenditure."
+
+ company_media_conglomerate:0 "Media Conglomerate"
+ company_media_conglomerate_desc:0 "A privately held media group spanning broadcast, digital, and publishing properties. Prosperity concentrates editorial talent and amplifies the country's cultural output; recession causes consolidation and staff cuts. Incompatible with state-controlled media laws, which substitute public monopoly for private scale."

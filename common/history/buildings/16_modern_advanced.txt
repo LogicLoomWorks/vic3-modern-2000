@@ -1,0 +1,444 @@
+﻿BUILDINGS = {
+	# Modern buildings for advanced economies (year 2000 scaffold).
+	# All building keys from 2.1. Production methods omitted — defaults apply.
+	# State names follow vanilla Victoria 3 convention; verify against
+	# common/history/states/ if any scope silently fails.
+	# Ownership is set to country level (approximates mixed public/private
+	# in the year-2000 context; private ownership can be refined in later passes).
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# UNITED STATES
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Silicon Valley / West Coast tech hub
+	s:STATE_CALIFORNIA = {
+		region_state:USA = {
+			create_building = {
+				building = "building_software_studio"
+				add_ownership = { country = { country = "c:USA" levels = 3 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_semiconductor_fab"
+				add_ownership = { country = { country = "c:USA" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_data_center"
+				add_ownership = { country = { country = "c:USA" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_electronics_factory"
+				add_ownership = { country = { country = "c:USA" levels = 2 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# New York — financial and media capital
+	s:STATE_NEW_YORK = {
+		region_state:USA = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:USA" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_media_studio"
+				add_ownership = { country = { country = "c:USA" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_pharmaceutical_lab"
+				add_ownership = { country = { country = "c:USA" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Texas — energy and defense corridor
+	s:STATE_TEXAS = {
+		region_state:USA = {
+			create_building = {
+				building = "building_natural_gas_plant"
+				add_ownership = { country = { country = "c:USA" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_guided_munitions_plant"
+				add_ownership = { country = { country = "c:USA" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_military_hardware_factory"
+				add_ownership = { country = { country = "c:USA" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Washington DC — government, intelligence, telecom backbone
+	s:STATE_DISTRICT_OF_COLUMBIA = {
+		region_state:USA = {
+			create_building = {
+				building = "building_intelligence_agency"
+				add_ownership = { country = { country = "c:USA" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:USA" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# GREAT BRITAIN
+	# Capital: STATE_HOME_COUNTIES (London)
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# London — financial and tech hub
+	s:STATE_HOME_COUNTIES = {
+		region_state:GBR = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:GBR" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_software_studio"
+				add_ownership = { country = { country = "c:GBR" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:GBR" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_media_studio"
+				add_ownership = { country = { country = "c:GBR" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Midlands — manufacturing and pharma
+	s:STATE_MIDLANDS = {
+		region_state:GBR = {
+			create_building = {
+				building = "building_electronics_factory"
+				add_ownership = { country = { country = "c:GBR" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_pharmaceutical_lab"
+				add_ownership = { country = { country = "c:GBR" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Scotland — nuclear power and defense
+	s:STATE_SCOTLAND = {
+		region_state:GBR = {
+			create_building = {
+				building = "building_nuclear_power_plant"
+				add_ownership = { country = { country = "c:GBR" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# FRANCE
+	# Capital: STATE_ILE_DE_FRANCE
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Paris region — finance, software, media
+	s:STATE_ILE_DE_FRANCE = {
+		region_state:FRA = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:FRA" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_software_studio"
+				add_ownership = { country = { country = "c:FRA" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_media_studio"
+				add_ownership = { country = { country = "c:FRA" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:FRA" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Normandy — nuclear power corridor (Flamanville, etc.)
+	s:STATE_NORMANDY = {
+		region_state:FRA = {
+			create_building = {
+				building = "building_nuclear_power_plant"
+				add_ownership = { country = { country = "c:FRA" levels = 2 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Alsace-Lorraine — pharma, chemicals, advanced manufacturing
+	s:STATE_ALSACE = {
+		region_state:FRA = {
+			create_building = {
+				building = "building_pharmaceutical_lab"
+				add_ownership = { country = { country = "c:FRA" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_electronics_factory"
+				add_ownership = { country = { country = "c:FRA" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# GERMANY
+	# Capital: STATE_BRANDENBURG (Berlin)
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Rhineland — industrial and electronics heartland (Ruhr, Düsseldorf)
+	s:STATE_RHINELAND = {
+		region_state:GER = {
+			create_building = {
+				building = "building_electronics_factory"
+				add_ownership = { country = { country = "c:GER" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_pharmaceutical_lab"
+				add_ownership = { country = { country = "c:GER" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Bavaria — high-tech manufacturing (Munich, Siemens, BMW)
+	s:STATE_BAVARIA = {
+		region_state:GER = {
+			create_building = {
+				building = "building_semiconductor_fab"
+				add_ownership = { country = { country = "c:GER" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_software_studio"
+				add_ownership = { country = { country = "c:GER" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Brandenburg/Berlin — finance, telecom, data
+	s:STATE_BRANDENBURG = {
+		region_state:GER = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:GER" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:GER" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# JAPAN
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Kanto — Tokyo mega-region: finance, electronics, semiconductors
+	s:STATE_KANTO = {
+		region_state:JAP = {
+			create_building = {
+				building = "building_electronics_factory"
+				add_ownership = { country = { country = "c:JAP" levels = 3 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_semiconductor_fab"
+				add_ownership = { country = { country = "c:JAP" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:JAP" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_data_center"
+				add_ownership = { country = { country = "c:JAP" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Kinai — Osaka/Kyoto region: electronics and pharma
+	s:STATE_KINAI = {
+		region_state:JAP = {
+			create_building = {
+				building = "building_electronics_factory"
+				add_ownership = { country = { country = "c:JAP" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_pharmaceutical_lab"
+				add_ownership = { country = { country = "c:JAP" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Kyushu — nuclear power
+	s:STATE_KYUSHU = {
+		region_state:JAP = {
+			create_building = {
+				building = "building_nuclear_power_plant"
+				add_ownership = { country = { country = "c:JAP" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# CANADA
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# Ontario — finance and tech (Toronto)
+	s:STATE_ONTARIO = {
+		region_state:CAN = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:CAN" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_software_studio"
+				add_ownership = { country = { country = "c:CAN" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Alberta — oil sands and natural gas
+	s:STATE_ALBERTA = {
+		region_state:CAN = {
+			create_building = {
+				building = "building_natural_gas_plant"
+				add_ownership = { country = { country = "c:CAN" levels = 2 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# British Columbia — rare earths, tech corridor (Vancouver)
+	s:STATE_BRITISH_COLUMBIA = {
+		region_state:CAN = {
+			create_building = {
+				building = "building_data_center"
+				add_ownership = { country = { country = "c:CAN" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# AUSTRALIA
+	# Capital: STATE_NEW_SOUTH_WALES (Sydney)
+	# ═══════════════════════════════════════════════════════════════════════
+
+	# New South Wales — Sydney: finance and tech
+	s:STATE_NEW_SOUTH_WALES = {
+		region_state:AST = {
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:AST" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_software_studio"
+				add_ownership = { country = { country = "c:AST" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Western Australia — rare earths and lithium (world's largest producer)
+	s:STATE_WESTERN_AUSTRALIA = {
+		region_state:AST = {
+			create_building = {
+				building = "building_rare_earth_mine"
+				add_ownership = { country = { country = "c:AST" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_lithium_mine"
+				add_ownership = { country = { country = "c:AST" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# Queensland — LNG corridor
+	s:STATE_QUEENSLAND = {
+		region_state:AST = {
+			create_building = {
+				building = "building_natural_gas_plant"
+				add_ownership = { country = { country = "c:AST" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+
+	# ═══════════════════════════════════════════════════════════════════════
+	# SOUTH KOREA
+	# Note: STATE_JOSEON covers the Korean peninsula. In the 2000-era mod,
+	#       ROK controls the southern portion. Verify state split against
+	#       common/history/states/ — adjust to STATE_GYEONGGI or similar if defined.
+	# ═══════════════════════════════════════════════════════════════════════
+
+	s:STATE_JOSEON = {
+		region_state:ROK = {
+			create_building = {
+				building = "building_semiconductor_fab"
+				add_ownership = { country = { country = "c:ROK" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_electronics_factory"
+				add_ownership = { country = { country = "c:ROK" levels = 2 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_telecom_network"
+				add_ownership = { country = { country = "c:ROK" levels = 1 } }
+				reserves = 1
+			}
+			create_building = {
+				building = "building_financial_hub"
+				add_ownership = { country = { country = "c:ROK" levels = 1 } }
+				reserves = 1
+			}
+		}
+	}
+}

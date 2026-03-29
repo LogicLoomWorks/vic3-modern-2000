@@ -1,0 +1,44 @@
+﻿l_english:
+
+ # ── Bookmark name & description ──────────────────────────────────────────────
+ # These keys are referenced by common/bookmarks/bm_new_millennium.txt.
+ # They will appear if bookmark-picker GUI support is ever added.
+
+ bm_new_millennium_name: "The New Millennium"
+ bm_new_millennium_desc: "The world stands at the dawn of a new century. The Cold War is over, globalization is reshaping every economy, and the internet is transforming how humanity communicates. The United States stands as the sole superpower, but rising powers challenge the existing order. Lead your nation through the upheavals of the twenty-first century — wars, financial crises, climate pressures, and a technological revolution unlike any before."
+
+ # ── Per-country bookmark descriptions ────────────────────────────────────────
+ # These keys are referenced by the countries = { } block in the bookmark file.
+
+ bm_new_millennium_USA_desc: "The United States enters the new millennium as the world's unrivaled superpower. Its economy dwarfs all rivals, its military projects force to every corner of the globe, and its culture saturates international media. But the burden of unipolar leadership is heavy, and a world resentful of American dominance is beginning to push back."
+ bm_new_millennium_CHI_desc: "China has sustained two decades of double-digit growth and is reclaiming its historical place at the center of world affairs. One hundred years of humiliation at foreign hands have made the Communist Party determined to restore national greatness. The question is not whether China will rise, but how the world will respond."
+ bm_new_millennium_RUS_desc: "Russia emerges from the collapse of the Soviet Union battered and impoverished. With vast natural resources, nuclear weapons, and a permanent UN Security Council seat, Russia remains a great power by every formal measure — but the economic chaos of the 1990s has hollowed out its strength. A new leader must decide whether to integrate with the West or chart a different path."
+ bm_new_millennium_GER_desc: "Germany reunified just a decade ago and has rapidly become the economic anchor of Europe. As the largest economy in the European Union and a driving force behind the euro, Germany wields enormous soft power. Yet reunification carries enormous costs, and the country's complicated history still shapes its foreign policy ambitions."
+ bm_new_millennium_JAP_desc: "Japan is the world's second-largest economy, but a decade of economic stagnation following the asset-price collapse of 1991 has shaken confidence. An aging population, a rigid corporate culture, and a rising China to the west pose structural challenges. Can Japan reform itself, or will the twenty-first century belong to others?"
+ bm_new_millennium_BRZ_desc: "Brazil is Latin America's giant — a continental-sized democracy of 170 million people with enormous agricultural and mineral wealth. After decades of military rule and hyperinflation, democratic stability has returned. Brazil is a founding member of any future multipolar order, but inequality and corruption remain deep scars."
+ bm_new_millennium_FRA_desc: "France is a nuclear-armed permanent member of the UN Security Council and a founding pillar of the European project. Deeply committed to a multipolar world and wary of American unipolarity, France under a new government is charting an independent foreign policy. At home, questions of immigration, identity, and social cohesion are reshaping politics."
+ bm_new_millennium_IND_desc: "India has just conducted nuclear tests and asserted its status as a great power. With one billion people, a booming software sector, and the world's largest democracy, India's potential is enormous — but poverty, communal tensions, and conflict with Pakistan cast long shadows. The twenty-first century may belong to India if it can realize that potential."
+ bm_new_millennium_GBR_desc: "The United Kingdom retains a permanent seat on the UN Security Council, a nuclear deterrent, and a 'special relationship' with the United States. The Blair government has modernized Labour and rebranded Britain as 'Cool Britannia.' But questions about Britain's relationship with Europe, devolution in Scotland and Wales, and the future of the Northern Ireland peace process loom large."
+
+ # ── Country flavor text (DISPLAYED on the vanilla Vic3 country-picker) ───────
+ # Victoria 3 reads TAG_FLAVOR_TEXT keys from country_flavor_text_l_english.yml
+ # and displays them when a player hovers over or selects a country.
+ # These keys use the same naming convention as the vanilla file.
+
+ USA_FLAVOR_TEXT:0 "The United States stands as the world's sole superpower at the turn of the millennium. With an economy producing a quarter of global GDP, the world's most powerful military, and cultural influence that reaches every corner of the globe, America's choices will shape the twenty-first century. But managing a unipolar world is harder than it looks."
+
+ CHI_FLAVOR_TEXT:0 "The People's Republic of China has sustained extraordinary growth since Deng Xiaoping's reforms and is now the world's most populous nation and a rising great power. The Communist Party has traded ideology for pragmatism, delivering prosperity in exchange for political control. As China's economy surges, the world must adjust to its ambitions."
+
+ RUS_FLAVOR_TEXT:0 "Russia is a great power in transition — nuclear-armed and vast, but economically shattered by the collapse of the Soviet Union. The 1990s brought oligarchs, chaos, and humiliation. Now a new leader must decide whether Russia's future lies in partnership with the West or in asserting a sphere of influence across the former Soviet space."
+
+ GER_FLAVOR_TEXT:0 "A reunified Germany is the undisputed economic heart of Europe. As the European Union deepens integration and prepares to launch the euro, Germany's choices drive the continent. But reunification has cost hundreds of billions of marks, and the eastern states lag far behind. Can Germany pay for reunification while leading Europe?"
+
+ JAP_FLAVOR_TEXT:0 "Japan's 'lost decade' of stagnation follows the spectacular crash of its asset-price bubble. The world's second-largest economy faces an aging population, rigid corporate structures, and a banking system burdened with bad loans. Meanwhile China's rise is reshaping the regional balance of power that Japan once dominated."
+
+ BRZ_FLAVOR_TEXT:0 "Brazil is the sleeping giant of the Americas — vast, resource-rich, and home to 170 million people. After military rule and hyperinflation, democracy and economic stability have returned. Brazil aspires to a permanent seat on the UN Security Council and leadership among developing nations. The question is whether it can translate potential into power."
+
+ FRA_FLAVOR_TEXT:0 "France is a nuclear power, a permanent UN Security Council member, and a committed champion of a multipolar world order. Suspicious of American unipolarity and deeply invested in European integration, France seeks to give Europe a voice distinct from Washington's. The 35-hour working week and expansive social model are also under growing strain."
+
+ IND_FLAVOR_TEXT:0 "India has declared itself a nuclear power and joined an elite club of nations. With one billion people, a democratic system, and a booming information technology sector, India's trajectory points upward. Yet half the population remains in poverty, and the risk of conflict with nuclear-armed Pakistan is ever present. India's century may be coming — but it is not yet here."
+
+ GBR_FLAVOR_TEXT:0 "Britain enters the new millennium with a reformist government promising to modernize the country's creaking public services and reposition it at the heart of Europe. The peace process in Northern Ireland has brought hope after decades of violence. But Scotland is demanding more autonomy, and the question of Britain's relationship with the euro will define the next decade."

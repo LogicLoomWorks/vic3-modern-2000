@@ -458,7 +458,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=1
-						region="STATE_INGRIA"
+						region="STATE_EAST_KARELIA"
 					}
 				}
 				reserves=1
@@ -482,7 +482,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=1
-						region="STATE_INGRIA"
+						region="STATE_EAST_KARELIA"
 					}
 				}
 				reserves=1
@@ -744,7 +744,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=8
-						region="STATE_INGRIA"
+						region="STATE_BREST"
 					}
 				}
 				reserves=1
@@ -761,7 +761,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=6
-						region="STATE_INGRIA"
+						region="STATE_VOLHYNIA"
 					}
 				}
 				reserves=1
@@ -834,7 +834,7 @@
 						type="building_manor_house"
 						country="c:RUS"
 						levels=8
-						region="STATE_INGRIA"
+						region="STATE_KIEV"
 					}
 				}
 				reserves=1
@@ -1088,7 +1088,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=1
-						region="STATE_INGRIA"
+						region="STATE_NOVGOROD"
 					}
 				}
 				reserves=1
@@ -1896,7 +1896,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=1
-						region="STATE_INGRIA"
+						region="STATE_RYAZAN"
 					}
 				}
 				reserves=1
@@ -1923,7 +1923,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=1
-						region="STATE_INGRIA"
+						region="STATE_VITEBSK"
 					}
 				}
 				reserves=1
@@ -1942,7 +1942,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=2
-						region="STATE_INGRIA"
+						region="STATE_VITEBSK"
 					}
 				}
 				reserves=1
@@ -2066,7 +2066,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=1
-						region="STATE_INGRIA"
+						region="STATE_UFA"
 					}
 				}
 				reserves=1
@@ -2107,7 +2107,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=2
-						region="STATE_INGRIA"
+						region="STATE_CHELYABINSK"
 					}
 				}
 				reserves=1

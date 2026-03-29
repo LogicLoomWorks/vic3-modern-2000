@@ -1,0 +1,63 @@
+﻿### MODERN LAW GROUPS — vic3-modern-2000
+#
+# law_group_category maps to the UI column the group appears in.
+# Vanilla categories confirmed: power_structure, distribution_of_power
+# Custom categories used below (may require UI loc entries to display cleanly):
+#   economics, military
+#
+# base_enactment_days: 365 = ordinary legislation; 730 = major structural reform.
+# All groups are mutually exclusive within themselves (one active law per group).
+
+law_group_digital_rights = {
+	# Governs state access to personal data, online speech, and surveillance
+	law_group_category = power_structure
+	base_enactment_days = 730
+}
+
+law_group_energy_policy = {
+	# Determines the energy mix and fossil/renewable balance the state mandates
+	law_group_category = economics
+	base_enactment_days = 730
+}
+
+law_group_healthcare_system = {
+	# Governs whether healthcare is state-funded, mixed, or market-provided
+	law_group_category = distribution_of_power
+	base_enactment_days = 730
+}
+
+law_group_immigration_policy = {
+	# Controls the openness of borders to labor and population movement
+	law_group_category = distribution_of_power
+	base_enactment_days = 365
+}
+
+law_group_welfare_state = {
+	# Governs the floor of economic security the state guarantees to its citizens
+	law_group_category = distribution_of_power
+	base_enactment_days = 730
+}
+
+law_group_military_doctrine = {
+	# Determines the organizational and technological basis of the armed forces
+	law_group_category = military
+	base_enactment_days = 365
+}
+
+law_group_trade_policy = {
+	# Sets the terms on which the domestic economy engages with world markets
+	law_group_category = economics
+	base_enactment_days = 365
+}
+
+law_group_nuclear_policy = {
+	# Governs whether the state pursues, maintains, or renounces nuclear weapons
+	law_group_category = military
+	base_enactment_days = 730
+}
+
+law_group_media_regulation = {
+	# Determines how far the state can shape what citizens read, watch, and say
+	law_group_category = power_structure
+	base_enactment_days = 365
+}

@@ -1,0 +1,555 @@
+﻿### ERA 6 — INFORMATION AGE
+
+internet_infrastructure = {
+	# Unlocks the digital economy — foundation for all modern computing techs
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/internet_infrastructure.dds"
+	category = production
+
+	modifier = {
+		country_authority_mult = 0.1
+		country_max_declared_interests_add = 1
+	}
+
+	unlocking_technologies = {
+		telephone
+	}
+
+	ai_weight = {
+		value = 3 # Entry point of the modern tech tree, critical for everyone
+	}
+}
+
+fiber_optics = {
+	# Unlocks high-bandwidth data infrastructure
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/fiber_optics.dds"
+	category = production
+
+	modifier = {
+		country_max_declared_interests_add = 1
+		country_minting_mult = 0.05
+	}
+
+	unlocking_technologies = {
+		internet_infrastructure
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_industrial_expansion
+			}
+			add = 1
+		}
+	}
+}
+
+mobile_telecommunications = {
+	# Extends connectivity beyond wired networks; economic and social multiplier
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/mobile_telecommunications.dds"
+	category = production
+
+	modifier = {
+		country_authority_mult = 0.05
+		building_economy_of_scale_level_cap_add = 5
+	}
+
+	unlocking_technologies = {
+		internet_infrastructure
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
+}
+
+gps_navigation = {
+	# Satellite positioning transforms logistics, surveying, and resource discovery
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/gps_navigation.dds"
+	category = production
+
+	modifier = {
+		country_resource_discovery_chance_mult = 0.25
+		building_construction_sector_throughput_add = 0.05
+	}
+
+	unlocking_technologies = {
+		mobile_telecommunications
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_industrial_expansion
+					has_strategy = ai_strategy_resource_expansion
+				}
+			}
+			add = 2
+		}
+	}
+}
+
+containerized_logistics = {
+	# The standardized shipping container quietly remade global trade
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/containerized_logistics.dds"
+	category = production
+
+	modifier = {
+		building_economy_of_scale_level_cap_add = 10
+		state_market_access_price_impact = 0.1
+	}
+
+	unlocking_technologies = {
+		gps_navigation
+		compression_ignition
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_industrial_expansion
+			}
+			add = 1
+		}
+	}
+}
+
+precision_agriculture = {
+	# GPS-guided machinery, soil sensors, and satellite imagery optimize every hectare
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/precision_agriculture.dds"
+	category = production
+
+	modifier = {
+	}
+
+	unlocking_technologies = {
+		gps_navigation
+		mechanized_farming
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_agricultural_expansion
+					has_strategy = ai_strategy_plantation_economy
+				}
+			}
+			add = 2
+		}
+	}
+}
+
+advanced_petrochemicals = {
+	# Modern refining extracts far more value from a barrel of crude than simple combustion ever did
+	era = era_6
+	texture = "gfx/interface/icons/technology_icons/advanced_petrochemicals.dds"
+	category = production
+
+	modifier = {
+		goods_output_oil_mult = 0.2
+		country_resource_discovery_chance_mult = 0.25
+	}
+
+	unlocking_technologies = {
+		oil_turbine
+		plastics
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_resource_expansion
+			}
+			add = 2
+		}
+	}
+}
+
+### ERA 7 — DIGITAL AGE
+
+cloud_computing = {
+	# Centralizing computation lets small firms punch above their weight and governments extend their reach
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/cloud_computing.dds"
+	category = production
+
+	modifier = {
+		country_authority_mult = 0.1
+		country_max_declared_interests_add = 1
+		country_max_weekly_construction_progress_add = 5
+	}
+
+	unlocking_technologies = {
+		fiber_optics
+	}
+
+	ai_weight = {
+		value = 3 # Very important tech in general
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_industrial_expansion
+			}
+			add = 1
+		}
+	}
+}
+
+renewable_energy = {
+	# Wind and solar generation reach cost parity with fossil fuels, reshaping industrial energy supply
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/renewable_energy.dds"
+	category = production
+
+	modifier = {
+		building_power_plant_throughput_add = 0.15
+		building_construction_sector_throughput_add = 0.05
+	}
+
+	unlocking_technologies = {
+		advanced_petrochemicals
+		steam_turbine
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_industrial_expansion
+					has_strategy = ai_strategy_resource_expansion
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+hydraulic_fracturing = {
+	# Horizontal drilling and high-pressure water unlock oil and gas locked in tight shale formations
+	# Countries get a +25% chance of discovering new resources
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/hydraulic_fracturing.dds"
+	category = production
+
+	modifier = {
+		goods_output_oil_mult = 0.25
+		country_resource_discovery_chance_mult = 0.25
+	}
+
+	unlocking_technologies = {
+		advanced_petrochemicals
+		pneumatic_tools
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_resource_expansion
+			}
+			add = 3
+		}
+	}
+}
+
+industrial_automation = {
+	# Robotic assembly lines and automated warehousing compress labor costs and expand throughput
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/industrial_automation.dds"
+	category = production
+
+	modifier = {
+		building_economy_of_scale_level_cap_add = 20
+		building_construction_sector_throughput_add = 0.1
+	}
+
+	unlocking_technologies = {
+		cloud_computing
+		containerized_logistics
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_industrial_expansion
+			}
+			add = 2
+		}
+	}
+}
+
+electric_vehicles = {
+	# Unlocks Electric Vehicle Production PM in Motor Industry
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/electric_vehicles.dds"
+	category = production
+
+	modifier = {
+		building_motor_industry_throughput_add = 0.2
+	}
+
+	unlocking_technologies = {
+		industrial_automation
+		renewable_energy
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_industrial_expansion
+			}
+			add = 1
+		}
+	}
+}
+
+biotech_engineering = {
+	# Gene editing, synthetic biology, and precision fermentation expand what agriculture and medicine can produce
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/biotech_engineering.dds"
+	category = production
+
+	modifier = {
+		country_institution_health_system_max_investment_add = 1
+		state_harvest_condition_disease_outbreak_impact_mult = -0.2
+	}
+
+	unlocking_technologies = {
+		precision_agriculture
+		cloud_computing
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_agricultural_expansion
+					has_strategy = ai_strategy_plantation_economy
+				}
+			}
+			add = 2
+		}
+	}
+}
+
+advanced_materials = {
+	# Carbon fiber, graphene, and high-performance alloys make construction lighter, stronger, and faster
+	era = era_7
+	texture = "gfx/interface/icons/technology_icons/advanced_materials.dds"
+	category = production
+
+	modifier = {
+		building_construction_sector_throughput_add = 0.15
+		building_economy_of_scale_level_cap_add = 10
+	}
+
+	unlocking_technologies = {
+		industrial_automation
+		arc_welding
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_industrial_expansion
+			}
+			add = 1
+		}
+	}
+}
+
+### ERA 8 — NEAR FUTURE
+
+artificial_intelligence = {
+	# Machine learning systems optimize supply chains, resource extraction, and industrial scheduling
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/artificial_intelligence.dds"
+	category = production
+
+	modifier = {
+		country_authority_mult = 0.15
+		building_economy_of_scale_level_cap_add = 15
+		country_max_declared_interests_add = 1
+		country_max_weekly_construction_progress_add = 10
+	}
+
+	unlocking_technologies = {
+		cloud_computing
+		industrial_automation
+	}
+
+	ai_weight = {
+		value = 3 # Very important tech in general
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_industrial_expansion
+			}
+			add = 2
+		}
+	}
+}
+
+quantum_computing = {
+	# Quantum processors solve optimization problems intractable for classical machines
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/quantum_computing.dds"
+	category = production
+
+	modifier = {
+		country_max_declared_interests_add = 2
+		country_minting_mult = 0.1
+		country_loan_interest_rate_add = -0.02
+	}
+
+	unlocking_technologies = {
+		artificial_intelligence
+		advanced_materials
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+fusion_research = {
+	# Controlled plasma fusion promises virtually limitless clean energy — if the engineering can be made to work
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/fusion_research.dds"
+	category = production
+
+	modifier = {
+		building_power_plant_throughput_add = 0.25
+		building_construction_sector_throughput_add = 0.1
+		country_resource_discovery_chance_mult = 0.25
+	}
+
+	unlocking_technologies = {
+		renewable_energy
+		advanced_materials
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_industrial_expansion
+					has_strategy = ai_strategy_resource_expansion
+				}
+			}
+			add = 2
+		}
+	}
+}
+
+vertical_farming = {
+	# Stacked hydroponic bays inside climate-controlled towers produce crops regardless of soil or season
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/vertical_farming.dds"
+	category = production
+
+	modifier = {
+		state_infrastructure_from_population_add = 1
+	}
+
+	unlocking_technologies = {
+		biotech_engineering
+		artificial_intelligence
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_agricultural_expansion
+					has_strategy = ai_strategy_plantation_economy
+				}
+			}
+			add = 2
+		}
+	}
+}
+
+space_commercialization = {
+	# Private launch vehicles and orbital industry open the solar system as an economic frontier
+	# Countries get a +50% chance of discovering new resources
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/space_commercialization.dds"
+	category = production
+
+	modifier = {
+		country_resource_discovery_chance_mult = 0.5
+		country_max_declared_interests_add = 2
+		country_prestige_mult = 0.1
+	}
+
+	unlocking_technologies = {
+		artificial_intelligence
+		advanced_materials
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				country_rank >= rank_value:unrecognized_major_power
+			}
+			add = 2
+		}
+	}
+}
+
+carbon_capture = {
+	# Direct air capture and geological sequestration begin to roll back the industrial era's atmospheric legacy
+	era = era_8
+	texture = "gfx/interface/icons/technology_icons/carbon_capture.dds"
+	category = production
+
+	modifier = {
+		state_pollution_reduction_health_mult = -0.25
+		state_harvest_condition_flood_impact_mult = -0.15
+		state_harvest_condition_disease_outbreak_impact_mult = -0.1
+	}
+
+	unlocking_technologies = {
+		fusion_research
+		vertical_farming
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}

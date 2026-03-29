@@ -1,0 +1,59 @@
+﻿# vic3-modern-2000: "The New Millennium" scenario bookmark.
+#
+# ┌─────────────────────────────────────────────────────────────────────────┐
+# │  IMPORTANT — Vic3 bookmark UI status (verified against game v2.0+)      │
+# │                                                                          │
+# │  Victoria 3 does NOT ship a common/bookmarks/ loader.                   │
+# │  All bookmark-picker GUI code in frontend_bookmarks.gui was commented    │
+# │  out before launch (marked "### v3 outcomment").                         │
+# │                                                                          │
+# │  What DOES work for the new-game screen:                                 │
+# │    • common/defines/  → sets START_DATE / END_DATE  (working)            │
+# │    • country_flavor_text_l_english.yml → per-country blurbs (working)   │
+# │                                                                          │
+# │  This file is kept in the correct Jomini bookmark format so it can be   │
+# │  activated later with a small GUI patch (uncomment the bookmark_grid     │
+# │  block in frontend_bookmarks.gui and hook GetBookmarks to this folder). │
+# └─────────────────────────────────────────────────────────────────────────┘
+
+bm_new_millennium = {
+
+	# Localization keys — see localization/english/modern_bookmark_l_english.yml
+	name = "bm_new_millennium_name"
+	desc = "bm_new_millennium_desc"
+
+	# The exact date that will be set when this bookmark is selected.
+	# Must match NGame.START_DATE in common/defines/00_modern_defines.txt.
+	start_date = 2000.1.1
+
+	# Marks this as the primary (default-selected) bookmark.
+	is_main_bookmark = yes
+
+	# Countries shown as highlighted / recommended on the country-picker.
+	# Tags must exist in common/country_definitions/.
+	recommended_countries = {
+		USA  # United States — sole superpower, global hegemon
+		CHI  # China — rising industrial power and regional giant
+		RUS  # Russia — nuclear state navigating post-Soviet transition
+		GER  # Germany — economic engine of a newly reunited Europe
+		JAP  # Japan — technological powerhouse facing stagnation
+		BRZ  # Brazil — largest democracy in Latin America
+		FRA  # France — nuclear power and EU cornerstone
+		IND  # India — world's largest democracy, software boom
+		GBR  # United Kingdom — permanent Security Council seat, NATO anchor
+	}
+
+	# Per-country localization hooks for the country-picker description panel.
+	# Each key must appear in modern_bookmark_l_english.yml.
+	countries = {
+		USA = { desc = "bm_new_millennium_USA_desc" }
+		CHI = { desc = "bm_new_millennium_CHI_desc" }
+		RUS = { desc = "bm_new_millennium_RUS_desc" }
+		GER = { desc = "bm_new_millennium_GER_desc" }
+		JAP = { desc = "bm_new_millennium_JAP_desc" }
+		BRZ = { desc = "bm_new_millennium_BRZ_desc" }
+		FRA = { desc = "bm_new_millennium_FRA_desc" }
+		IND = { desc = "bm_new_millennium_IND_desc" }
+		GBR = { desc = "bm_new_millennium_GBR_desc" }
+	}
+}

@@ -1,4 +1,4 @@
-COUNTRIES = {
+﻿COUNTRIES = {
 	c:ISR ?= { effect_starting_technology_tier_4_tech = yes }
 	c:UAE ?= { effect_starting_technology_tier_4_tech = yes }
 	c:TUR ?= { effect_starting_technology_tier_3_tech = yes }

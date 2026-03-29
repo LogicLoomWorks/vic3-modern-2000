@@ -1,11 +1,7 @@
 ﻿DIPLOMACY = {
-	c:SUD ?= {
-		create_diplomatic_pact = {
-			country = c:SSD
-			type = puppet
-		}
-	}	
-	
+	# South Sudan (SSD) is NOT a Sudan puppet in 2000 — the Second Sudanese Civil War
+	# (1983–2005) was ongoing. The independence war is in 00_modern_wars.txt.
+
 	c:USA ?= {
 		create_diplomatic_pact = {
 			country = c:PCO

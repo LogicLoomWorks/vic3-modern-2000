@@ -1,0 +1,45 @@
+﻿# Modern Scripted Effects — vic3-modern-2000
+
+effect_impose_sanctions = {
+    $TARGET$ = {
+        add_modifier = {
+            name = modifier_sanctions_target
+            months = 36
+        }
+    }
+    add_modifier = {
+        name = modifier_sanctions_sender
+        months = 36
+    }
+}
+
+effect_lift_sanctions = {
+    $TARGET$ = {
+        remove_modifier = modifier_sanctions_target
+    }
+    remove_modifier = modifier_sanctions_sender
+}
+
+effect_cyber_attack = {
+    $TARGET$ = {
+        add_modifier = {
+            name = modifier_cyber_attack_victim
+            months = 12
+        }
+    }
+}
+
+effect_nuclear_test = {
+    add_modifier = {
+        name = modifier_nuclear_arsenal
+        years = 10
+    }
+    change_infamy = 20
+}
+
+effect_climate_crisis_tick = {
+    add_modifier = {
+        name = modifier_climate_penalty
+        months = 24
+    }
+}

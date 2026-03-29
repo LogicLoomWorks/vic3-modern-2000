@@ -1,0 +1,24 @@
+﻿l_english:
+ gov_liberal_democracy:0 "Liberal Democracy"
+ gov_liberal_democracy_desc:0 "Competitive multi-party elections, constitutionally protected civil rights, and an independent judiciary constrain the government's power over the governed. The system is noisy, slow, and expensive to run. It is also the only form of government that reliably replaces itself without violence."
+
+ gov_illiberal_democracy:0 "Illiberal Democracy"
+ gov_illiberal_democracy_desc:0 "Elections are held and the results are nominally respected, but civil liberties are curtailed, the press is pressured, and the incumbent enjoys structural advantages that make alternation of power increasingly unlikely. The democratic form persists while the democratic substance hollows out."
+
+ gov_parliamentary_democracy:0 "Parliamentary Democracy"
+ gov_parliamentary_democracy_desc:0 "The head of government is accountable to the legislature and survives only as long as it commands a majority. The head of state is ceremonial. Coalitions form and fall; policy reflects the negotiated position of parliamentary arithmetic. The system is adaptive; it is also unstable when no stable majority can be constructed."
+
+ gov_federal_republic:0 "Federal Republic"
+ gov_federal_republic_desc:0 "A directly elected president holds strong executive authority within a federal constitutional framework. Power is divided between the national government and constituent states. The system was designed to prevent tyranny by fragmenting authority; it occasionally prevents effective governance at the same time."
+
+ gov_one_party_state:0 "One-Party State"
+ gov_one_party_state_desc:0 "A single party monopolizes political power, controls state institutions, and defines the acceptable parameters of public discourse. Internal party factions provide the only outlet for political competition. The system is stable until it is not; when the party loses legitimacy, there is no legal mechanism for transferring power."
+
+ gov_military_junta:0 "Military Junta"
+ gov_military_junta_desc:0 "The armed forces have suspended civilian government and exercise executive authority directly. The junta governs by decree. Political parties are banned or neutralized. The arrangement is presented as temporary — a corrective interlude — until conditions allow a return to civilian rule that, in practice, may never come."
+
+ gov_theocracy:0 "Theocracy"
+ gov_theocracy_desc:0 "Religious law and its authorized interpreters provide the framework for governance. Political legitimacy is derived from divine authority rather than popular mandate. The devout find their values embedded in every institution of state. Those who do not share those values find them compelled."
+
+ gov_absolute_monarchy:0 "Absolute Monarchy"
+ gov_absolute_monarchy_desc:0 "The monarch holds undivided executive, legislative, and judicial authority. Succession is hereditary. No constitution limits the crown. The system is stable when the monarch is competent and the revenue base is sufficient to buy consent; it is brittle when neither condition holds."

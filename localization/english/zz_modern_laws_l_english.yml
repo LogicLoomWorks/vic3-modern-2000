@@ -1,0 +1,128 @@
+﻿l_english:
+ ### LAW GROUPS
+
+ law_group_digital_rights:0 "Digital Rights"
+ law_group_digital_rights_desc:0 "Determines how far the state may surveil its citizens, regulate online speech, and control access to personal data."
+
+ law_group_energy_policy:0 "Energy Policy"
+ law_group_energy_policy_desc:0 "Sets the balance between fossil fuels and renewable sources, and whether the transition away from carbon is mandated or left to the market."
+
+ law_group_healthcare_system:0 "Healthcare System"
+ law_group_healthcare_system_desc:0 "Governs whether medical care is a state guarantee, a market commodity, or something in between."
+
+ law_group_immigration_policy:0 "Immigration Policy"
+ law_group_immigration_policy_desc:0 "Controls the terms on which foreign nationals may enter, settle, and work."
+
+ law_group_welfare_state:0 "Welfare State"
+ law_group_welfare_state_desc:0 "Determines the floor of economic security the state guarantees to every citizen, from minimal safety nets to unconditional income."
+
+ law_group_military_doctrine:0 "Military Doctrine"
+ law_group_military_doctrine_desc:0 "Shapes the organizational and technological basis of the armed forces, from mass conscription to a small high-technology professional force."
+
+ law_group_trade_policy:0 "Trade Policy"
+ law_group_trade_policy_desc:0 "Sets the terms on which the domestic economy engages with world markets — open, protected, or strategically selective."
+
+ law_group_nuclear_policy:0 "Nuclear Policy"
+ law_group_nuclear_policy_desc:0 "Governs whether the state acquires, maintains, limits, or renounces nuclear weapons capability."
+
+ law_group_media_regulation:0 "Media Regulation"
+ law_group_media_regulation_desc:0 "Determines how far the state may direct, license, or restrict what citizens publish, broadcast, and read."
+
+ ### DIGITAL RIGHTS LAWS
+
+ law_surveillance_state:0 "Surveillance State"
+ law_surveillance_state_desc:0 "Mass data collection, facial recognition networks, and mandatory metadata retention give the state near-total visibility into the communications and movements of its population. Security agencies gain unprecedented situational awareness. The intelligentsia and organized labor — the groups most likely to organize effective opposition — find themselves weakened and watched."
+
+ law_regulated_data:0 "Regulated Data"
+ law_regulated_data_desc:0 "Data protection legislation, mandatory breach notification, and algorithmic accountability requirements balance the state's interest in security against the citizen's interest in privacy. Neither the surveillance apparatus nor the free internet receives everything it wants, but both can function."
+
+ law_digital_freedom:0 "Digital Freedom"
+ law_digital_freedom_desc:0 "Robust protections for online speech, end-to-end encryption, and strict limits on government access to communications data. Innovation accelerates as engineers and activists alike operate without fear of surveillance. Governments find it harder to suppress dissent; disinformation spreads alongside legitimate speech."
+
+ ### ENERGY POLICY LAWS
+
+ law_fossil_dependent:0 "Fossil Dependent"
+ law_fossil_dependent_desc:0 "The economy runs on oil, gas, and coal, and state policy is organized to keep it that way. Extraction subsidies, friendly permitting regimes, and resistance to international climate commitments protect the carbon sector. The treasury benefits from commodity revenues; the atmosphere does not."
+
+ law_mixed_transition:0 "Mixed Transition"
+ law_mixed_transition_desc:0 "The state supports renewable deployment through subsidies and carbon pricing while continuing to permit fossil extraction during the transition. Neither the most committed green agenda nor the most comfortable status quo, but a path that most stakeholders can live with."
+
+ law_green_mandate:0 "Green Mandate"
+ law_green_mandate_desc:0 "Binding net-zero targets, accelerated phaseouts of fossil fuels, and mandatory investment in renewable capacity reshape the entire productive base toward emissions elimination. Power output from wind and solar expands rapidly. Fossil-dependent industries face structural decline. The intelligentsia, at last, sees the state doing something commensurate with the problem."
+
+ ### HEALTHCARE LAWS
+
+ law_private_healthcare:0 "Private Healthcare"
+ law_private_healthcare_desc:0 "Medical care is delivered through market mechanisms: private insurance, co-payments, and for-profit providers. The treasury is relieved of most health expenditure, and industrialists who profit from the sector are pleased. Citizens who cannot afford coverage manage as best they can."
+
+ law_hybrid_healthcare:0 "Hybrid Healthcare"
+ law_hybrid_healthcare_desc:0 "A mixed system combines state-funded basic coverage with private options for those who want more. Neither the most efficient nor the most equitable arrangement, it is the one that most societies find themselves in when the ideological arguments exhaust themselves."
+
+ law_universal_healthcare:0 "Universal Healthcare"
+ law_universal_healthcare_desc:0 "Every citizen receives comprehensive medical coverage funded through taxation, regardless of income or employment status. The health system institution can attract the investment needed to expand capacity. Trade unions and rural communities, who have most to gain from universal access, become stronger forces in national politics."
+
+ ### IMMIGRATION LAWS
+
+ law_closed_borders:0 "Closed Borders"
+ law_closed_borders_desc:0 "Tight restrictions on who may enter, work, or settle. Labour shortfalls are addressed through productivity rather than population. Traditional communities are protected from demographic disruption; the authority of the central state over population movement is unambiguous. The innovation gains that come from an internationally mobile professional class are foregone."
+
+ law_managed_migration:0 "Managed Migration"
+ law_managed_migration_desc:0 "A points-based or skills-based system admits workers the economy needs while limiting broader immigration. Bureaucracy expands to administer the regime. Neither nativists nor cosmopolitans are satisfied; the economy continues to function."
+
+ law_open_borders:0 "Open Borders"
+ law_open_borders_desc:0 "The free movement of labour is treated as a corollary of free trade. Talent flows toward economic opportunity regardless of nationality. Innovation accelerates as cross-border networks of professionals form and dissolve. Rural communities that have seen their young leave for cities find the argument less persuasive."
+
+ ### WELFARE STATE LAWS
+
+ law_minimal_safety_net:0 "Minimal Safety Net"
+ law_minimal_safety_net_desc:0 "The state provides only emergency relief and basic infrastructure, leaving the rest to markets and private charity. Treasury expenditure is controlled; capital accumulates where it is most productive. Workers who fall between the cracks find no floor beneath them."
+
+ law_social_democratic_welfare:0 "Social Democratic Welfare"
+ law_social_democratic_welfare_desc:0 "Unemployment insurance, public pensions, subsidized housing, and universal education form a comprehensive safety net. Trade unions and rural communities, whose members benefit most directly, gain political strength. The treasury pays, but the population pays back in stability and human capital."
+
+ law_universal_basic_income:0 "Universal Basic Income"
+ law_universal_basic_income_desc:0 "Every adult citizen receives an unconditional monthly payment sufficient to meet basic needs. The administrative apparatus of means-tested welfare shrinks; the social contract is simplified. Automation displaces workers without creating the political crisis that would otherwise follow. The cost is real: it falls on the treasury and, indirectly, on industrialists and the organized labor movement that once made the safety net what it was."
+
+ ### MILITARY DOCTRINE LAWS
+
+ law_conscription_legacy:0 "Conscription Legacy"
+ law_conscription_legacy_desc:0 "Universal or near-universal military service produces a large standing army at high treasury cost. The armed forces are a major presence in national life. Military culture permeates civilian institutions. The officer class and traditional landowners who supply the NCO corps see their social position reinforced. Modern high-technology force structure is sacrificed for mass."
+
+ law_professional_military:0 "Professional Military"
+ law_professional_military_desc:0 "An all-volunteer force, better paid and better equipped than a conscript army, trades mass for quality. The treasury commitment is moderate. The armed forces become more specialized and effective; they also become more detached from the rest of society."
+
+ law_tech_centric_force:0 "Tech-Centric Force"
+ law_tech_centric_force_desc:0 "Precision munitions, cyber warfare capabilities, autonomous systems, and network-centric operations are prioritized over conventional infantry mass. The defence-industrial relationship with the technology sector deepens. Guided munitions and cyber capability output expands. The intelligentsia finds itself central to national security in a way it has never quite been before."
+
+ ### TRADE POLICY LAWS
+
+ law_protectionist:0 "Protectionist"
+ law_protectionist_desc:0 "Tariffs, import quotas, and subsidies for domestic producers shield national industries from foreign competition. Markets are captive; inefficiencies are tolerated to preserve employment and industrial capacity. Industrialists with domestic monopolies and landowners who grow for the home market are pleased. Consumers pay more."
+
+ law_free_trade:0 "Free Trade"
+ law_free_trade_desc:0 "The removal of trade barriers lets comparative advantage determine what each country produces. Export sectors expand; import-competing industries contract. The treasury gains from broader tax bases and lower input costs. Diplomatic influence grows as trade relationships multiply. Workers in sectors that cannot compete find the adjustment painful and prolonged."
+
+ law_strategic_decoupling:0 "Strategic Decoupling"
+ law_strategic_decoupling_desc:0 "Sensitive supply chains — semiconductors, electronics, advanced materials — are deliberately re-shored or ally-shored regardless of cost efficiency. The domestic technology sector gains captive demand and strategic importance. Overall market integration declines. The intelligentsia and security establishment, who have been arguing for years that economic interdependence with rivals was a vulnerability, finally get what they wanted."
+
+ ### NUCLEAR POLICY LAWS
+
+ law_nuclear_disarmament:0 "Nuclear Disarmament"
+ law_nuclear_disarmament_desc:0 "The state renounces nuclear weapons, submits to inspection regimes, and advocates for global reduction of arsenals. International prestige rises among states that share these values. Diplomatic leverage increases in multilateral forums. The military's power projection capability shrinks by a significant margin, and the generals know it."
+
+ law_nuclear_deterrence:0 "Nuclear Deterrence"
+ law_nuclear_deterrence_desc:0 "The state maintains a nuclear arsenal sized for credible second-strike capability. Existential war is deterred; conventional war below the nuclear threshold remains possible. The treasury pays for weapons that, by design, are never used. The armed forces gain a strategic weight disproportionate to their conventional size."
+
+ law_nuclear_proliferation:0 "Nuclear Proliferation"
+ law_nuclear_proliferation_desc:0 "The state pursues maximum nuclear capability, accepting international isolation in exchange for the ultimate security guarantee. No great power can threaten regime change against a state with deliverable warheads — a calculation that has driven every proliferant's logic since 1945. Prestige in liberal international forums collapses. Influence over neighbouring states declines. The garrison state tightens its grip on domestic politics."
+
+ ### MEDIA REGULATION LAWS
+
+ law_state_controlled_media:0 "State-Controlled Media"
+ law_state_controlled_media_desc:0 "Television, radio, and major press outlets are owned or effectively directed by the state. The government controls the national narrative. Legitimacy, as officially measured, runs high; actual approval is impossible to independently verify. Journalists who ask uncomfortable questions find their careers limited. The intelligentsia, whose currency is credibility, loses political weight."
+
+ law_regulated_free_press:0 "Regulated Free Press"
+ law_regulated_free_press_desc:0 "Independent outlets operate under a licensing and legal framework that permits criticism while prohibiting defamation, incitement, and foreign state interference. The press can report; it can investigate; it cannot operate without consequences. The balance is never perfectly struck and is always contested."
+
+ law_unregulated_media:0 "Unregulated Media"
+ law_unregulated_media_desc:0 "The state makes no attempt to license, regulate, or restrict the press or online speech beyond the narrowest criminal prohibitions. Information flows freely. Media output expands. Innovation in content production accelerates. Disinformation scales at the same rate as legitimate journalism, and governments find it increasingly difficult to maintain any coherent public narrative."

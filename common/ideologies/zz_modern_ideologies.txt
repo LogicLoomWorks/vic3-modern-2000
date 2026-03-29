@@ -1,0 +1,417 @@
+﻿### MODERN IDEOLOGIES — vic3-modern-2000
+#
+# Each ideology defines per-law stances for all 27 laws across the 9 modern law groups.
+# Stance values: strongly_approve / approve / neutral / disapprove / strongly_disapprove
+#
+# Stances omitted = implicitly neutral. All 27 laws are listed explicitly for every
+# ideology so the table is complete and auditable.
+#
+# Colors follow rough political tradition (RGB 0-1 scale).
+
+ideology_neoliberal = {
+	# Free markets, minimal state, open trade, individual liberty above collective solidarity
+	icon = "gfx/interface/icons/ideology_icons/ideology_neoliberal.dds"
+	color = { 0.25 0.45 0.78 }
+
+	### DIGITAL RIGHTS
+	law_surveillance_state           = disapprove
+	law_regulated_data               = neutral
+	law_digital_freedom              = approve
+
+	### ENERGY POLICY
+	law_fossil_dependent             = approve
+	law_mixed_transition             = neutral
+	law_green_mandate                = disapprove
+
+	### HEALTHCARE SYSTEM
+	law_private_healthcare           = strongly_approve
+	law_hybrid_healthcare            = disapprove
+	law_universal_healthcare         = strongly_disapprove
+
+	### IMMIGRATION POLICY
+	law_closed_borders               = disapprove
+	law_managed_migration            = neutral
+	law_open_borders                 = approve
+
+	### WELFARE STATE
+	law_minimal_safety_net           = strongly_approve
+	law_social_democratic_welfare    = disapprove
+	law_universal_basic_income       = strongly_disapprove
+
+	### MILITARY DOCTRINE
+	law_conscription_legacy          = disapprove
+	law_professional_military        = approve
+	law_tech_centric_force           = neutral
+
+	### TRADE POLICY
+	law_protectionist                = strongly_disapprove
+	law_free_trade                   = strongly_approve
+	law_strategic_decoupling         = disapprove
+
+	### NUCLEAR POLICY
+	law_nuclear_disarmament          = neutral
+	law_nuclear_deterrence           = neutral
+	law_nuclear_proliferation        = disapprove
+
+	### MEDIA REGULATION
+	law_state_controlled_media       = disapprove
+	law_regulated_free_press         = neutral
+	law_unregulated_media            = approve
+}
+
+ideology_social_democratic = {
+	# Regulated capitalism, universal welfare, workers' rights, multilateral cooperation
+	icon = "gfx/interface/icons/ideology_icons/ideology_social_democratic.dds"
+	color = { 0.85 0.25 0.35 }
+
+	### DIGITAL RIGHTS
+	law_surveillance_state           = strongly_disapprove
+	law_regulated_data               = approve
+	law_digital_freedom              = neutral
+
+	### ENERGY POLICY
+	law_fossil_dependent             = disapprove
+	law_mixed_transition             = approve
+	law_green_mandate                = approve
+
+	### HEALTHCARE SYSTEM
+	law_private_healthcare           = disapprove
+	law_hybrid_healthcare            = approve
+	law_universal_healthcare         = strongly_approve
+
+	### IMMIGRATION POLICY
+	law_closed_borders               = disapprove
+	law_managed_migration            = approve
+	law_open_borders                 = neutral
+
+	### WELFARE STATE
+	law_minimal_safety_net           = strongly_disapprove
+	law_social_democratic_welfare    = strongly_approve
+	law_universal_basic_income       = neutral
+
+	### MILITARY DOCTRINE
+	law_conscription_legacy          = neutral
+	law_professional_military        = approve
+	law_tech_centric_force           = neutral
+
+	### TRADE POLICY
+	law_protectionist                = neutral
+	law_free_trade                   = neutral
+	law_strategic_decoupling         = neutral
+
+	### NUCLEAR POLICY
+	law_nuclear_disarmament          = approve
+	law_nuclear_deterrence           = neutral
+	law_nuclear_proliferation        = strongly_disapprove
+
+	### MEDIA REGULATION
+	law_state_controlled_media       = strongly_disapprove
+	law_regulated_free_press         = strongly_approve
+	law_unregulated_media            = neutral
+}
+
+ideology_nationalist_populist = {
+	# National sovereignty, cultural protection, economic nationalism, strong state
+	icon = "gfx/interface/icons/ideology_icons/ideology_nationalist_populist.dds"
+	color = { 0.65 0.20 0.15 }
+
+	### DIGITAL RIGHTS
+	law_surveillance_state           = approve
+	law_regulated_data               = neutral
+	law_digital_freedom              = disapprove
+
+	### ENERGY POLICY
+	law_fossil_dependent             = approve
+	law_mixed_transition             = neutral
+	law_green_mandate                = disapprove
+
+	### HEALTHCARE SYSTEM
+	law_private_healthcare           = neutral
+	law_hybrid_healthcare            = approve
+	law_universal_healthcare         = neutral
+
+	### IMMIGRATION POLICY
+	law_closed_borders               = strongly_approve
+	law_managed_migration            = neutral
+	law_open_borders                 = strongly_disapprove
+
+	### WELFARE STATE
+	law_minimal_safety_net           = neutral
+	law_social_democratic_welfare    = neutral
+	law_universal_basic_income       = disapprove
+
+	### MILITARY DOCTRINE
+	law_conscription_legacy          = strongly_approve
+	law_professional_military        = neutral
+	law_tech_centric_force           = disapprove
+
+	### TRADE POLICY
+	law_protectionist                = strongly_approve
+	law_free_trade                   = strongly_disapprove
+	law_strategic_decoupling         = approve
+
+	### NUCLEAR POLICY
+	law_nuclear_disarmament          = strongly_disapprove
+	law_nuclear_deterrence           = approve
+	law_nuclear_proliferation        = neutral
+
+	### MEDIA REGULATION
+	law_state_controlled_media       = approve
+	law_regulated_free_press         = neutral
+	law_unregulated_media            = disapprove
+}
+
+ideology_green_progressive = {
+	# Ecological limits, social equity, universal rights, demilitarization
+	icon = "gfx/interface/icons/ideology_icons/ideology_green_progressive.dds"
+	color = { 0.25 0.70 0.35 }
+
+	### DIGITAL RIGHTS
+	law_surveillance_state           = strongly_disapprove
+	law_regulated_data               = approve
+	law_digital_freedom              = strongly_approve
+
+	### ENERGY POLICY
+	law_fossil_dependent             = strongly_disapprove
+	law_mixed_transition             = approve
+	law_green_mandate                = strongly_approve
+
+	### HEALTHCARE SYSTEM
+	law_private_healthcare           = disapprove
+	law_hybrid_healthcare            = neutral
+	law_universal_healthcare         = approve
+
+	### IMMIGRATION POLICY
+	law_closed_borders               = strongly_disapprove
+	law_managed_migration            = approve
+	law_open_borders                 = strongly_approve
+
+	### WELFARE STATE
+	law_minimal_safety_net           = strongly_disapprove
+	law_social_democratic_welfare    = approve
+	law_universal_basic_income       = strongly_approve
+
+	### MILITARY DOCTRINE
+	law_conscription_legacy          = disapprove
+	law_professional_military        = neutral
+	law_tech_centric_force           = neutral
+
+	### TRADE POLICY
+	law_protectionist                = neutral
+	law_free_trade                   = neutral
+	law_strategic_decoupling         = neutral
+
+	### NUCLEAR POLICY
+	law_nuclear_disarmament          = strongly_approve
+	law_nuclear_deterrence           = disapprove
+	law_nuclear_proliferation        = strongly_disapprove
+
+	### MEDIA REGULATION
+	law_state_controlled_media       = strongly_disapprove
+	law_regulated_free_press         = approve
+	law_unregulated_media            = approve
+}
+
+ideology_technocratic = {
+	# Evidence-based governance, strategic statecraft, regulated data, expert-led institutions
+	icon = "gfx/interface/icons/ideology_icons/ideology_technocratic.dds"
+	color = { 0.40 0.65 0.78 }
+
+	### DIGITAL RIGHTS
+	law_surveillance_state           = neutral
+	law_regulated_data               = strongly_approve
+	law_digital_freedom              = neutral
+
+	### ENERGY POLICY
+	law_fossil_dependent             = disapprove
+	law_mixed_transition             = approve
+	law_green_mandate                = neutral
+
+	### HEALTHCARE SYSTEM
+	law_private_healthcare           = neutral
+	law_hybrid_healthcare            = approve
+	law_universal_healthcare         = neutral
+
+	### IMMIGRATION POLICY
+	law_closed_borders               = disapprove
+	law_managed_migration            = approve
+	law_open_borders                 = neutral
+
+	### WELFARE STATE
+	law_minimal_safety_net           = neutral
+	law_social_democratic_welfare    = neutral
+	law_universal_basic_income       = approve
+
+	### MILITARY DOCTRINE
+	law_conscription_legacy          = disapprove
+	law_professional_military        = approve
+	law_tech_centric_force           = strongly_approve
+
+	### TRADE POLICY
+	law_protectionist                = disapprove
+	law_free_trade                   = neutral
+	law_strategic_decoupling         = approve
+
+	### NUCLEAR POLICY
+	law_nuclear_disarmament          = neutral
+	law_nuclear_deterrence           = approve
+	law_nuclear_proliferation        = neutral
+
+	### MEDIA REGULATION
+	law_state_controlled_media       = disapprove
+	law_regulated_free_press         = approve
+	law_unregulated_media            = disapprove
+}
+
+ideology_religious_conservative = {
+	# Traditional values, family, community, faith-based authority, moral regulation
+	icon = "gfx/interface/icons/ideology_icons/ideology_religious_conservative.dds"
+	color = { 0.65 0.45 0.20 }
+
+	### DIGITAL RIGHTS
+	law_surveillance_state           = neutral
+	law_regulated_data               = approve
+	law_digital_freedom              = disapprove
+
+	### ENERGY POLICY
+	law_fossil_dependent             = approve
+	law_mixed_transition             = neutral
+	law_green_mandate                = disapprove
+
+	### HEALTHCARE SYSTEM
+	law_private_healthcare           = approve
+	law_hybrid_healthcare            = neutral
+	law_universal_healthcare         = disapprove
+
+	### IMMIGRATION POLICY
+	law_closed_borders               = approve
+	law_managed_migration            = neutral
+	law_open_borders                 = disapprove
+
+	### WELFARE STATE
+	law_minimal_safety_net           = approve
+	law_social_democratic_welfare    = neutral
+	law_universal_basic_income       = disapprove
+
+	### MILITARY DOCTRINE
+	law_conscription_legacy          = approve
+	law_professional_military        = neutral
+	law_tech_centric_force           = neutral
+
+	### TRADE POLICY
+	law_protectionist                = approve
+	law_free_trade                   = neutral
+	law_strategic_decoupling         = neutral
+
+	### NUCLEAR POLICY
+	law_nuclear_disarmament          = disapprove
+	law_nuclear_deterrence           = approve
+	law_nuclear_proliferation        = neutral
+
+	### MEDIA REGULATION
+	law_state_controlled_media       = approve
+	law_regulated_free_press         = neutral
+	law_unregulated_media            = strongly_disapprove
+}
+
+ideology_authoritarian_statist = {
+	# Strong central state, subordinated civil society, strategic autarky, national security first
+	icon = "gfx/interface/icons/ideology_icons/ideology_authoritarian_statist.dds"
+	color = { 0.45 0.15 0.15 }
+
+	### DIGITAL RIGHTS
+	law_surveillance_state           = strongly_approve
+	law_regulated_data               = neutral
+	law_digital_freedom              = strongly_disapprove
+
+	### ENERGY POLICY
+	law_fossil_dependent             = approve
+	law_mixed_transition             = neutral
+	law_green_mandate                = disapprove
+
+	### HEALTHCARE SYSTEM
+	law_private_healthcare           = neutral
+	law_hybrid_healthcare            = approve
+	law_universal_healthcare         = neutral
+
+	### IMMIGRATION POLICY
+	law_closed_borders               = approve
+	law_managed_migration            = neutral
+	law_open_borders                 = disapprove
+
+	### WELFARE STATE
+	law_minimal_safety_net           = neutral
+	law_social_democratic_welfare    = neutral
+	law_universal_basic_income       = disapprove
+
+	### MILITARY DOCTRINE
+	law_conscription_legacy          = strongly_approve
+	law_professional_military        = neutral
+	law_tech_centric_force           = neutral
+
+	### TRADE POLICY
+	law_protectionist                = strongly_approve
+	law_free_trade                   = disapprove
+	law_strategic_decoupling         = approve
+
+	### NUCLEAR POLICY
+	law_nuclear_disarmament          = strongly_disapprove
+	law_nuclear_deterrence           = approve
+	law_nuclear_proliferation        = approve
+
+	### MEDIA REGULATION
+	law_state_controlled_media       = strongly_approve
+	law_regulated_free_press         = disapprove
+	law_unregulated_media            = strongly_disapprove
+}
+
+ideology_libertarian = {
+	# Individual sovereignty, free markets, voluntary association, minimal state in all domains
+	icon = "gfx/interface/icons/ideology_icons/ideology_libertarian.dds"
+	color = { 0.85 0.75 0.20 }
+
+	### DIGITAL RIGHTS
+	law_surveillance_state           = strongly_disapprove
+	law_regulated_data               = disapprove
+	law_digital_freedom              = strongly_approve
+
+	### ENERGY POLICY
+	law_fossil_dependent             = neutral
+	law_mixed_transition             = neutral
+	law_green_mandate                = disapprove
+
+	### HEALTHCARE SYSTEM
+	law_private_healthcare           = strongly_approve
+	law_hybrid_healthcare            = neutral
+	law_universal_healthcare         = strongly_disapprove
+
+	### IMMIGRATION POLICY
+	law_closed_borders               = strongly_disapprove
+	law_managed_migration            = neutral
+	law_open_borders                 = approve
+
+	### WELFARE STATE
+	law_minimal_safety_net           = strongly_approve
+	law_social_democratic_welfare    = strongly_disapprove
+	law_universal_basic_income       = neutral
+
+	### MILITARY DOCTRINE
+	law_conscription_legacy          = strongly_disapprove
+	law_professional_military        = approve
+	law_tech_centric_force           = neutral
+
+	### TRADE POLICY
+	law_protectionist                = strongly_disapprove
+	law_free_trade                   = strongly_approve
+	law_strategic_decoupling         = disapprove
+
+	### NUCLEAR POLICY
+	law_nuclear_disarmament          = neutral
+	law_nuclear_deterrence           = neutral
+	law_nuclear_proliferation        = disapprove
+
+	### MEDIA REGULATION
+	law_state_controlled_media       = strongly_disapprove
+	law_regulated_free_press         = neutral
+	law_unregulated_media            = strongly_approve
+}

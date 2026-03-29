@@ -221,12 +221,12 @@
 				activate_production_methods={ "pm_no_organization" }
 			}
 		}
-		region_state:MKT={
+		region_state:NIC={
 			create_building={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:MKT"
+						country="c:NIC"
 						levels=2
 					}
 				}
@@ -237,7 +237,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:MKT"
+						country="c:NIC"
 						levels=1
 					}
 				}

@@ -1,0 +1,78 @@
+﻿l_english:
+ # ── Interest Groups (vanilla key overrides) ────────────────────────────────
+ ig_industrialists:0 "Technology Industry"
+ ig_industrialists_desc:0 "The engineers, software developers, data scientists, and digital entrepreneurs who form the commanding heights of the modern economy. They favor open markets, light-touch regulation, and state investment in infrastructure — and they believe technological progress is the solution to every problem that politics has failed to solve."
+
+ ig_armed_forces:0 "Military Establishment"
+ ig_armed_forces_desc:0 "Professional officers, defense industrialists, and strategic planners who see national security as the first obligation of any government. They support robust procurement budgets, nuclear deterrence, and a foreign policy that is not afraid to project force. In their view, weakness invites aggression, and every concession to cost-cutting is paid for in blood."
+
+ ig_devout:0 "Religious Institutions"
+ ig_devout_desc:0 "The clergy, faith communities, and conservative civic organizations that anchor the moral life of the nation. They distrust rapid social change, defend traditional family structures, and believe that a society which loses its spiritual center has nothing left but appetites. Their political influence is greatest where urbanization has not yet dissolved the bonds of community."
+
+ ig_trade_unions:0 "Organized Labor"
+ ig_trade_unions_desc:0 "The trade unions, workers' federations, and labor activists who represent the interests of those who work with their hands and their machines. They fought for the eight-hour day and the right to strike; they now fight for universal healthcare, living wages, and trade policies that protect workers rather than shareholders. Their strength lies in numbers and solidarity."
+
+ ig_petty_bourgeoisie:0 "Financial Sector"
+ ig_petty_bourgeoisie_desc:0 "The bankers, asset managers, derivatives traders, and financial analysts who intermediate the allocation of capital across the global economy. They understand risk, price it, and move it — and they want governments that keep inflation low, taxes moderate, and borders open to money if not to people. In prosperity they are celebrated; in crisis they are blamed."
+
+ ig_landowners:0 "Green Movement"
+ ig_landowners_desc:0 "The ecologists, climate scientists, environmental NGOs, and urban reformists who have concluded that industrial civilization is racing toward catastrophe. They demand a managed transition away from fossil fuels, stronger social safety nets to cushion the disruption, and a politics of sufficiency rather than endless growth. They are well-educated, urban, and increasingly impatient."
+
+ ig_rural_folk:0 "Rural Populists"
+ ig_rural_folk_desc:0 "The farmers, smallholders, and rural laborers who feel overlooked by a political class that speaks the language of cities, universities, and global markets. They want protected home markets, controlled borders, and a state that remembers them when writing policy. Their power is greatest when they translate economic grievance into cultural and national identity."
+
+ ig_intelligentsia:0 "Intelligentsia"
+ ig_intelligentsia_desc:0 "The academics, researchers, writers, and public intellectuals who shape the ideas that eventually become policy. They are broadly reformist — committed to evidence-based governance, civil liberties, universal healthcare, and a free press. They rarely hold power directly but are indispensable to any coalition that wants to govern well rather than merely govern."
+
+ # ── Legacy keys (old IG names — kept for any cross-references in older saves) ──
+ ig_tech_industry:0 "Technology Industry"
+ ig_tech_industry_desc:0 "The engineers, software developers, data scientists, and digital entrepreneurs who form the commanding heights of the modern economy. They favor open markets, light-touch regulation, and state investment in infrastructure — and they believe technological progress is the solution to every problem that politics has failed to solve."
+
+ ig_military_establishment:0 "Military Establishment"
+ ig_military_establishment_desc:0 "Professional officers, defense industrialists, and strategic planners who see national security as the first obligation of any government. They support robust procurement budgets, nuclear deterrence, and a foreign policy that is not afraid to project force. In their view, weakness invites aggression, and every concession to cost-cutting is paid for in blood."
+
+ ig_religious_institutions:0 "Religious Institutions"
+ ig_religious_institutions_desc:0 "The clergy, faith communities, and conservative civic organizations that anchor the moral life of the nation. They distrust rapid social change, defend traditional family structures, and believe that a society which loses its spiritual center has nothing left but appetites. Their political influence is greatest where urbanization has not yet dissolved the bonds of community."
+
+ ig_organized_labor:0 "Organized Labor"
+ ig_organized_labor_desc:0 "The trade unions, workers' federations, and labor activists who represent the interests of those who work with their hands and their machines. They fought for the eight-hour day and the right to strike; they now fight for universal healthcare, living wages, and trade policies that protect workers rather than shareholders. Their strength lies in numbers and solidarity."
+
+ ig_financial_sector:0 "Financial Sector"
+ ig_financial_sector_desc:0 "The bankers, asset managers, derivatives traders, and financial analysts who intermediate the allocation of capital across the global economy. They understand risk, price it, and move it — and they want governments that keep inflation low, taxes moderate, and borders open to money if not to people. In prosperity they are celebrated; in crisis they are blamed."
+
+ ig_green_movement:0 "Green Movement"
+ ig_green_movement_desc:0 "The ecologists, climate scientists, environmental NGOs, and urban reformists who have concluded that industrial civilization is racing toward catastrophe. They demand a managed transition away from fossil fuels, stronger social safety nets to cushion the disruption, and a politics of sufficiency rather than endless growth. They are well-educated, urban, and increasingly impatient."
+
+ ig_rural_populists:0 "Rural Populists"
+ ig_rural_populists_desc:0 "The farmers, smallholders, and rural laborers who feel overlooked by a political class that speaks the language of cities, universities, and global markets. They want protected home markets, controlled borders, and a state that remembers them when writing policy. Their power is greatest when they translate economic grievance into cultural and national identity."
+
+ ig_security_services:0 "Security Services"
+ ig_security_services_desc:0 "The intelligence officers, counterterrorism analysts, surveillance bureaucrats, and law-enforcement heavyweights who see every open society as a target and every reform as a potential vulnerability. When in government, they expand their mandates, classify their budgets, and argue — always credibly — that the threat environment justifies the next increment of state power."
+
+ # ── IG Traits ──────────────────────────────────────────────────────────────
+ ig_trait_tech_lobby:0 "Tech Lobby"
+ ig_trait_tech_lobby_desc:0 "Close ties between this group and the technology sector translate into faster permitting, lighter regulation, and preferential access to state contracts. Construction pipelines accelerate and research institutions expand when this group holds influence."
+
+ ig_trait_military_industrial:0 "Military-Industrial Complex"
+ ig_trait_military_industrial_desc:0 "Deep integration with defense procurement means this group can direct state authority toward strategic industries. Bureaucratic pathways for military hardware and munitions are well-lubricated, and international brinkmanship is normalized rather than stigmatized."
+
+ ig_trait_religious_authority:0 "Religious Authority"
+ ig_trait_religious_authority_desc:0 "The moral weight of religious institutions bolsters the government's legitimacy and amplifies its capacity to demand compliance. Authority is higher and the population more willing to accept the state's rulings on contested social questions."
+
+ ig_trait_social_solidarity:0 "Social Solidarity"
+ ig_trait_social_solidarity_desc:0 "A culture of collective bargaining and mutual aid strengthens public institutions and extends the social contract. Welfare systems, unions, and community organizations become denser and more resilient, and the government derives legitimacy from its role as guarantor of shared welfare."
+
+ ig_trait_financial_elite:0 "Financial Elite"
+ ig_trait_financial_elite_desc:0 "Access to global capital networks increases tax efficiency through better investment allocation and gives the country disproportionate leverage in diplomatic negotiations. Money talks, and this group knows all the languages."
+
+ ig_trait_green_lobby:0 "Green Lobby"
+ ig_trait_green_lobby_desc:0 "Pressure from environmental advocates channels state investment toward clean infrastructure and responsible foreign policy. International standing improves, infamy decays faster as aggressive postures become politically costly, and construction pivots toward sustainable sectors."
+
+ ig_trait_rural_traditionalism:0 "Rural Traditionalism"
+ ig_trait_rural_traditionalism_desc:0 "Deep roots in the countryside give this movement a quiet but durable claim on national identity. The government draws legitimacy from its association with land, tradition, and continuity, and its authority over the rural hinterland is uncontested."
+
+ ig_trait_academic_reformers:0 "Academic Reformers"
+ ig_trait_academic_reformers_desc:0 "Universities, think tanks, and research centers flourish under this group's influence, expanding the state's institutional capacity and generating soft-power dividends through intellectual exports and international collaboration."
+
+ ig_trait_security_state:0 "Security State"
+ ig_trait_security_state_desc:0 "Surveillance infrastructure, classification authority, and expanded law-enforcement powers concentrate authority at the center and make repression routine. Infamy fades quickly because no one complains loudly twice. Legitimacy erodes in proportion, as civil society learns to self-censor."

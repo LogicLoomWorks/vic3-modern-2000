@@ -1,0 +1,118 @@
+﻿rare_earth_elements = {
+	texture = "gfx/interface/goods/rare_earth_elements.dds"
+	category = industrial
+	cost = 40
+	prestige_factor = 0.10
+}
+
+lithium = {
+	texture = "gfx/interface/goods/lithium.dds"
+	category = industrial
+	cost = 35
+	prestige_factor = 0.10
+}
+
+natural_gas = {
+	texture = "gfx/interface/goods/natural_gas.dds"
+	category = industrial
+	cost = 25
+	prestige_factor = 0.10
+}
+
+uranium = {
+	texture = "gfx/interface/goods/uranium.dds"
+	category = industrial
+	cost = 50
+	prestige_factor = 0.10
+}
+
+semiconductors = {
+	texture = "gfx/interface/goods/semiconductors.dds"
+	category = industrial
+	cost = 60
+	prestige_factor = 0.10
+}
+
+electronics = {
+	texture = "gfx/interface/goods/electronics.dds"
+	category = industrial
+	cost = 50
+	prestige_factor = 0.10
+}
+
+pharmaceuticals = {
+	texture = "gfx/interface/goods/pharmaceuticals.dds"
+	category = industrial
+	cost = 55
+	prestige_factor = 0.10
+}
+
+software = {
+	texture = "gfx/interface/goods/software.dds"
+	category = industrial
+	cost = 40
+	prestige_factor = 0.10
+}
+
+batteries = {
+	texture = "gfx/interface/goods/batteries.dds"
+	category = industrial
+	cost = 45
+	prestige_factor = 0.10
+}
+
+refined_fuel = {
+	texture = "gfx/interface/goods/refined_fuel.dds"
+	category = industrial
+	cost = 30
+	prestige_factor = 0.10
+}
+
+telecommunications = {
+	texture = "gfx/interface/goods/telecommunications.dds"
+	category = industrial
+	cost = 35
+	prestige_factor = 0.10
+}
+
+financial_services = {
+	texture = "gfx/interface/goods/financial_services.dds"
+	category = industrial
+	cost = 45
+	prestige_factor = 0.10
+}
+
+digital_services = {
+	texture = "gfx/interface/goods/digital_services.dds"
+	category = industrial
+	cost = 50
+	prestige_factor = 0.10
+}
+
+media = {
+	texture = "gfx/interface/goods/media.dds"
+	category = industrial
+	cost = 30
+	prestige_factor = 0.10
+}
+
+guided_munitions = {
+	texture = "gfx/interface/goods/guided_munitions.dds"
+	category = military
+	cost = 70
+	prestige_factor = 0.25
+}
+
+military_hardware = {
+	texture = "gfx/interface/goods/military_hardware.dds"
+	category = military
+	cost = 80
+	prestige_factor = 0.25
+}
+
+cyber_capability = {
+	texture = "gfx/interface/goods/cyber_capability.dds"
+	category = military
+	cost = 60
+	prestige_factor = 0.25
+}

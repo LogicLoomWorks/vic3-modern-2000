@@ -1,0 +1,438 @@
+﻿COUNTRIES = {
+	# Modern law assignments for all 22 scaffolded nations — vic3-modern-2000.
+	# All law keys from law_group_* defined in 2.2.
+	# Tech tiers assigned here only for countries NOT already handled in other files:
+	#   CAN (tier 1) → can - canada.txt
+	#   ROK (tier 1) → rok - south_korea.txt
+	#   ISR (tier 4), TUR/IRN/SAU (tier 3) → me - middle_east.txt
+	#
+	# IG dominance comments reflect expected emergence from pop + law interactions.
+	# IG strength is NOT directly assignable; it is determined by pop composition
+	# (common/history/pops/) and law-gated enable conditions.
+	# IGs requiring internet_infrastructure (era 6) are active at tier 2+:
+	#   ig_tech_industry, ig_financial_sector, ig_intelligentsia
+	# IGs requiring big_data_analytics (era 7 society) are active at tier 3+:
+	#   ig_security_services
+	# ig_green_movement requires environmental_regulation (era 6 society).
+
+	# ─── UNITED STATES ───────────────────────────────────────────────────────
+	# IG expected: ig_financial_sector (Wall St), ig_tech_industry (Silicon Valley),
+	#              ig_military_establishment (defense budget), ig_intelligentsia (universities)
+	# Moderate:    ig_organized_labor (unions), ig_green_movement
+	# Weak:        ig_rural_populists, ig_religious_institutions, ig_security_services
+	c:USA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		activate_law = law_type:law_digital_freedom
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_private_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_professional_military
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_deterrence
+		activate_law = law_type:law_unregulated_media
+	}
+
+	# ─── CHINA ───────────────────────────────────────────────────────────────
+	# IG expected: ig_security_services (dominant), ig_military_establishment,
+	#              ig_organized_labor (factory workers), ig_rural_populists
+	# Moderate:    ig_intelligentsia, ig_financial_sector (Shanghai emerging)
+	# Weak:        ig_tech_industry (nascent in 2000), ig_green_movement
+	# Note: China joins WTO December 2001; protectionist is correct for 2000.
+	c:CHI ?= {
+		effect_starting_technology_tier_3_tech = yes
+		activate_law = law_type:law_surveillance_state
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_hybrid_healthcare
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_minimal_safety_net
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_protectionist
+		activate_law = law_type:law_nuclear_deterrence
+		activate_law = law_type:law_state_controlled_media
+	}
+
+	# ─── RUSSIA ──────────────────────────────────────────────────────────────
+	# IG expected: ig_security_services (FSB consolidating under Putin),
+	#              ig_military_establishment, ig_financial_sector (oligarchs)
+	# Moderate:    ig_organized_labor (industrial workers), ig_intelligentsia
+	# Weak:        ig_tech_industry, ig_green_movement, ig_religious_institutions
+	# Note: Putin became President January 2000; security services ascending.
+	c:RUS ?= {
+		effect_starting_technology_tier_3_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_hybrid_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_protectionist
+		activate_law = law_type:law_nuclear_deterrence
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── GREAT BRITAIN ───────────────────────────────────────────────────────
+	# IG expected: ig_financial_sector (City of London), ig_intelligentsia,
+	#              ig_tech_industry (emerging), ig_organized_labor (Blair-era unions)
+	# Moderate:    ig_green_movement, ig_military_establishment
+	# Weak:        ig_rural_populists, ig_security_services
+	c:GBR ?= {
+		effect_starting_technology_tier_4_tech = yes
+		activate_law = law_type:law_digital_freedom
+		activate_law = law_type:law_mixed_transition
+		activate_law = law_type:law_universal_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_professional_military
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_deterrence
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── FRANCE ──────────────────────────────────────────────────────────────
+	# IG expected: ig_organized_labor (CGT strength), ig_intelligentsia,
+	#              ig_financial_sector, ig_military_establishment (force de frappe)
+	# Moderate:    ig_green_movement (Greens in coalition), ig_tech_industry
+	# Weak:        ig_rural_populists, ig_religious_institutions
+	# Note: France switched to professional military service 2001; conscription_legacy correct for 2000.
+	c:FRA ?= {
+		effect_starting_technology_tier_4_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_mixed_transition
+		activate_law = law_type:law_universal_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_deterrence
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── GERMANY ─────────────────────────────────────────────────────────────
+	# IG expected: ig_organized_labor (DGB co-determination), ig_financial_sector,
+	#              ig_intelligentsia, ig_green_movement (Greens in Schröder government)
+	# Moderate:    ig_tech_industry, ig_military_establishment
+	# Weak:        ig_rural_populists, ig_security_services
+	# Note: Germany has no independent nuclear arsenal (NPT; US nuclear sharing
+	#       under NATO is not the same as national deterrence).
+	c:GER ?= {
+		effect_starting_technology_tier_4_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_mixed_transition
+		activate_law = law_type:law_universal_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_professional_military
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── JAPAN ───────────────────────────────────────────────────────────────
+	# IG expected: ig_financial_sector (keiretsu), ig_tech_industry (electronics),
+	#              ig_organized_labor, ig_intelligentsia
+	# Moderate:    ig_military_establishment (SDF growing), ig_religious_institutions (Shinto)
+	# Weak:        ig_green_movement, ig_rural_populists (declining agricultural sector)
+	# Note: Japan has mandatory military service for SDF reserves; conscription_legacy
+	#       better than professional_military for this era.
+	# Note: Article 9 prohibits offensive nuclear capability; nuclear_disarmament correct.
+	c:JAP ?= {
+		effect_starting_technology_tier_4_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_mixed_transition
+		activate_law = law_type:law_universal_healthcare
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── INDIA ───────────────────────────────────────────────────────────────
+	# IG expected: ig_rural_populists (dominant rural population), ig_religious_institutions,
+	#              ig_organized_labor (unorganized sector large), ig_military_establishment
+	# Moderate:    ig_intelligentsia (IITs, Bangalore tech), ig_financial_sector (Mumbai)
+	# Weak:        ig_tech_industry (nascent but real), ig_green_movement
+	# Note: India tested nuclear weapons May 1998; nuclear_deterrence correct.
+	# Note: India in 2000 had protective trade policy; partial liberalization begun 1991.
+	c:IND ?= {
+		effect_starting_technology_tier_2_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_hybrid_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_minimal_safety_net
+		activate_law = law_type:law_professional_military
+		activate_law = law_type:law_protectionist
+		activate_law = law_type:law_nuclear_deterrence
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── BRAZIL ──────────────────────────────────────────────────────────────
+	# IG expected: ig_organized_labor (CUT strength), ig_rural_populists (large rural sector),
+	#              ig_financial_sector (São Paulo finance), ig_intelligentsia
+	# Moderate:    ig_green_movement (Amazon awareness), ig_military_establishment
+	# Weak:        ig_tech_industry, ig_religious_institutions
+	# Note: Brazil renounced nuclear weapons 1990 (Tlatelolco + ABACC).
+	# Note: SUS (unified health system) established 1988 → universal_healthcare correct.
+	c:BRZ ?= {
+		effect_starting_technology_tier_3_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_mixed_transition
+		activate_law = law_type:law_universal_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_professional_military
+		activate_law = law_type:law_protectionist
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── CANADA ──────────────────────────────────────────────────────────────
+	# (Tech tier already set in can - canada.txt)
+	# IG expected: ig_financial_sector (Bay Street), ig_organized_labor (public unions),
+	#              ig_intelligentsia, ig_green_movement
+	# Moderate:    ig_tech_industry, ig_military_establishment, ig_rural_populists
+	# Weak:        ig_security_services, ig_religious_institutions
+	c:CAN ?= {
+		activate_law = law_type:law_digital_freedom
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_universal_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_professional_military
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── AUSTRALIA ───────────────────────────────────────────────────────────
+	# IG expected: ig_rural_populists (mining, agriculture), ig_financial_sector,
+	#              ig_organized_labor, ig_intelligentsia
+	# Moderate:    ig_green_movement (reef/wilderness politics), ig_tech_industry
+	# Weak:        ig_military_establishment, ig_security_services
+	c:AST ?= {
+		effect_starting_technology_tier_4_tech = yes
+		activate_law = law_type:law_digital_freedom
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_universal_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_professional_military
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── SOUTH KOREA ─────────────────────────────────────────────────────────
+	# (Tech tier already set in rok - south_korea.txt)
+	# IG expected: ig_tech_industry (Samsung/LG/SK Hynix), ig_financial_sector (chaebols),
+	#              ig_organized_labor (post-1987 labor movement)
+	# Moderate:    ig_military_establishment (conscription, US alliance), ig_intelligentsia
+	# Weak:        ig_rural_populists, ig_green_movement, ig_religious_institutions
+	c:ROK ?= {
+		activate_law = law_type:law_digital_freedom
+		activate_law = law_type:law_mixed_transition
+		activate_law = law_type:law_universal_healthcare
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── MEXICO ──────────────────────────────────────────────────────────────
+	# IG expected: ig_rural_populists (PRI legacy, ejido farmers), ig_organized_labor (CTM),
+	#              ig_financial_sector (Monterrey elite), ig_military_establishment
+	# Moderate:    ig_intelligentsia, ig_security_services (narco-state links)
+	# Weak:        ig_tech_industry, ig_green_movement
+	# Note: Mexico joined NAFTA 1994; free_trade correct despite some protection remaining.
+	# Note: Fox wins July 2000 election ending 71-year PRI rule; managed_migration correct.
+	c:MEX ?= {
+		effect_starting_technology_tier_2_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_hybrid_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_minimal_safety_net
+		activate_law = law_type:law_professional_military
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── TURKEY ──────────────────────────────────────────────────────────────
+	# (Tech tier already set in me - middle_east.txt: tier 3)
+	# IG expected: ig_military_establishment (dominant; coup tradition), ig_religious_institutions,
+	#              ig_rural_populists, ig_organized_labor
+	# Moderate:    ig_intelligentsia, ig_financial_sector (Istanbul)
+	# Weak:        ig_tech_industry, ig_green_movement
+	c:TUR ?= {
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_hybrid_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_minimal_safety_net
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── SAUDI ARABIA ────────────────────────────────────────────────────────
+	# (Tech tier already set in me - middle_east.txt: tier 3)
+	# IG expected: ig_religious_institutions (Wahhabi establishment), ig_military_establishment,
+	#              ig_security_services (interior ministry, Mabahith), ig_financial_sector (Aramco)
+	# Moderate:    ig_rural_populists (tribal constituencies), ig_organized_labor (foreign workers)
+	# Weak:        ig_tech_industry, ig_green_movement, ig_intelligentsia
+	c:SAU ?= {
+		activate_law = law_type:law_surveillance_state
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_hybrid_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_minimal_safety_net
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_protectionist
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_state_controlled_media
+	}
+
+	# ─── IRAN ────────────────────────────────────────────────────────────────
+	# (Tech tier already set in me - middle_east.txt: tier 3)
+	# IG expected: ig_religious_institutions (Supreme Leader, clerics), ig_security_services (IRGC),
+	#              ig_military_establishment, ig_rural_populists
+	# Moderate:    ig_organized_labor, ig_intelligentsia (reform movement)
+	# Weak:        ig_financial_sector, ig_tech_industry, ig_green_movement
+	# Note: Iran's nuclear program was active but undeclared in 2000; nuclear_deterrence
+	#       represents ambiguous pursuit, not declared arsenal.
+	c:IRN ?= {
+		activate_law = law_type:law_surveillance_state
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_hybrid_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_minimal_safety_net
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_protectionist
+		activate_law = law_type:law_nuclear_deterrence
+		activate_law = law_type:law_state_controlled_media
+	}
+
+	# ─── ISRAEL ──────────────────────────────────────────────────────────────
+	# (Tech tier already set in me - middle_east.txt: tier 4)
+	# IG expected: ig_military_establishment (IDF pervasive), ig_tech_industry ("startup nation"),
+	#              ig_intelligentsia, ig_security_services (Mossad/Shin Bet)
+	# Moderate:    ig_financial_sector, ig_religious_institutions (ultra-Orthodox)
+	# Weak:        ig_organized_labor (Histadrut declining), ig_rural_populists, ig_green_movement
+	# Note: Israel's nuclear policy is "nuclear ambiguity" — publicly undeclared but assumed.
+	#       nuclear_deterrence is the correct functional approximation.
+	c:ISR ?= {
+		activate_law = law_type:law_digital_freedom
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_universal_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_deterrence
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── EGYPT ───────────────────────────────────────────────────────────────
+	# IG expected: ig_military_establishment (controls large sector of economy),
+	#              ig_security_services (mukhabarat, Mubarak security state),
+	#              ig_religious_institutions (Al-Azhar), ig_rural_populists (fellahin)
+	# Moderate:    ig_organized_labor, ig_intelligentsia
+	# Weak:        ig_financial_sector, ig_tech_industry, ig_green_movement
+	c:EGY ?= {
+		effect_starting_technology_tier_2_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_hybrid_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_minimal_safety_net
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_protectionist
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_state_controlled_media
+	}
+
+	# ─── NIGERIA ─────────────────────────────────────────────────────────────
+	# IG expected: ig_military_establishment (just returned to civilian rule 1999),
+	#              ig_religious_institutions (strong Christian + Muslim communities),
+	#              ig_rural_populists, ig_organized_labor
+	# Moderate:    ig_financial_sector (Lagos), ig_intelligentsia
+	# Weak:        ig_tech_industry, ig_green_movement, ig_security_services
+	c:NGA ?= {
+		effect_starting_technology_tier_2_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_private_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_minimal_safety_net
+		activate_law = law_type:law_professional_military
+		activate_law = law_type:law_protectionist
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── SOUTH AFRICA ────────────────────────────────────────────────────────
+	# IG expected: ig_organized_labor (COSATU), ig_intelligentsia (Mbeki government),
+	#              ig_financial_sector (Johannesburg Stock Exchange), ig_military_establishment
+	# Moderate:    ig_rural_populists (land reform politics), ig_religious_institutions
+	# Weak:        ig_tech_industry, ig_green_movement, ig_security_services
+	# Note: South Africa dismantled its nuclear arsenal by 1991 (unique in history).
+	c:SAF ?= {
+		effect_starting_technology_tier_3_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_hybrid_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_social_democratic_welfare
+		activate_law = law_type:law_professional_military
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── PAKISTAN ────────────────────────────────────────────────────────────
+	# IG expected: ig_military_establishment (dominant; Musharraf coup October 1999),
+	#              ig_security_services (ISI), ig_religious_institutions (strong Islamist base),
+	#              ig_rural_populists
+	# Moderate:    ig_organized_labor, ig_intelligentsia
+	# Weak:        ig_financial_sector, ig_tech_industry, ig_green_movement
+	# Note: Pakistan tested nuclear weapons May 1998; nuclear_deterrence correct.
+	c:PAK ?= {
+		effect_starting_technology_tier_2_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_private_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_minimal_safety_net
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_protectionist
+		activate_law = law_type:law_nuclear_deterrence
+		activate_law = law_type:law_regulated_free_press
+	}
+
+	# ─── INDONESIA ───────────────────────────────────────────────────────────
+	# IG expected: ig_military_establishment (TNI, post-dwifungsi transition),
+	#              ig_religious_institutions (NU, Muhammadiyah), ig_rural_populists,
+	#              ig_organized_labor
+	# Moderate:    ig_intelligentsia (Reformasi era), ig_financial_sector (Jakarta)
+	# Weak:        ig_tech_industry, ig_green_movement, ig_security_services
+	# Note: Wahid became President October 1999 after post-Suharto democratic transition.
+	c:IDN ?= {
+		effect_starting_technology_tier_2_tech = yes
+		activate_law = law_type:law_regulated_data
+		activate_law = law_type:law_fossil_dependent
+		activate_law = law_type:law_hybrid_healthcare
+		activate_law = law_type:law_managed_migration
+		activate_law = law_type:law_minimal_safety_net
+		activate_law = law_type:law_conscription_legacy
+		activate_law = law_type:law_protectionist
+		activate_law = law_type:law_nuclear_disarmament
+		activate_law = law_type:law_regulated_free_press
+	}
+}

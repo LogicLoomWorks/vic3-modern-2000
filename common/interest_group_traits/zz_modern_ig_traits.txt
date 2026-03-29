@@ -1,0 +1,87 @@
+﻿# Modern IG Traits — vic3-modern-2000
+
+ig_trait_tech_lobby = {
+    icon = "gfx/interface/icons/ig_icons/ig_trait_tech_lobby.dds"
+
+    modifier = {
+        country_max_weekly_construction_progress_add = 5
+        country_bureaucracy_mult = 0.04
+    }
+}
+
+ig_trait_military_industrial = {
+    icon = "gfx/interface/icons/ig_icons/ig_trait_military_industrial.dds"
+
+    modifier = {
+        country_authority_mult = 0.05
+        country_bureaucracy_add = 15
+        country_infamy_decay_mult = -0.05
+    }
+}
+
+ig_trait_religious_authority = {
+    icon = "gfx/interface/icons/ig_icons/ig_trait_religious_authority.dds"
+
+    modifier = {
+        country_authority_mult = 0.08
+        country_legitimacy_base_add = 5
+    }
+}
+
+ig_trait_social_solidarity = {
+    icon = "gfx/interface/icons/ig_icons/ig_trait_social_solidarity.dds"
+
+    modifier = {
+        country_bureaucracy_mult = 0.05
+        country_legitimacy_base_add = 5
+    }
+}
+
+ig_trait_financial_elite = {
+    icon = "gfx/interface/icons/ig_icons/ig_trait_financial_elite.dds"
+
+    modifier = {
+        country_tax_efficiency_mult = 0.05
+        country_influence_mult = 0.05
+    }
+}
+
+ig_trait_green_lobby = {
+    icon = "gfx/interface/icons/ig_icons/ig_trait_green_lobby.dds"
+
+    modifier = {
+        country_prestige_mult = 0.05
+        country_infamy_decay_mult = 0.08
+        country_max_weekly_construction_progress_add = 3
+    }
+}
+
+ig_trait_rural_traditionalism = {
+    icon = "gfx/interface/icons/ig_icons/ig_trait_rural_traditionalism.dds"
+
+    modifier = {
+        country_authority_mult = 0.05
+        country_legitimacy_base_add = 3
+    }
+}
+
+ig_trait_academic_reformers = {
+    icon = "gfx/interface/icons/ig_icons/ig_trait_academic_reformers.dds"
+
+    modifier = {
+        country_bureaucracy_mult = 0.10
+        country_influence_mult = 0.05
+    }
+}
+
+ig_trait_security_state = {
+    icon = "gfx/interface/icons/ig_icons/ig_trait_security_state.dds"
+
+    # Not referenced by any IG (ig_security_services was merged into ig_armed_forces)
+    # Kept here as a valid (if unused) trait definition to avoid missing key errors.
+    modifier = {
+        country_authority_mult = 0.12
+        country_infamy_decay_mult = 0.10
+        country_legitimacy_base_add = -5
+    }
+}

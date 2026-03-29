@@ -1,0 +1,268 @@
+﻿decision_establish_special_economic_zone = {
+	icon = "gfx/interface/icons/decisions/decision_upgrade_port.dds"
+
+	is_shown = {
+		OR = {
+			has_law = law_free_trade
+			has_law = law_strategic_decoupling
+		}
+	}
+
+	possible = {
+		OR = {
+			has_law = law_free_trade
+			has_law = law_strategic_decoupling
+		}
+		gold_reserves >= 500
+		custom_tooltip = {
+			text = decision_sez_cost_tt
+			gold_reserves >= 500
+		}
+	}
+
+	when_taken = {
+		add_treasury = -500
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+			}
+			add_modifier = {
+				name = modifier_special_economic_zone
+				years = 10
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 10
+		modifier = {
+			add = 20
+			has_law = law_free_trade
+		}
+	}
+}
+
+decision_launch_space_program = {
+	icon = "gfx/interface/icons/decisions/decision_activate_research_institute.dds"
+
+	is_shown = {
+		any_scope_state = {
+			has_building = building_space_launch_facility
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			has_building = building_space_launch_facility
+		}
+		gold_reserves >= 1000
+		custom_tooltip = {
+			text = decision_space_program_cost_tt
+			gold_reserves >= 1000
+		}
+	}
+
+	when_taken = {
+		add_treasury = -1000
+		change_prestige = 75
+		add_modifier = {
+			name = modifier_tech_hub
+			years = 5
+		}
+		trigger_event = { id = tech_boom.1 }
+	}
+
+	ai_chance = {
+		base = 5
+		modifier = {
+			add = 20
+			is_great_power_2000 = yes
+		}
+		modifier = {
+			add = 10
+			is_tech_leader = yes
+		}
+	}
+}
+
+decision_cyber_offensive = {
+	icon = "gfx/interface/icons/decisions/decision_activate_research_institute.dds"
+
+	is_shown = {
+		any_scope_state = {
+			has_building = building_cyber_operations_center
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			has_building = building_cyber_operations_center
+		}
+		any_rival_country = {
+			always = yes
+		}
+	}
+
+	when_taken = {
+		random_rival_country = {
+			limit = { always = yes }
+			save_scope_as = cyber_target
+		}
+		effect_cyber_attack = { TARGET = scope:cyber_target }
+		trigger_event = { id = cyber_attack_launched.1 }
+	}
+
+	ai_chance = {
+		base = 5
+		modifier = {
+			add = 15
+			any_rival_country = {
+				country_rank >= rank_value:major_power
+			}
+		}
+	}
+}
+
+decision_impose_sanctions = {
+	icon = "gfx/interface/icons/decisions/decision_upgrade_port.dds"
+
+	is_shown = {
+		is_great_power_2000 = yes
+	}
+
+	possible = {
+		is_great_power_2000 = yes
+		any_rival_country = {
+			always = yes
+		}
+		NOT = {
+			has_modifier = modifier_sanctions_sender
+		}
+	}
+
+	when_taken = {
+		random_rival_country = {
+			limit = { always = yes }
+			save_scope_as = sanction_target
+		}
+		effect_impose_sanctions = { TARGET = scope:sanction_target }
+		trigger_event = { id = trade_war_escalation.1 }
+	}
+
+	ai_chance = {
+		base = 5
+		modifier = {
+			add = 15
+			any_rival_country = {
+				has_modifier = modifier_nuclear_arsenal
+			}
+		}
+	}
+}
+
+decision_offer_development_aid = {
+	icon = "gfx/interface/icons/decisions/decision_invest_in_state.dds"
+
+	is_shown = {
+		gold_reserves >= 300
+	}
+
+	possible = {
+		gold_reserves >= 300
+		OR = {
+			any_neighbouring_country = {
+				always = yes
+			}
+			any_subject_or_below = {
+				always = yes
+			}
+		}
+	}
+
+	when_taken = {
+		add_treasury = -300
+		change_prestige = 15
+		if = {
+			limit = {
+				any_subject_or_below = { always = yes }
+			}
+			random_subject_or_below = {
+				limit = { always = yes }
+				add_modifier = {
+					name = modifier_green_transition_subsidy
+					months = 24
+				}
+			}
+		}
+		else = {
+			random_neighbouring_country = {
+				limit = { always = yes }
+				add_modifier = {
+					name = modifier_green_transition_subsidy
+					months = 24
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 5
+		modifier = {
+			add = 10
+			any_subject_or_below = {
+				always = yes
+			}
+		}
+	}
+}
+
+decision_military_intervention = {
+	icon = "gfx/interface/icons/decisions/decision_mobilize_defense.dds"
+
+	is_shown = {
+		OR = {
+			has_law = law_professional_military
+			has_law = law_tech_centric_force
+		}
+	}
+
+	possible = {
+		OR = {
+			has_law = law_professional_military
+			has_law = law_tech_centric_force
+		}
+		is_great_power_2000 = yes
+		any_scope_state = {
+			has_building = building_military_hardware_factory
+		}
+		gold_reserves >= 500
+	}
+
+	when_taken = {
+		add_treasury = -500
+		change_infamy = 10
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+				has_building = building_military_hardware_factory
+			}
+			add_modifier = {
+				name = modifier_military_base
+				years = 5
+			}
+		}
+		trigger_event = { id = mass_protest.1 }
+	}
+
+	ai_chance = {
+		base = 3
+		modifier = {
+			add = 10
+			country_rank >= rank_value:major_power
+		}
+		modifier = {
+			add = 5
+			has_law = law_tech_centric_force
+		}
+	}
+}

@@ -1,0 +1,125 @@
+﻿l_english:
+ # Era names
+ era_6: "Information Age"
+ era_6_desc: "The rapid spread of computing and the internet transforms how knowledge is created, stored, and shared. Nations that master information technology gain decisive advantages in commerce, governance, and warfare."
+ era_7: "Digital Age"
+ era_7_desc: "Digital systems permeate every aspect of society and industry. Artificial intelligence, automation, and global connectivity redefine the boundaries of economic and military power."
+ era_8: "Near Future"
+ era_8_desc: "Emerging technologies push the limits of what was once considered possible. Nations on the cutting edge of science and engineering shape the destiny of the world."
+
+ # ERA 6 — INFORMATION AGE — Production
+
+ internet_infrastructure: "Internet Infrastructure"
+ internet_infrastructure_desc: "A global web of interconnected computer networks, the internet collapses distances that once took weeks to bridge by telegraph and months by post. Its effects on commerce, communication, and political organization are without precedent in peacetime history."
+
+ fiber_optics: "Fiber Optics"
+ fiber_optics_desc: "Pulses of light traveling through hair-thin glass strands carry more information per second than copper cables could carry in a day. Every exchange, every bank transfer, every phone call quietly passes through this invisible infrastructure underfoot."
+
+ mobile_telecommunications: "Mobile Telecommunications"
+ mobile_telecommunications_desc: "For the first time in history, reliable communication follows the individual rather than the location. The consequences ripple outward from personal convenience to the organization of labor, finance, and political dissent alike."
+
+ gps_navigation: "GPS Navigation"
+ gps_navigation_desc: "A constellation of satellites overhead renders every point on the earth's surface precisely addressable. Shipping, agriculture, mining, and military operations all find themselves transformed by the ability to know exactly where anything is, at any time."
+
+ containerized_logistics: "Containerized Logistics"
+ containerized_logistics_desc: "The humble steel box may be the most quietly revolutionary invention of the twentieth century. By standardizing the unit of cargo, the container slashed loading times from days to hours and stitched the world's ports into a single, humming system."
+
+ precision_agriculture: "Precision Agriculture"
+ precision_agriculture_desc: "GPS-guided machinery, airborne sensors, and soil monitoring reduce the farming of land to a problem of data. Each meter of a field can now be treated according to its particular needs rather than the average of the whole — yield goes up, waste goes down."
+
+ advanced_petrochemicals: "Advanced Petrochemicals"
+ advanced_petrochemicals_desc: "Modern refineries crack a barrel of crude into dozens of distinct products — plastics, fertilizers, pharmaceuticals, lubricants — extracting far more economic value than the simple combustion of early oil use ever managed."
+
+ # ERA 7 — DIGITAL AGE — Production
+
+ cloud_computing: "Cloud Computing"
+ cloud_computing_desc: "Vast server farms distributed across continents rent their capacity by the second, allowing a startup with a credit card to access infrastructure that once required a building full of mainframes. The geography of industry shifts: what matters is not where the machines are, but who controls the software."
+
+ renewable_energy: "Renewable Energy"
+ renewable_energy_desc: "Wind turbines and solar panels reach cost parity with gas and coal, then beat them outright. The age of energy scarcity tied to geological luck begins to loosen its grip — any country with sun, wind, or coastline can generate power on a competitive basis."
+
+ hydraulic_fracturing: "Hydraulic Fracturing"
+ hydraulic_fracturing_desc: "High-pressure fluid forced through horizontal boreholes shatters the tight shale that previously trapped vast reserves of oil and natural gas. The technique rewrites the geopolitics of energy: countries once thought dry discover they are sitting atop a century's worth of fuel."
+
+ industrial_automation: "Industrial Automation"
+ industrial_automation_desc: "Robotic arms, automated guided vehicles, and machine-vision systems take over repetitive assembly tasks with a consistency and speed no human worker can match around the clock. The factory floor of 2015 looks little like the factory floor of 1975."
+
+ electric_vehicles: "Electric Vehicles"
+ electric_vehicles_desc: "Battery technology matures until the electric drivetrain becomes cheaper to build and run than the internal combustion engine. Transportation — the largest single source of oil demand — begins a slow but irreversible structural shift."
+
+ biotech_engineering: "Biotech Engineering"
+ biotech_engineering_desc: "Precise editing of genetic sequences, the design of novel proteins, and the reprogramming of microbes as chemical factories open possibilities in medicine and agriculture that would have seemed like science fiction a generation before. The boundary between engineering and biology dissolves."
+
+ advanced_materials: "Advanced Materials"
+ advanced_materials_desc: "Carbon fiber composites, high-entropy alloys, and engineered ceramics offer combinations of strength, weight, and heat resistance that conventional steel and aluminum simply cannot reach. Aerospace, construction, and energy infrastructure are reshaped by what it becomes possible to build."
+
+ # ERA 8 — NEAR FUTURE — Production
+
+ artificial_intelligence: "Artificial Intelligence"
+ artificial_intelligence_desc: "Systems that learn from data rather than following fixed instructions begin to outperform human specialists in one domain after another — logistics routing, materials discovery, industrial scheduling. The countries that deploy these systems earliest compound their advantages at a rate that earlier technologies never permitted."
+
+ quantum_computing: "Quantum Computing"
+ quantum_computing_desc: "Processors that exploit quantum superposition solve certain optimization and cryptographic problems exponentially faster than any classical machine. Financial modeling, drug design, and supply chain management are the first to feel the shift; no one is sure what comes next."
+
+ fusion_research: "Fusion Research"
+ fusion_research_desc: "Scientists have been promising commercial fusion within twenty years for sixty years running — but this time the plasma stays confined, the reaction sustains itself, and net energy is produced. The economics of electricity change completely when the fuel is hydrogen extracted from seawater."
+
+ vertical_farming: "Vertical Farming"
+ vertical_farming_desc: "Stacked hydroponic bays sealed inside climate-controlled towers grow leafy crops year-round regardless of latitude, season, or soil. Water use falls by ninety percent compared to conventional farming. Food security, long tied to geography and weather, becomes an engineering problem instead."
+
+ space_commercialization: "Space Commercialization"
+ space_commercialization_desc: "Reusable rockets reduce the cost of reaching orbit by two orders of magnitude, and the resource wealth of the solar system — rare metals on asteroids, helium-3 in lunar regolith — becomes a subject of serious industrial planning rather than science fiction. The first country to establish a permanent presence beyond Earth gains an advantage that cannot be measured in conventional terms."
+
+ carbon_capture: "Carbon Capture"
+ carbon_capture_desc: "Industrial-scale direct air capture and deep geological sequestration allow the atmosphere's accumulated load of carbon dioxide to be reduced deliberately, rather than simply hoping emissions fall fast enough. It is expensive, energy-intensive work — but the alternatives are worse."
+
+ # ERA 6 — INFORMATION AGE — Society
+
+ globalization: "Globalization"
+ globalization_desc: "The barriers that once kept national economies separate — tariffs, capital controls, and the raw friction of distance — dissolve faster than any government planned. Goods, money, and people move in volumes that would have been inconceivable a generation before. The gains are real, widely distributed, and deeply uneven; so are the dislocations."
+
+ human_rights_framework: "Human Rights Framework"
+ human_rights_framework_desc: "A body of international conventions, regional courts, and domestic legislation translates the language of universal rights into enforceable obligations. Governments that ratify these instruments accept a degree of external scrutiny over how they treat their own citizens — a revolution in the logic of sovereignty that would have been unthinkable before the mid-twentieth century."
+
+ microfinance: "Microfinance"
+ microfinance_desc: "For most of history, formal credit has been unavailable to anyone without collateral. Microfinance institutions extend small loans to smallholders, street traders, and village craftspeople — groups that commercial banks ignore as unprofitable. The results are uneven, but in the places where it works, it works profoundly."
+
+ digital_democracy: "Digital Democracy"
+ digital_democracy_desc: "Online petitions, participatory budgeting platforms, and open government data portals lower the cost of civic engagement to near zero. Whether governments use these tools to deepen accountability or to perform it is a political question the technology cannot answer."
+
+ environmental_regulation: "Environmental Regulation"
+ environmental_regulation_desc: "Clean air standards, protected area designations, and mandatory environmental impact assessments give legal force to the idea that the commons — air, water, soil — belong to everyone. Industry resists; courts enforce; the atmosphere improves more slowly than scientists recommend and faster than optimists expected."
+
+ # ERA 7 — DIGITAL AGE — Society
+
+ social_media: "Social Media"
+ social_media_desc: "Platforms designed to maximize engagement deploy the full arsenal of behavioral psychology to keep users scrolling. The side effects are formidable: political organizing that bypasses traditional institutions, disinformation that spreads faster than corrections, and a permanent, searchable record of everything anyone has ever said in a moment of anger."
+
+ big_data_analytics: "Big Data Analytics"
+ big_data_analytics_desc: "The digital traces left by billions of people — purchases, movements, communications, clicks — accumulate into datasets large enough to detect patterns invisible to any individual observer. Governments that learn to use these patterns govern more efficiently. Those that exploit them govern more oppressively. The technology does not distinguish between the two."
+
+ international_criminal_court: "International Criminal Court"
+ international_criminal_court_desc: "For the first time in history, a permanent court sits in judgment of individuals — not states — for the most serious crimes under international law. Its jurisdiction is contested, its enforcement record uneven, and its docket heavily weighted toward the weak rather than the powerful. It exists nonetheless, which is more than could be said in 1945."
+
+ climate_science: "Climate Science"
+ climate_science_desc: "Atmospheric modeling, ice-core records, and a global network of monitoring stations build a picture of the Earth's climate system precise enough to project its future behavior under different emissions scenarios. The science is settled; the politics are not. The gap between what scientists recommend and what governments agree to do has defined international diplomacy for a generation."
+
+ sovereign_wealth_funds: "Sovereign Wealth Funds"
+ sovereign_wealth_funds_desc: "States that sit atop resource windfalls face a recurring temptation: spend the money now, lose it to corruption, or invest it for the future. The sovereign wealth fund is an institutional answer to that problem — a state-owned portfolio designed to convert a temporary commodity surplus into a permanent endowment. The largest of them hold assets comparable to the GDP of mid-sized economies."
+
+ # ERA 8 — NEAR FUTURE — Society
+
+ universal_basic_income: "Universal Basic Income"
+ universal_basic_income_desc: "As automation compresses labor demand in sector after sector, policymakers revisit an old idea: an unconditional payment to every citizen, sufficient to meet basic needs, regardless of employment status. Pilots proliferate; economists argue; the fiscal arithmetic is never quite as impossible as the critics claim, nor as easy as the advocates suggest."
+
+ digital_currency: "Digital Currency"
+ digital_currency_desc: "Central bank digital currencies give states a direct monetary transmission mechanism that bypasses commercial banks entirely. Decentralized alternatives challenge the state's monopoly on currency issuance from the other direction. Between them, the infrastructure of money — settlement, clearing, issuance — is redesigned from the ground up for the first time since the gold standard was abandoned."
+
+ ai_governance: "AI Governance"
+ ai_governance_desc: "When decisions affecting employment, credit, policing, and medical care are made by algorithms trained on historical data, the question of who audits the algorithm and who answers for its errors becomes urgent. Regulatory frameworks emerge slowly, contested at every stage by the industries they purport to govern, and become obsolete faster than they can be written."
+
+ carbon_neutral_economy: "Carbon-Neutral Economy"
+ carbon_neutral_economy_desc: "Net-zero targets written into law create enforceable obligations that outlast individual governments. Carbon pricing, green industrial subsidies, and mandatory supply chain disclosure requirements redirect investment at a scale that voluntary commitments never achieved. The transition is painful for incumbent industries and long overdue for everyone else."
+
+ space_law: "Space Law"
+ space_law_desc: "The Outer Space Treaty of 1967 was written for a world of two space powers and no commercial space industry. As reusable rockets make orbit accessible to private firms and national programs proliferate, the rules governing orbital debris, resource extraction, and sovereign jurisdiction above the Kármán line require serious renegotiation. The countries that shape those rules will shape the next century."

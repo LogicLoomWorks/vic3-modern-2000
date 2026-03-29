@@ -1,0 +1,494 @@
+﻿# Modern Interest Groups — vic3-modern-2000
+# All 8 definitions use VANILLA IG key names to override vanilla IGs
+# rather than adding new ones (adding new IGs triggers a hardcoded
+# ExpectedNumItems assertion crash in CInterestGroupTypeDatabase).
+#
+# Mapping from design concept to vanilla key:
+#   ig_tech_industry        → ig_industrialists
+#   ig_military_establishment → ig_armed_forces
+#   ig_religious_institutions → ig_devout
+#   ig_organized_labor      → ig_trade_unions
+#   ig_financial_sector     → ig_petty_bourgeoisie
+#   ig_green_movement       → ig_landowners
+#   ig_rural_populists      → ig_rural_folk
+#   ig_intelligentsia       → ig_intelligentsia  (same key)
+#   ig_security_services    → merged into ig_armed_forces (dropped as separate IG)
+
+ig_industrialists = {
+    color = { 0.20 0.60 0.90 }
+    texture = "gfx/interface/icons/interest_group_icons/ig_tech_industry.dds"
+
+    ideologies = {
+        ideology_technocratic = {
+            weight = {
+                value = 5
+            }
+        }
+        ideology_neoliberal = {
+            weight = {
+                value = 3
+            }
+        }
+    }
+
+    enable = {
+        has_technology_researched = internet_infrastructure
+    }
+
+    pop_potential = {
+        OR = {
+            is_pop_type = engineers
+            is_pop_type = academics
+            is_pop_type = clerks
+        }
+    }
+
+    pop_weight = {
+        value = 0
+        if = {
+            limit = {
+                is_pop_type = engineers
+                workplace = {
+                    OR = {
+                        is_building_type = building_software_studio
+                        is_building_type = building_electronics_factory
+                        is_building_type = building_data_center
+                        is_building_type = building_telecom_network
+                        is_building_type = building_semiconductor_fab
+                    }
+                }
+            }
+            add = 10
+        }
+        if = {
+            limit = {
+                is_pop_type = academics
+                workplace = {
+                    OR = {
+                        is_building_type = building_software_studio
+                        is_building_type = building_data_center
+                        is_building_type = building_semiconductor_fab
+                    }
+                }
+            }
+            add = 8
+        }
+        if = {
+            limit = {
+                is_pop_type = clerks
+                workplace = {
+                    OR = {
+                        is_building_type = building_financial_hub
+                        is_building_type = building_data_center
+                        is_building_type = building_telecom_network
+                    }
+                }
+            }
+            add = 4
+        }
+    }
+
+    traits = { ig_trait_tech_lobby }
+}
+
+ig_armed_forces = {
+    color = { 0.40 0.20 0.10 }
+    texture = "gfx/interface/icons/interest_group_icons/ig_military_establishment.dds"
+
+    ideologies = {
+        ideology_nationalist_populist = {
+            weight = {
+                value = 4
+            }
+        }
+        ideology_authoritarian_statist = {
+            weight = {
+                value = 5
+            }
+        }
+    }
+
+    enable = {
+        always = yes
+    }
+
+    pop_potential = {
+        OR = {
+            is_pop_type = officers
+            is_pop_type = soldiers
+            is_pop_type = engineers
+        }
+    }
+
+    pop_weight = {
+        value = 0
+        if = {
+            limit = {
+                is_pop_type = officers
+            }
+            add = 10
+        }
+        if = {
+            limit = {
+                is_pop_type = engineers
+                workplace = {
+                    OR = {
+                        is_building_type = building_guided_munitions_plant
+                        is_building_type = building_military_hardware_factory
+                        is_building_type = building_cyber_operations_center
+                    }
+                }
+            }
+            add = 7
+        }
+        if = {
+            limit = {
+                is_pop_type = soldiers
+            }
+            add = 3
+        }
+    }
+
+    traits = { ig_trait_military_industrial }
+}
+
+ig_devout = {
+    color = { 0.70 0.60 0.20 }
+    texture = "gfx/interface/icons/interest_group_icons/ig_religious_institutions.dds"
+
+    ideologies = {
+        ideology_religious_conservative = {
+            weight = {
+                value = 8
+            }
+        }
+    }
+
+    enable = {
+        always = yes
+    }
+
+    pop_potential = {
+        OR = {
+            is_pop_type = clergy
+            is_pop_type = aristocrats
+            is_pop_type = farmers
+        }
+    }
+
+    pop_weight = {
+        value = 0
+        if = {
+            limit = {
+                is_pop_type = clergy
+            }
+            add = 10
+        }
+        if = {
+            limit = {
+                is_pop_type = aristocrats
+            }
+            add = 5
+        }
+        if = {
+            limit = {
+                is_pop_type = farmers
+            }
+            add = 2
+        }
+    }
+
+    traits = { ig_trait_religious_authority }
+}
+
+ig_trade_unions = {
+    color = { 0.80 0.20 0.20 }
+    texture = "gfx/interface/icons/interest_group_icons/ig_organized_labor.dds"
+
+    ideologies = {
+        ideology_social_democratic = {
+            weight = {
+                value = 8
+            }
+        }
+    }
+
+    enable = {
+        always = yes
+    }
+
+    pop_potential = {
+        OR = {
+            is_pop_type = laborers
+            is_pop_type = machinists
+            is_pop_type = farmers
+        }
+    }
+
+    pop_weight = {
+        value = 0
+        if = {
+            limit = {
+                is_pop_type = machinists
+            }
+            add = 8
+        }
+        if = {
+            limit = {
+                is_pop_type = laborers
+            }
+            add = 7
+        }
+        if = {
+            limit = {
+                is_pop_type = laborers
+                workplace = {
+                    OR = {
+                        is_building_type = building_rare_earth_mine
+                        is_building_type = building_lithium_mine
+                        is_building_type = building_uranium_mine
+                        is_building_type = building_natural_gas_plant
+                        is_building_type = building_electronics_factory
+                        is_building_type = building_battery_factory
+                        is_building_type = building_guided_munitions_plant
+                        is_building_type = building_military_hardware_factory
+                        is_building_type = building_nuclear_power_plant
+                        is_building_type = building_solar_wind_farm
+                        is_building_type = building_telecom_network
+                    }
+                }
+            }
+            add = 3
+        }
+        if = {
+            limit = {
+                is_pop_type = farmers
+            }
+            add = 3
+        }
+    }
+
+    traits = { ig_trait_social_solidarity }
+}
+
+ig_petty_bourgeoisie = {
+    color = { 0.90 0.80 0.10 }
+    texture = "gfx/interface/icons/interest_group_icons/ig_financial_sector.dds"
+
+    ideologies = {
+        ideology_neoliberal = {
+            weight = {
+                value = 5
+            }
+        }
+        ideology_libertarian = {
+            weight = {
+                value = 4
+            }
+        }
+    }
+
+    enable = {
+        has_technology_researched = internet_infrastructure
+    }
+
+    pop_potential = {
+        OR = {
+            is_pop_type = clerks
+            is_pop_type = academics
+            is_pop_type = capitalists
+        }
+    }
+
+    pop_weight = {
+        value = 0
+        if = {
+            limit = {
+                is_pop_type = clerks
+                workplace = {
+                    OR = {
+                        is_building_type = building_financial_hub
+                        is_building_type = building_data_center
+                    }
+                }
+            }
+            add = 10
+        }
+        if = {
+            limit = {
+                is_pop_type = academics
+                workplace = {
+                    is_building_type = building_financial_hub
+                }
+            }
+            add = 7
+        }
+        if = {
+            limit = {
+                is_pop_type = capitalists
+            }
+            add = 6
+        }
+    }
+
+    traits = { ig_trait_financial_elite }
+}
+
+ig_landowners = {
+    color = { 0.20 0.80 0.30 }
+    texture = "gfx/interface/icons/interest_group_icons/ig_green_movement.dds"
+
+    ideologies = {
+        ideology_green_progressive = {
+            weight = {
+                value = 8
+            }
+        }
+    }
+
+    enable = {
+        has_technology_researched = environmental_regulation
+    }
+
+    pop_potential = {
+        OR = {
+            is_pop_type = academics
+            is_pop_type = engineers
+            is_pop_type = clerks
+        }
+    }
+
+    pop_weight = {
+        value = 0
+        if = {
+            limit = {
+                is_pop_type = academics
+            }
+            add = 8
+        }
+        if = {
+            limit = {
+                is_pop_type = engineers
+                workplace = {
+                    OR = {
+                        is_building_type = building_solar_wind_farm
+                        is_building_type = building_nuclear_power_plant
+                    }
+                }
+            }
+            add = 7
+        }
+        if = {
+            limit = {
+                is_pop_type = clerks
+            }
+            add = 3
+        }
+    }
+
+    traits = { ig_trait_green_lobby }
+}
+
+ig_rural_folk = {
+    color = { 0.60 0.50 0.20 }
+    texture = "gfx/interface/icons/interest_group_icons/ig_rural_populists.dds"
+
+    ideologies = {
+        ideology_nationalist_populist = {
+            weight = {
+                value = 8
+            }
+        }
+    }
+
+    enable = {
+        always = yes
+    }
+
+    pop_potential = {
+        OR = {
+            is_pop_type = farmers
+            is_pop_type = laborers
+        }
+    }
+
+    pop_weight = {
+        value = 0
+        if = {
+            limit = {
+                is_pop_type = farmers
+            }
+            add = 10
+        }
+        if = {
+            limit = {
+                is_pop_type = laborers
+                workplace = {
+                    OR = {
+                        is_building_type = building_rare_earth_mine
+                        is_building_type = building_lithium_mine
+                        is_building_type = building_natural_gas_plant
+                        is_building_type = building_uranium_mine
+                    }
+                }
+            }
+            add = 5
+        }
+    }
+
+    traits = { ig_trait_rural_traditionalism }
+}
+
+ig_intelligentsia = {
+    color = { 0.50 0.30 0.80 }
+    texture = "gfx/interface/icons/interest_group_icons/ig_intelligentsia.dds"
+
+    ideologies = {
+        ideology_social_democratic = {
+            weight = {
+                value = 4
+            }
+        }
+        ideology_green_progressive = {
+            weight = {
+                value = 4
+            }
+        }
+    }
+
+    enable = {
+        has_technology_researched = internet_infrastructure
+    }
+
+    pop_potential = {
+        OR = {
+            is_pop_type = academics
+            is_pop_type = engineers
+        }
+    }
+
+    pop_weight = {
+        value = 0
+        if = {
+            limit = {
+                is_pop_type = academics
+            }
+            add = 10
+        }
+        if = {
+            limit = {
+                is_pop_type = engineers
+                workplace = {
+                    OR = {
+                        is_building_type = building_semiconductor_fab
+                        is_building_type = building_pharmaceutical_lab
+                        is_building_type = building_software_studio
+                    }
+                }
+            }
+            add = 6
+        }
+    }
+
+    traits = { ig_trait_academic_reformers }
+}

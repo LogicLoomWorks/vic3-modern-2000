@@ -1,0 +1,137 @@
+﻿# Draft scaffold for vic3-modern-2000
+
+pmg_rare_earth_extraction = {
+	production_methods = { pm_surface_rare_earth_extraction pm_deep_rare_earth_extraction }
+}
+
+pmg_lithium_extraction = {
+	production_methods = { pm_brine_lithium_extraction pm_hardrock_lithium_extraction }
+}
+
+pmg_natural_gas_extraction = {
+	production_methods = { pm_conventional_gas_fields pm_deep_gas_fields }
+}
+
+pmg_fuel_processing_specialization = {
+	production_methods = { pm_grid_gas_supply pm_synthetic_fuel_refining }
+}
+
+pmg_semiconductor_fab = {
+	production_methods = { pm_basic_fab_lines pm_advanced_fab_lines }
+}
+
+pmg_electronics_factory = {
+	production_methods = { pm_consumer_electronics_assembly pm_advanced_electronics_assembly }
+}
+
+pmg_electronics_specialization = {
+	production_methods = { pm_civilian_electronics_focus pm_dual_use_electronics_focus }
+}
+
+pmg_pharmaceutical_lab = {
+	production_methods = { pm_generic_medicine_production pm_biotech_drug_production }
+}
+
+pmg_software_studio = {
+	production_methods = { pm_enterprise_software_development pm_platform_software_development }
+}
+
+pmg_battery_factory = {
+	production_methods = { pm_lithium_ion_battery_lines pm_advanced_battery_lines }
+}
+
+pmg_telecom_network = {
+	production_methods = { pm_fixed_line_backbone pm_mobile_broadband_network }
+}
+
+pmg_data_center = {
+	production_methods = { pm_server_rack_operations pm_hyperscale_computing }
+}
+
+pmg_data_center_specialization = {
+	production_methods = { pm_cloud_hosting_focus pm_media_streaming_focus }
+}
+
+pmg_financial_hub = {
+	production_methods = { pm_investment_banking pm_fintech_platforms }
+}
+
+pmg_media_studio = {
+	production_methods = { pm_broadcast_media pm_digital_media_platforms }
+}
+
+pmg_nuclear_generation = {
+	production_methods = { pm_light_water_reactors pm_advanced_reactors }
+}
+
+pmg_renewable_generation = {
+	production_methods = { pm_mixed_solar_wind pm_grid_scale_storage_renewables }
+}
+
+pmg_guided_munitions_plant = {
+	production_methods = { pm_precision_munitions_assembly pm_integrated_strike_systems }
+}
+
+pmg_military_hardware_specialization = {
+	production_methods = { pm_munitions_priority pm_hardware_priority }
+}
+
+pmg_cyber_operations = {
+	production_methods = { pm_defensive_cyber_operations pm_offensive_cyber_operations }
+}
+
+pmg_intelligence_agency = {
+	production_methods = { pm_signals_collection pm_integrated_intelligence_analysis }
+}
+
+pmg_space_launch_facility = {
+	production_methods = { pm_orbital_launch_program pm_heavy_lift_program }
+}
+
+pmg_space_program_specialization = {
+	production_methods = { pm_civil_space_program pm_strategic_space_program }
+}
+
+pmg_modern_mining_automation = {
+	production_methods = { pm_manual_mining_operations pm_automated_mining_systems pm_ai_assisted_mining }
+}
+
+pmg_modern_extraction_automation = {
+	production_methods = { pm_manual_extraction_operations pm_automated_extraction_systems pm_ai_assisted_extraction }
+}
+
+pmg_modern_factory_automation = {
+	production_methods = { pm_manual_factory_lines pm_automated_factory_lines pm_ai_assisted_factory_lines }
+}
+
+pmg_knowledge_work_automation = {
+	production_methods = { pm_clerical_workflows pm_digital_workflows pm_ai_assisted_workflows }
+}
+
+pmg_network_automation = {
+	production_methods = { pm_regional_network_operations pm_smart_network_operations pm_autonomous_network_operations }
+}
+
+pmg_power_automation = {
+	production_methods = { pm_manual_grid_management pm_digital_grid_management pm_autonomous_grid_management }
+}
+
+pmg_military_industry_automation = {
+	production_methods = { pm_conventional_military_manufacture pm_automated_military_manufacture pm_ai_directed_military_manufacture }
+}
+
+pmg_government_digital_automation = {
+	production_methods = { pm_analog_state_capacity pm_digital_state_capacity pm_ai_augmented_state_capacity }
+}
+
+# Prerequisite fix: PMGs for two buildings that were referenced in scripted triggers
+# but were missing from buildings file.
+
+pmg_uranium_extraction = {
+	production_methods = { pm_conventional_uranium_mining pm_advanced_uranium_mining }
+}
+
+pmg_military_hardware_factory = {
+	production_methods = { pm_conventional_military_hardware pm_advanced_military_hardware }
+}
+

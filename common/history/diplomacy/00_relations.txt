@@ -1,3 +1,76 @@
 ﻿DIPLOMACY = {
-	
+	# Year-2000 diplomatic relations scaffold.
+	# NATO/EU/CIS power-bloc memberships are handled in 00_power_blocs.txt.
+	# This file covers bilateral security treaties and formal rivalry declarations.
+	#
+	# Pact types used:
+	#   defensive_pact — mutual defense treaty (closest V3 approximation to
+	#                    formal bilateral security commitments)
+	#   rivalry        — declared strategic rivalry / persistent hostile competition
+	#
+	# If either type is not supported by the installed V3 patch, replace with
+	# the nearest valid pact type and comment the substitution.
+
+	# ─── US BILATERAL SECURITY ARCHITECTURE ──────────────────────────────
+	c:USA ?= {
+		# US-Japan Security Treaty (1960) — bedrock of East Asian security
+		create_diplomatic_pact = {
+			country = c:JAP
+			type = defensive_pact
+		}
+		# US-ROK Mutual Defense Treaty (1953) — permanent garrison on peninsula
+		create_diplomatic_pact = {
+			country = c:ROK
+			type = defensive_pact
+		}
+		# ANZUS Treaty (1951) — Pacific security arrangement with Australia
+		create_diplomatic_pact = {
+			country = c:AST
+			type = defensive_pact
+		}
+		# US-Russia rivalry — NATO expansion (1999), Kosovo intervention tensions,
+		# competing strategic interests in former Soviet space
+		create_diplomatic_pact = {
+			country = c:RUS
+			type = rivalry
+		}
+		# US-China rivalry — emerging strategic competition; Taiwan Strait crisis
+		# (1996), Cox Report (1999), EP-3 incident approaching. Less acute than
+		# US-Russia in 2000 but clearly developing.
+		create_diplomatic_pact = {
+			country = c:CHI
+			type = rivalry
+		}
+	}
+
+	# ─── INDIA–PAKISTAN ───────────────────────────────────────────────────
+	# Kargil War concluded July 1999. Both states had tested nuclear weapons
+	# May 1998. The most acute nuclear rivalry on earth in year 2000.
+	c:IND ?= {
+		create_diplomatic_pact = {
+			country = c:PAK
+			type = rivalry
+		}
+	}
+
+	# ─── ISRAEL–IRAN ──────────────────────────────────────────────────────
+	# Iran funds Hezbollah and Hamas; both states view each other as
+	# existential threats. No formal diplomatic relations.
+	c:ISR ?= {
+		create_diplomatic_pact = {
+			country = c:IRN
+			type = rivalry
+		}
+	}
+
+	# ─── INDIA–CHINA ──────────────────────────────────────────────────────
+	# Ongoing border dispute (Aksai Chin, Arunachal Pradesh), 1962 war memory,
+	# competing influence in South and Southeast Asia.
+	# Less acute than India-Pakistan in 2000 but persistent.
+	c:IND ?= {
+		create_diplomatic_pact = {
+			country = c:CHI
+			type = rivalry
+		}
+	}
 }

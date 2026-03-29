@@ -1,50 +1,99 @@
 ﻿POWER_BLOCS = {
-	c:GBR = {
+	# NATO - North Atlantic Treaty Organization
+	# Non-EU NATO members + GBR (Atlanticist) + 1999 expansion (POL, CZE, HUN not yet EU members)
+	# Note: dual NATO+EU members (GER, FRA, ITA, SPA, etc.) are assigned to the EU bloc below
+	c:USA ?= {
 		create_power_bloc = {
-			name = BRITISH_EMPIRE
-			map_color = hsv{ 0.99  0.7  0.9 }
+			name = NATO
+			map_color = { 0 75 150 }
 
-			founding_date = 1784.5.12 # Treaty of Paris (1783) comes into effect
-			identity = identity_sovereign_empire
-			principle = principle_vassalization_1
+			founding_date = 1949.4.4
+			identity = identity_military_treaty_organization
+			principle = principle_defensive_cooperation_1
 
-			# subjects are automatically part of the bloc
+			member = c:GBR
+			member = c:CAN
+			member = c:NOR
+			member = c:TUR
+			member = c:POL
+			member = c:CZE
+			member = c:HUN
 		}
 		if = {
 			limit = {
 				has_dlc_feature = power_bloc_features
 			}
 			power_bloc = {
-				add_principle = principle_colonial_offices_2
+				add_principle = principle_military_industry_1
 			}
 		}
 	}
 
-	
-
-	c:RUS = {
+	# European Union
+	# 15 EU members as of January 2000 (GER leads; GBR assigned to NATO above)
+	c:GER ?= {
 		create_power_bloc = {
-			name = ROSSIYSKAYA_IMPERIYA
+			name = EUROPEAN_UNION
+			map_color = { 0 51 153 }
 
-			map_color = { 78 134 62 }
+			founding_date = 1993.11.1 # Maastricht Treaty
+			identity = identity_trade_league
+			principle = principle_internal_trade_1
 
-			founding_date = 1825.12.1 # Coronation of Nicholas I
-			identity = identity_sovereign_empire
-			principle = principle_vassalization_1
-
-			# subjects are automatically part of the bloc
+			member = c:FRA
+			member = c:ITA
+			member = c:SPA
+			member = c:NET
+			member = c:BEL
+			member = c:AUS
+			member = c:POR
+			member = c:GRE
+			member = c:SWE
+			member = c:DEN
+			member = c:FIN
+			member = c:IRE
+			member = c:LUX
 		}
 		if = {
 			limit = {
 				has_dlc_feature = power_bloc_features
 			}
 			power_bloc = {
-				add_principle = principle_defensive_cooperation_1
+				add_principle = principle_construction_1
 			}
 		}
 	}
 
-	# America gets no power bloc because it's 1836
+	# CIS - Commonwealth of Independent States
+	# Post-Soviet successor organization, founded 1991
+	c:RUS ?= {
+		create_power_bloc = {
+			name = CIS
+			map_color = { 70 130 70 }
 
-	
+			founding_date = 1991.12.8 # Belavezha Accords
+			identity = identity_ideological_union
+			principle = principle_defensive_cooperation_1
+
+			member = c:BYE
+			member = c:KAZ
+			member = c:UZB
+			member = c:KYR
+			member = c:TJI
+			member = c:TRC
+			member = c:ARM
+			member = c:AZB
+			member = c:MOL
+			member = c:GEO
+			member = c:UKR
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_police_coordination_1
+			}
+		}
+	}
 }

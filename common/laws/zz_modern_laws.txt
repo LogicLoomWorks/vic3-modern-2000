@@ -1,0 +1,704 @@
+﻿### MODERN LAWS — vic3-modern-2000
+#
+# Tech key substitutions (blueprint spec → implemented key):
+#   signals_intelligence  → big_data_analytics
+#   internet_networking   → internet_infrastructure
+#   genomics              → biotech_engineering
+#   autonomous_systems    → artificial_intelligence
+#   nuclear_energy        → advanced_petrochemicals  (no nuclear tech in 1.1-1.4)
+#   fintech               → digital_currency
+#
+# possible = { has_technology_researched = X } gates enactment behind tech research.
+# Laws without a possible block can be enacted from game start (all pre-researched by 2000).
+#
+# progressiveness range: -100 (most reactionary) to +100 (most progressive).
+# ai_will_do base values: 1 = unlikely, 3 = neutral, 5 = likely.
+
+###############################################################################
+### DIGITAL RIGHTS
+###############################################################################
+
+law_surveillance_state = {
+	group = law_group_digital_rights
+	icon = "gfx/interface/icons/law_icons/surveillance_state.dds"
+	progressiveness = -60
+
+	modifier = {
+		country_authority_mult = 0.15
+		country_legitimacy_base_add = 5
+		country_innovation_mult = -0.15
+		ig_intelligentsia_pol_str_mult = -0.20
+		ig_trade_unions_pol_str_mult = -0.10
+	}
+
+	possible = {
+		has_technology_researched = big_data_analytics
+		# blueprint: signals_intelligence → big_data_analytics
+	}
+
+	ai_will_do = {
+		value = 3
+		modifier = {
+			factor = 3
+			country_rank >= rank_value:major_power
+			ig:ig_armed_forces = { is_in_government = yes }
+		}
+		modifier = {
+			factor = 0.3
+			ig:ig_intelligentsia = { is_in_government = yes }
+		}
+	}
+}
+
+law_regulated_data = {
+	group = law_group_digital_rights
+	icon = "gfx/interface/icons/law_icons/regulated_data.dds"
+	progressiveness = 10
+
+	modifier = {
+		country_authority_mult = 0.05
+		country_innovation_mult = 0.05
+		ig_intelligentsia_pol_str_mult = 0.05
+		country_bureaucracy_mult = 0.05
+	}
+
+	possible = {
+		has_technology_researched = internet_infrastructure
+		# blueprint: internet_networking → internet_infrastructure
+	}
+
+	ai_will_do = {
+		value = 4
+	}
+}
+
+law_digital_freedom = {
+	group = law_group_digital_rights
+	icon = "gfx/interface/icons/law_icons/digital_freedom.dds"
+	progressiveness = 40
+
+	modifier = {
+		country_innovation_mult = 0.15
+		country_authority_mult = -0.05
+		ig_intelligentsia_pol_str_mult = 0.15
+		ig_petty_bourgeoisie_pol_str_mult = 0.10
+	}
+
+	possible = {
+		has_technology_researched = internet_infrastructure
+		# blueprint: internet_networking → internet_infrastructure
+	}
+
+	ai_will_do = {
+		value = 3
+		modifier = {
+			factor = 2
+			ig:ig_intelligentsia = { is_in_government = yes }
+		}
+		modifier = {
+			factor = 0.3
+			ig:ig_armed_forces = { is_in_government = yes }
+		}
+	}
+}
+
+###############################################################################
+### ENERGY POLICY
+###############################################################################
+
+law_fossil_dependent = {
+	group = law_group_energy_policy
+	icon = "gfx/interface/icons/law_icons/fossil_dependent.dds"
+	progressiveness = -30
+
+	modifier = {
+		goods_output_natural_gas_mult = 0.10
+		goods_output_oil_mult = 0.10
+		country_minting_mult = 0.05
+		ig_industrialists_pol_str_mult = 0.10
+	}
+
+	ai_will_do = {
+		value = 3
+		modifier = {
+			factor = 2
+			has_strategy = ai_strategy_resource_expansion
+		}
+	}
+}
+
+law_mixed_transition = {
+	group = law_group_energy_policy
+	icon = "gfx/interface/icons/law_icons/mixed_transition.dds"
+	progressiveness = 10
+
+	modifier = {
+		goods_output_electricity_mult = 0.05
+		country_minting_mult = 0.03
+	}
+
+	possible = {
+		has_technology_researched = renewable_energy
+	}
+
+	ai_will_do = {
+		value = 4
+	}
+}
+
+law_green_mandate = {
+	group = law_group_energy_policy
+	icon = "gfx/interface/icons/law_icons/green_mandate.dds"
+	progressiveness = 40
+
+	modifier = {
+		goods_output_electricity_mult = 0.10
+		ig_industrialists_pol_str_mult = -0.10
+		ig_intelligentsia_pol_str_mult = 0.10
+		goods_output_oil_mult = -0.10
+	}
+
+	possible = {
+		has_technology_researched = renewable_energy
+		has_technology_researched = climate_science
+	}
+
+	ai_will_do = {
+		value = 2
+		modifier = {
+			factor = 3
+			ig:ig_intelligentsia = { is_in_government = yes }
+		}
+	}
+}
+
+###############################################################################
+### HEALTHCARE SYSTEM
+###############################################################################
+
+law_private_healthcare = {
+	group = law_group_healthcare_system
+	icon = "gfx/interface/icons/law_icons/private_healthcare.dds"
+	progressiveness = -20
+
+	modifier = {
+		country_minting_mult = 0.08
+		ig_industrialists_pol_str_mult = 0.10
+		ig_petty_bourgeoisie_pol_str_mult = 0.05
+	}
+
+	ai_will_do = {
+		value = 3
+		modifier = {
+			factor = 2
+			has_strategy = ai_strategy_resource_expansion
+		}
+	}
+}
+
+law_hybrid_healthcare = {
+	group = law_group_healthcare_system
+	icon = "gfx/interface/icons/law_icons/hybrid_healthcare.dds"
+	progressiveness = 10
+
+	modifier = {
+		country_bureaucracy_add = 20
+		country_minting_mult = 0.03
+		ig_trade_unions_pol_str_mult = 0.05
+	}
+
+	ai_will_do = {
+		value = 4
+	}
+}
+
+law_universal_healthcare = {
+	group = law_group_healthcare_system
+	icon = "gfx/interface/icons/law_icons/universal_healthcare.dds"
+	progressiveness = 40
+
+	modifier = {
+		country_bureaucracy_add = 20
+		country_minting_mult = -0.05
+		ig_trade_unions_pol_str_mult = 0.15
+		ig_rural_folk_pol_str_mult = 0.10
+		ig_intelligentsia_pol_str_mult = 0.05
+	}
+
+	possible = {
+		has_technology_researched = biotech_engineering
+		# blueprint: genomics/biotechnology → biotech_engineering
+	}
+
+	ai_will_do = {
+		value = 2
+		modifier = {
+			factor = 3
+			ig:ig_trade_unions = { is_in_government = yes }
+		}
+		modifier = {
+			factor = 0.5
+			has_strategy = ai_strategy_resource_expansion
+		}
+	}
+}
+
+###############################################################################
+### IMMIGRATION POLICY
+###############################################################################
+
+law_closed_borders = {
+	group = law_group_immigration_policy
+	icon = "gfx/interface/icons/law_icons/closed_borders.dds"
+	progressiveness = -30
+
+	modifier = {
+		country_migration_pull_mult = -0.30
+		country_authority_mult = 0.08
+		ig_landowners_pol_str_mult = 0.10
+		ig_devout_pol_str_mult = 0.05
+		country_bureaucracy_mult = -0.05
+	}
+
+	ai_will_do = {
+		value = 3
+		modifier = {
+			factor = 2
+			has_strategy = ai_strategy_isolationist
+		}
+	}
+}
+
+law_managed_migration = {
+	group = law_group_immigration_policy
+	icon = "gfx/interface/icons/law_icons/managed_migration.dds"
+	progressiveness = 10
+
+	modifier = {
+		country_migration_pull_mult = 0.10
+		country_bureaucracy_mult = 0.08
+	}
+
+	ai_will_do = {
+		value = 4
+	}
+}
+
+law_open_borders = {
+	group = law_group_immigration_policy
+	icon = "gfx/interface/icons/law_icons/open_borders.dds"
+	progressiveness = 40
+
+	modifier = {
+		country_migration_pull_mult = 0.30
+		country_innovation_mult = 0.10
+		ig_intelligentsia_pol_str_mult = 0.10
+		ig_landowners_pol_str_mult = -0.05
+		country_authority_mult = -0.05
+	}
+
+	possible = {
+		has_technology_researched = globalization
+	}
+
+	ai_will_do = {
+		value = 2
+		modifier = {
+			factor = 3
+			has_strategy = ai_strategy_diplomatic_expansion
+		}
+	}
+}
+
+###############################################################################
+### WELFARE STATE
+###############################################################################
+
+law_minimal_safety_net = {
+	group = law_group_welfare_state
+	icon = "gfx/interface/icons/law_icons/minimal_safety_net.dds"
+	progressiveness = -30
+
+	modifier = {
+		country_minting_mult = 0.08
+		ig_industrialists_pol_str_mult = 0.10
+		ig_rural_folk_pol_str_mult = -0.10
+		ig_trade_unions_pol_str_mult = -0.15
+	}
+
+	ai_will_do = {
+		value = 3
+		modifier = {
+			factor = 2
+			has_strategy = ai_strategy_resource_expansion
+		}
+	}
+}
+
+law_social_democratic_welfare = {
+	group = law_group_welfare_state
+	icon = "gfx/interface/icons/law_icons/social_democratic_welfare.dds"
+	progressiveness = 20
+
+	modifier = {
+		country_minting_mult = -0.03
+		ig_trade_unions_pol_str_mult = 0.15
+		ig_rural_folk_pol_str_mult = 0.10
+		state_education_access_add = 0.05
+		country_bureaucracy_add = 20
+	}
+
+	ai_will_do = {
+		value = 4
+	}
+}
+
+law_universal_basic_income = {
+	group = law_group_welfare_state
+	icon = "gfx/interface/icons/law_icons/universal_basic_income.dds"
+	progressiveness = 60
+
+	modifier = {
+		country_legitimacy_base_add = 10
+		country_minting_mult = -0.10
+		ig_rural_folk_pol_str_mult = 0.15
+		ig_petty_bourgeoisie_pol_str_mult = 0.10
+		ig_trade_unions_pol_str_mult = -0.10
+		ig_industrialists_pol_str_mult = -0.05
+		state_education_access_add = 0.10
+	}
+
+	possible = {
+		OR = {
+			has_technology_researched = universal_basic_income
+			has_technology_researched = artificial_intelligence
+		}
+	}
+
+	ai_will_do = {
+		value = 1
+		modifier = {
+			factor = 4
+			has_technology_researched = universal_basic_income
+			ig:ig_rural_folk = { is_in_government = yes }
+		}
+	}
+}
+
+###############################################################################
+### MILITARY DOCTRINE
+###############################################################################
+
+law_conscription_legacy = {
+	group = law_group_military_doctrine
+	icon = "gfx/interface/icons/law_icons/conscription_legacy.dds"
+	progressiveness = -20
+
+	modifier = {
+		country_prestige_mult = 0.15
+		country_minting_mult = -0.05
+		ig_armed_forces_pol_str_mult = 0.15
+		ig_landowners_pol_str_mult = 0.05
+		country_innovation_mult = -0.05
+	}
+
+	ai_will_do = {
+		value = 3
+		modifier = {
+			factor = 2
+			has_strategy = ai_strategy_antagonistic
+		}
+	}
+}
+
+law_professional_military = {
+	group = law_group_military_doctrine
+	icon = "gfx/interface/icons/law_icons/professional_military.dds"
+	progressiveness = 10
+
+	modifier = {
+		country_prestige_mult = 0.10
+		country_minting_mult = -0.03
+		ig_armed_forces_pol_str_mult = 0.05
+	}
+
+	ai_will_do = {
+		value = 4
+	}
+}
+
+law_tech_centric_force = {
+	group = law_group_military_doctrine
+	icon = "gfx/interface/icons/law_icons/tech_centric_force.dds"
+	progressiveness = 30
+
+	modifier = {
+		country_prestige_mult = 0.05
+		goods_output_guided_munitions_mult = 0.15
+		goods_output_cyber_capability_mult = 0.15
+		country_innovation_mult = 0.10
+		ig_armed_forces_pol_str_mult = -0.05
+		ig_intelligentsia_pol_str_mult = 0.10
+		country_minting_mult = -0.05
+	}
+
+	possible = {
+		has_technology_researched = artificial_intelligence
+		# blueprint: autonomous_systems → artificial_intelligence
+	}
+
+	ai_will_do = {
+		value = 2
+		modifier = {
+			factor = 4
+			has_technology_researched = artificial_intelligence
+			ig:ig_intelligentsia = { is_in_government = yes }
+		}
+	}
+}
+
+###############################################################################
+### TRADE POLICY
+###############################################################################
+
+law_protectionist = {
+	group = law_group_trade_policy
+	icon = "gfx/interface/icons/law_icons/protectionist.dds"
+	progressiveness = -10
+
+	modifier = {
+		state_market_access_price_impact = -0.10
+		ig_industrialists_pol_str_mult = 0.10
+		ig_landowners_pol_str_mult = 0.05
+		country_minting_mult = -0.05
+	}
+
+	ai_will_do = {
+		value = 3
+		modifier = {
+			factor = 2
+			has_strategy = ai_strategy_isolationist
+		}
+	}
+}
+
+law_free_trade = {
+	group = law_group_trade_policy
+	icon = "gfx/interface/icons/law_icons/free_trade.dds"
+	progressiveness = 20
+
+	modifier = {
+		state_market_access_price_impact = 0.15
+		country_minting_mult = 0.08
+		country_influence_mult = 0.05
+		ig_industrialists_pol_str_mult = 0.05
+	}
+
+	ai_will_do = {
+		value = 4
+		modifier = {
+			factor = 2
+			has_strategy = ai_strategy_diplomatic_expansion
+		}
+	}
+}
+
+law_strategic_decoupling = {
+	group = law_group_trade_policy
+	icon = "gfx/interface/icons/law_icons/strategic_decoupling.dds"
+	progressiveness = -5
+
+	modifier = {
+		goods_output_semiconductors_mult = 0.15
+		goods_output_electronics_mult = 0.10
+		goods_output_software_mult = 0.10
+		state_market_access_price_impact = -0.08
+		country_influence_mult = -0.05
+		ig_intelligentsia_pol_str_mult = 0.10
+	}
+
+	possible = {
+		has_technology_researched = big_data_analytics
+		# blueprint: strategic planning → big_data_analytics
+	}
+
+	ai_will_do = {
+		value = 2
+		modifier = {
+			factor = 4
+			country_rank >= rank_value:major_power
+			has_technology_researched = internet_infrastructure
+			# AI favors decoupling if it has domestic fab-level tech (internet_infrastructure unlocks semiconductor_fab)
+		}
+	}
+}
+
+###############################################################################
+### NUCLEAR POLICY
+###############################################################################
+
+law_nuclear_disarmament = {
+	group = law_group_nuclear_policy
+	icon = "gfx/interface/icons/law_icons/nuclear_disarmament.dds"
+	progressiveness = 30
+
+	modifier = {
+		country_prestige_mult = 0.10
+		country_influence_mult = 0.10
+		country_legitimacy_base_add = 5
+		country_prestige_mult = -0.10
+		ig_armed_forces_pol_str_mult = -0.10
+	}
+
+	ai_will_do = {
+		value = 2
+		modifier = {
+			factor = 3
+			has_strategy = ai_strategy_diplomatic_expansion
+		}
+		modifier = {
+			factor = 0.2
+			country_rank >= rank_value:major_power
+		}
+	}
+}
+
+law_nuclear_deterrence = {
+	group = law_group_nuclear_policy
+	icon = "gfx/interface/icons/law_icons/nuclear_deterrence.dds"
+	progressiveness = 0
+
+	modifier = {
+		country_prestige_mult = 0.20
+		ig_armed_forces_pol_str_mult = 0.10
+		country_minting_mult = -0.05
+		country_prestige_mult = 0.05
+	}
+
+	possible = {
+		has_technology_researched = advanced_petrochemicals
+		# blueprint: nuclear_energy → advanced_petrochemicals (no nuclear tech in 1.1-1.4)
+	}
+
+	ai_will_do = {
+		value = 3
+		modifier = {
+			factor = 3
+			country_rank >= rank_value:major_power
+		}
+		modifier = {
+			factor = 2
+			has_strategy = ai_strategy_antagonistic
+		}
+	}
+}
+
+law_nuclear_proliferation = {
+	group = law_group_nuclear_policy
+	icon = "gfx/interface/icons/law_icons/nuclear_proliferation.dds"
+	progressiveness = -30
+
+	modifier = {
+		country_prestige_mult = 0.35
+		ig_armed_forces_pol_str_mult = 0.20
+		country_prestige_mult = -0.15
+		country_influence_mult = -0.20
+		country_minting_mult = -0.08
+	}
+
+	possible = {
+		has_technology_researched = advanced_petrochemicals
+		has_technology_researched = fusion_research
+		# Requires both advanced energy tech and fusion research as a proxy for weapons-grade capability
+		# blueprint: nuclear_energy → advanced_petrochemicals
+	}
+
+	on_activate = {
+		# Flag for future nuclear journal/event content
+		set_variable = {
+			name = nuclear_proliferation_active
+			value = 1
+		}
+	}
+
+	ai_will_do = {
+		value = 1
+		modifier = {
+			factor = 5
+			has_strategy = ai_strategy_antagonistic
+			country_rank >= rank_value:major_power
+		}
+	}
+}
+
+###############################################################################
+### MEDIA REGULATION
+###############################################################################
+
+law_state_controlled_media = {
+	group = law_group_media_regulation
+	icon = "gfx/interface/icons/law_icons/state_controlled_media.dds"
+	progressiveness = -50
+
+	modifier = {
+		country_authority_mult = 0.15
+		country_legitimacy_base_add = 8
+		country_innovation_mult = -0.15
+		ig_intelligentsia_pol_str_mult = -0.20
+		ig_petty_bourgeoisie_pol_str_mult = -0.05
+	}
+
+	ai_will_do = {
+		value = 3
+		modifier = {
+			factor = 3
+			ig:ig_armed_forces = { is_in_government = yes }
+		}
+		modifier = {
+			factor = 0.2
+			ig:ig_intelligentsia = { is_in_government = yes }
+		}
+	}
+}
+
+law_regulated_free_press = {
+	group = law_group_media_regulation
+	icon = "gfx/interface/icons/law_icons/regulated_free_press.dds"
+	progressiveness = 10
+
+	modifier = {
+		country_authority_mult = 0.05
+		country_innovation_mult = 0.05
+		ig_intelligentsia_pol_str_mult = 0.05
+	}
+
+	ai_will_do = {
+		value = 4
+	}
+}
+
+law_unregulated_media = {
+	group = law_group_media_regulation
+	icon = "gfx/interface/icons/law_icons/unregulated_media.dds"
+	progressiveness = 20
+
+	modifier = {
+		country_innovation_mult = 0.10
+		country_authority_mult = -0.08
+		ig_intelligentsia_pol_str_mult = 0.15
+		ig_petty_bourgeoisie_pol_str_mult = 0.10
+		goods_output_media_mult = 0.10
+	}
+
+	possible = {
+		has_technology_researched = social_media
+	}
+
+	ai_will_do = {
+		value = 2
+		modifier = {
+			factor = 3
+			ig:ig_petty_bourgeoisie = { is_in_government = yes }
+		}
+	}
+}

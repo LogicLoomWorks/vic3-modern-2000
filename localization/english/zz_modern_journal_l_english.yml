@@ -1,0 +1,54 @@
+﻿ l_english:
+ # ============================================================
+ # JOURNAL ENTRY TITLES AND DESCRIPTIONS
+ # vic3-modern-2000 — Prompt 2.5
+ # ============================================================
+
+ # --- je_nuclear_ambitions ---
+ je_nuclear_ambitions:0 "Nuclear Ambitions"
+ je_nuclear_ambitions_desc:0 "Our government has committed to a nuclear weapons program under the doctrine of proliferation. We must secure domestic uranium, establish enrichment capacity, and conduct a test to demonstrate our deterrent capability."
+
+ # --- je_energy_transition ---
+ je_energy_transition:0 "Energy Transition"
+ je_energy_transition_desc:0 "The shift from fossil fuels to clean energy is underway. We must expand our renewable and nuclear generation capacity and commit fully to a green energy mandate before the window of opportunity closes."
+
+ # --- je_digital_transformation ---
+ je_digital_transformation:0 "Digital Transformation"
+ je_digital_transformation_desc:0 "The modern economy runs on digital infrastructure. Expanding our telecom networks, software sector, and data center capacity will position us as a global technology leader and unlock network-effect productivity gains."
+
+ # --- je_great_power_competition ---
+ je_great_power_competition:0 "Great Power Competition"
+ je_great_power_competition_desc:0 "The struggle for global influence demands that we maintain both military-industrial might and technological superiority. We must prove our status through hardware production capacity and advanced digital infrastructure."
+
+ # --- je_democratic_backsliding ---
+ je_democratic_backsliding:0 "Defending Democracy"
+ je_democratic_backsliding_desc:0 "Populist pressure, surveillance creep, and media control pose existential threats to our democratic institutions. We must actively choose the liberal path — digital freedom, a free press, and the rule of law — before it slips away."
+
+ # --- je_democratization ---
+ je_democratization:0 "Path to Democracy"
+ je_democratization_desc:0 "Our country stands at a crossroads. The structures of authoritarianism are eroding, and a democratic transition is possible — but entrenching surveillance and state media could lock us into permanent autocracy."
+
+ # ============================================================
+ # JOURNAL ENTRY ON_COMPLETE / ON_FAIL TOOLTIPS
+ # ============================================================
+
+ je_nuclear_ambitions_complete_tt:0 "The nuclear test has been conducted and the arsenal is operational. Our deterrent is established."
+ je_nuclear_ambitions_fail_tt:0 "The nuclear program has been abandoned under the disarmament doctrine. International pressure prevails."
+ je_energy_transition_complete_tt:0 "Our energy grid is now predominantly clean. The green transition is complete."
+ je_energy_transition_fail_tt:0 "The fossil fuel lobby has prevailed. The transition has been abandoned."
+ je_digital_transformation_complete_tt:0 "Our nation is now a recognized technology leader with a world-class digital economy."
+ je_great_power_competition_complete_tt:0 "We have established undeniable great-power status through military and technological dominance."
+ je_great_power_competition_fail_tt:0 "Our great-power standing has collapsed. Rivals have overtaken us on every axis of power."
+ je_democratic_backsliding_complete_tt:0 "We have reaffirmed our commitment to democratic governance and digital rights."
+ je_democratic_backsliding_fail_tt:0 "Democratic norms have been eroded. The regime has turned authoritarian."
+ je_democratization_complete_tt:0 "The democratic transition is complete. Our people have won the right to self-governance."
+ je_democratization_fail_tt:0 "The democratic window has closed. Authoritarian structures are now entrenched."
+ je_democratization_entrenched_tt:0 "Surveillance, state media, and closed borders have locked the country into authoritarianism."
+ je_democratic_backsliding_resisted_tt:0 "Democratic institutions have resisted the pressure and chosen the liberal path."
+
+ # ============================================================
+ # DECISION COST TOOLTIPS (referenced from decisions file)
+ # ============================================================
+
+ decision_sez_cost_tt:0 "Establishing a Special Economic Zone requires §Y500§! treasury to fund initial infrastructure."
+ decision_space_program_cost_tt:0 "Launching a national space program requires §Y1000§! treasury, representing electronics, refined fuel, and steel procurement."

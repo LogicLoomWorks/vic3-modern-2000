@@ -1,4 +1,4 @@
-IRN = {
+﻿IRN = {
 	color = { 50 100 90 }
 	
 	country_type = recognized

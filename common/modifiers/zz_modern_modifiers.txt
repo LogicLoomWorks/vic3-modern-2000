@@ -1,0 +1,111 @@
+﻿# Modern Named Modifiers — vic3-modern-2000
+# Applied via: add_modifier = { name = modifier_key months = X }
+# Removed via:  remove_modifier = modifier_key
+#
+# Country modifiers use country-scope modifier keys.
+# State modifiers use state-scope modifier keys.
+# All modifier keys are standard Victoria 3 engine modifiers.
+# country_research_speed_mult may need adjustment to exact V3 key if different.
+
+##############################################################################
+# COUNTRY MODIFIERS
+##############################################################################
+
+modifier_climate_penalty = {
+    # Applied periodically by effect_climate_crisis_tick.
+    # Represents infrastructure stress, agricultural disruption, and
+    # economic drag from extreme weather events.
+    country_construction_efficiency_mult = -0.03
+    country_tax_efficiency_mult = -0.03
+    country_institution_size_mult = -0.02
+}
+
+modifier_digital_economy_bonus = {
+    # Applied when a country reaches a threshold of digital infrastructure.
+    # Represents network-effect productivity gains from connected economy.
+    country_construction_efficiency_mult = 0.05
+    country_tax_efficiency_mult = 0.04
+    country_institution_size_mult = 0.05
+}
+
+modifier_sanctions_target = {
+    # Applied to a country that is the target of economic sanctions.
+    # Reduces tax efficiency (disrupted trade revenue), construction speed
+    # (import dependency on restricted goods), and diplomatic influence.
+    country_tax_efficiency_mult = -0.10
+    country_construction_efficiency_mult = -0.05
+    country_influence_mult = -0.10
+}
+
+modifier_sanctions_sender = {
+    # Applied to the country that imposed sanctions.
+    # Minor economic cost from severed trade ties.
+    country_tax_efficiency_mult = -0.02
+    country_trade_route_throughput_add = -0.02
+}
+
+modifier_nuclear_arsenal = {
+    # Applied when a country has an operational nuclear deterrent.
+    # Prestige benefit from nuclear status; infamy generation penalty
+    # reflects international scrutiny of nuclear-armed states.
+    country_prestige_mult = 0.10
+    country_influence_mult = 0.05
+    country_infamy_generation_mult = 0.05
+}
+
+modifier_cyber_attack_victim = {
+    # Applied temporarily after a cyber attack event.
+    # Disrupts digital infrastructure and financial networks.
+    country_tax_efficiency_mult = -0.06
+    country_construction_efficiency_mult = -0.04
+    country_institution_size_mult = -0.03
+}
+
+modifier_green_transition_subsidy = {
+    # Applied via policy or event when state invests in clean energy transition.
+    # Boosts construction efficiency (new builds), institution size (green R&D),
+    # and prestige (international climate leadership).
+    country_construction_efficiency_mult = 0.06
+    country_institution_size_mult = 0.05
+    country_prestige_mult = 0.05
+}
+
+modifier_brain_drain = {
+    # Applied when skilled emigration is depleting human capital.
+    # Approximated via institution size (fewer researchers staying)
+    # and construction efficiency (fewer engineers available).
+    country_institution_size_mult = -0.06
+    country_construction_efficiency_mult = -0.04
+    country_bureaucracy_add = -10
+}
+
+modifier_tech_hub = {
+    # Applied to countries that qualify as is_tech_leader (see scripted triggers).
+    # Represents agglomeration effects: talent concentration, investor confidence,
+    # and faster diffusion of new production methods.
+    country_construction_efficiency_mult = 0.05
+    country_institution_size_mult = 0.08
+    country_influence_mult = 0.05
+    country_prestige_mult = 0.05
+}
+
+##############################################################################
+# STATE MODIFIERS
+##############################################################################
+
+modifier_special_economic_zone = {
+    # Applied to individual states designated as SEZs.
+    # Boosts construction, trade throughput, and migration pull
+    # within the zone.
+    state_construction_efficiency_mult = 0.10
+    state_trade_route_throughput_add = 0.05
+    state_migration_pull_mult = 0.10
+}
+
+modifier_military_base = {
+    # Applied to states hosting major military installations.
+    # Boosts infrastructure investment and local authority projection;
+    # slight population growth from military families and support workers.
+    state_infrastructure_mult = 0.05
+    state_pop_growth_mult = 0.03
+}
